@@ -10,6 +10,15 @@
 
 library(tidyverse)
 
+## Write data to the inputs/data path in the project
+
+save_to_csv = function(data, name) {
+  write_csv(
+    x = data,
+    file = paste("inputs/data/", name, sep="")
+  )
+}
+
 ## Function to filter world economic outlook data based on a subject code
 ## Also pivots data into a clean format
 
@@ -34,8 +43,8 @@ filter_world_economic_outlook_data = function(data, subject_code, subject_name) 
   filtered_data =
     filtered_data |>
     pivot_longer(
-      cols = !iso,
-      names_to = "Year",
+      cols = !country_iso,
+      names_to = "year",
       values_to = subject_name,
       values_transform = as.numeric
     )  
@@ -43,7 +52,7 @@ filter_world_economic_outlook_data = function(data, subject_code, subject_name) 
   # Use data up to and including 2021
   filtered_data =
     filtered_data |>
-    filter (Year <= 2021)
+    filter (year <= 2021)
   
   return(filtered_data)
 }
