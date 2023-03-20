@@ -1,99 +1,85 @@
 #### Preamble ####
-# Purpose: Clean world economic outlook data into its components
+# Purpose: Clean up datasets related timesheets, sleep quality, and deliverables
 # Author: Christina Wei
-# Data: 19 February 2023
+# Data: March 19, 2023
 # Contact: christina.wei@mail.utoronto.ca
 # License: MIT
-# Pre-requisites:
-  # 00-download_data.R
-# Country sectors: https://www.imf.org/external/datamapper/FMEconGroup.xlsx
 
 #### Workspace setup ####
-
 library(tidyverse)
-library(readxl)
 library(janitor)
 
-source("scripts/02-helper_functions.R")
 
-#### UN World Economic Outlook Data ####
+#### Timesheet data ####
 
-## Read data in
+cleaned_time_sheet <-
+  read_csv(
+    file = "inputs/data/time_entry.csv",
+    show_col_types = FALSE
+  )
 
-raw_world_economic_outlook_data = 
-  read_excel("inputs/data/raw_un_world_economic_outlook.xls") |>
-  clean_names() |>
-  rename(country_iso = iso)
+cleaned_time_sheet <-
+  cleaned_time_sheet |>
+  select(-User, -Email, -Client, -Task, -Billable, -Tags, -`Amount ()`) |>
+  clean_names()
 
-colnames(raw_world_economic_outlook_data) =
-  sub("x", "", colnames(raw_world_economic_outlook_data))
+# classify each project
+cleaned_time_sheet <-
+  cleaned_time_sheet |>
+  mutate(type = case_when(
 
-## Country code reference table
+    grepl("Anastasia", description, fixed=TRUE) ~ "Research",
+    project == "Industry DDN" ~ "Research",
+    project == "Disfluency perception" ~ "Research",
+    project == "OAPerception" ~ "Research",
+    project == "Reading" ~ "Research",
+    project == "Lit Review" ~ "Research",
+    project == "Finance CA Marginalization" ~ "Research",
+    project == "Research-General" ~ "Research",
+    
+    project == "INF2241" ~ "Course Work",
+    project == "INF3001" ~ "Course Work",
+    project == "INF3104" ~ "Course Work",
+    project == "INF2169" ~ "Course Work",
+    
+    project == "TA-CCT419" ~ "TA",
+    project == "TA-INF2208" ~ "TA",
+    project == "TA-INF2192" ~ "TA",
+    
+    project == "CCT419" ~ "Learning",
+    project == "INF2208" ~ "Learning",
+    project == "writing course" ~ "Learning",
+    project == "Talks" ~ "Learning",
+    
+    project == "Cookie Lab" ~ "Other Activities",
+    project == "Service Work" ~ "Other Activities",
+    project == "Professional" ~ "Other Activities",
+    
+    is.na(project) ~ "Admin",
+    project == "Network" ~ "Admin",
+    grepl("Admin", description, fixed=TRUE) ~ "Admin",
+    grepl("NSERC", description, fixed=TRUE) ~ "Admin",
+    grepl("Grant", description, fixed=TRUE) ~ "Admin",
+  ))
 
-reference_country = 
-  raw_world_economic_outlook_data |>
-  select(
-    country,
-    country_iso,
-    weo_country_code
-  ) |>
-  distinct()
-
-## Population
-
-world_population_data = 
-  filter_world_economic_outlook_data(
-    raw_world_economic_outlook_data,
-    "LP",
-    "population"
+write_csv(
+  x = cleaned_time_sheet,
+  file = "outputs/data/cleaned_time_sheet.csv"
 )
 
-## GDP Current Price in US Dollars
+#### Sleep data ####
 
-world_gdp_data =
-  filter_world_economic_outlook_data(
-    raw_world_economic_outlook_data,
-    "NGDPD",
-    "GDP"
+cleaned_sleep_score <-
+  read_csv(
+    file = "inputs/data/sleep_score.csv",
+    show_col_types = FALSE
   )
 
 
-## Inflation - average consumer prices
+#### Due dates ####
 
-world_inflation_data =
-  filter_world_economic_outlook_data(
-    raw_world_economic_outlook_data,
-    "PCPI",
-    "inflation"
+cleaned_deliverables <-
+  read_csv(
+    file = "inputs/data/deliverables.csv",
+    show_col_types = FALSE
   )
-
-## Unemployment - percentage
-
-world_unemployment_data =
-  filter_world_economic_outlook_data(
-    raw_world_economic_outlook_data,
-    "LUR",
-    "unemployment"
-  )
-
-## Combine them into one dataset
-
-cleaned_world_economic_outlook_data =
-  list(world_gdp_data, world_inflation_data, world_population_data, world_unemployment_data) |>
-  reduce(
-    inner_join,
-    by=c("country_iso", "year")
-  )
-
-#### Write cleaned data to file and clean up working data ####
-
-# Save to CSV
-save_to_csv(reference_country, "reference_country.csv")
-save_to_csv(cleaned_world_economic_outlook_data, "cleaned_world_economic_outlook_data.csv")
-
-# Remove working variables
-rm(raw_world_economic_outlook_data)
-rm(world_inflation_data)
-rm(world_population_data)
-rm(world_unemployment_data)
-rm(world_gdp_data)

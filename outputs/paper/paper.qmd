@@ -1,0 +1,118 @@
+---
+title: "TBD"
+title-block-banner: true
+abstract: "TBD"
+thanks: "Code and data supporting this analysis is available at: https://github.com/christina-wei/TBD.git"
+author: Christina Wei
+date: today
+date-format: long
+format: pdf
+editor: visual
+toc: true
+number-sections: true
+bibliography: ref.bib
+---
+
+```{r}
+#| message: false
+#| echo: false
+
+#### Workspace set-up and read in data ####
+
+# Load packages 
+library(tidyverse)
+library(here)
+
+# read in cleaned data
+
+cleaned_time_sheet = read_csv(
+  file = here("outputs/data/cleaned_time_sheet.csv"),
+  show_col_types = FALSE
+)
+```
+
+# Introduction
+
+# Data
+
+-   Timesheet tracked in Toggl Track
+
+    -   Explain variables, categories
+
+-   Sleep data - automatically tracked through Fitbit
+
+-   Deliverable data - created at the beginning of each term to track major deliverables
+
+-   Data cleaning procedures
+
+-   Sources of error - retrospective entering of data, or forgetting to track; categorization arbitrary and may not reflect the actual work
+
+# Results
+
+**Timesheet**
+
+-   From 2022-08-15 to 2023-03-13
+
+-   582 entries
+
+```{r}
+min(cleaned_time_sheet$start_date)
+max(cleaned_time_sheet$end_date)
+nrow(cleaned_time_sheet)
+```
+
+```{r}
+
+# Piecharts: https://r-charts.com/part-whole/pie-chart-ggplot2/
+# Update this to %
+cleaned_time_sheet |>
+  group_by(type) |>
+  summarize(effort_hours = as.numeric(sum(duration)) / 3600) |>
+  ggplot(aes(x = "", y = effort_hours, fill = type)) +
+  geom_col(color = "black") +
+  coord_polar(theta = "y")
+```
+
+**Timesheet**
+
+-   How long does it take to work on a paper?
+
+-   When am I most productive?
+
+-   What is the regular schedule?
+
+```{=html}
+<!-- -->
+```
+-   Study pattern?
+
+```{=html}
+<!-- -->
+```
+-   Monday to Sunday
+
+-   Timing of the day
+
+-   Length for type of work
+
+-   How many things are happening concurrently?
+
+Sleep score & time sheets
+
+Actual vs. estimated effort
+
+Behavioural patterns?
+
+Model:
+
+-   input - type of assignment, expected hours, done to date
+
+-   process
+
+-   output - recommended study schedule?
+
+# Discussion
+
+-   Missing - social aspects, quality of work
+
+# Conclusion
