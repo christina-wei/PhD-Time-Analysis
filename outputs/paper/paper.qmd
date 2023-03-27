@@ -16,12 +16,14 @@ bibliography: ref.bib
 ```{r}
 #| message: false
 #| echo: false
+#| warning: false
 
 #### Workspace set-up and read in data ####
 
 # Load packages 
 library(tidyverse)
 library(here)
+source(here("scripts/03-helper_functions.R"))
 
 # read in cleaned data
 
@@ -49,6 +51,10 @@ cleaned_time_sheet = read_csv(
 
 # Results
 
+## Timesheet Data
+
+### Data Charateristics
+
 **Timesheet**
 
 -   From 2022-08-15 to 2023-03-13
@@ -56,63 +62,367 @@ cleaned_time_sheet = read_csv(
 -   582 entries
 
 ```{r}
+#| message: false
+#| echo: false
+#| warning: false
+
 min(cleaned_time_sheet$start_date)
 max(cleaned_time_sheet$end_date)
 nrow(cleaned_time_sheet)
 ```
 
 ```{r}
+#| message: false
+#| echo: false
+#| warning: false
+
+cleaned_time_sheet |>
+  group_by(type) |>
+  summarize(effort = sum(effort_hours)) |>
+  arrange(desc(effort))
 
 # Piecharts: https://r-charts.com/part-whole/pie-chart-ggplot2/
 # Update this to %
 cleaned_time_sheet |>
   group_by(type) |>
-  summarize(effort_hours = as.numeric(sum(duration)) / 3600) |>
-  ggplot(aes(x = "", y = effort_hours, fill = type)) +
+  summarize(effort = sum(effort_hours)) |>
+  mutate(effort_pct = effort / sum(effort)) |>
+  ggplot(aes(x = "", y = effort_pct, fill = type)) +
   geom_col(color = "black") +
   coord_polar(theta = "y")
 ```
 
-**Timesheet**
+### Trend Over Time
 
--   How long does it take to work on a paper?
+```{r}
+#| message: false
+#| echo: false
+#| warning: false
+
+# Weekly trend
+# https://stackoverflow.com/questions/67847174/convert-daily-data-into-weekly-data-and-summarize-multiple-columns-in-r
+
+#line graph overall
+generate_time_series_graph(
+  ggplot_data = 
+    cleaned_time_sheet |>
+    group_by(wk_index = floor_date(start_date, "week")) |>
+    summarize(effort = sum(effort_hours)) |>
+    ggplot(aes(x = wk_index, y = effort)),
+  xlabel = "Time",
+  ylabel = "Weekly Effort (in hours)",
+) +
+geom_smooth(method = lm, se = FALSE)
+
+# bar graph comparison over time
+generate_compare_bar_graph(
+  ggplot_data =
+    cleaned_time_sheet |>
+    filter(type %in% c("TA", "Research", "Course Work")) |>
+    group_by(wk_index = floor_date(start_date, "week"), type) |>
+    summarize(effort = sum(effort_hours)) |>
+    ggplot(aes(x = wk_index, y = effort, fill = type)),
+  position = "stack", 
+  xlabel = "Week",
+  ylabel = "Effort (in hours)"
+)
+```
+
+### Daily Patterns
+
+```{r}
+#| message: false
+#| echo: false
+#| warning: false
+
+# Duration of each session
+cleaned_time_sheet |>
+  group_by(start_date) |>
+  summarize(
+    effort = mean(effort_hours),
+    sessions = n()
+  ) |>
+  ungroup() |>
+  ggplot(aes(x = "", y = effort)) +
+  geom_boxplot(width = 0.3) +
+  geom_jitter(width = 0.1) +
+  labs(
+    x = "",
+    y = "Duration (in hours)"
+  ) +
+  theme_minimal()
+```
+
+```{r}
+#| message: false
+#| echo: false
+#| warning: false
+
+# Hours of each day
+hourly_calc <- 
+  cleaned_time_sheet |>
+  slice(rep(1:n(), each = 24)) |>
+  mutate(hour_value = rep(0:23, times = nrow(cleaned_time_sheet))) |>
+  mutate(
+    worked = (start_date == end_date & 
+                hour(start_time) <= hour_value & 
+                convert_hms_to_hours(end_time) > hour_value
+              ) |
+              (start_date < end_date & 
+                 (convert_hms_to_hours(end_time) > hour_value |
+                    hour(start_time) <= hour_value)
+               )
+    ) |>
+  filter(worked) |>
+  select(-worked)
+```
+
+```{r}
+#| message: false
+#| echo: false
+#| warning: false
+
+generate_compare_bar_graph(
+  ggplot_data =
+    hourly_calc |>
+    filter(type %in% c("Course Work", "Learning", "Research", "TA")) |>
+    group_by(hour_value, type) |>
+    count() |>
+    ungroup() |>
+    mutate(pct = n / sum(n)) |>
+    ggplot(aes(x = hour_value, y = pct, fill = type)),
+  xlabel = "Hour of the Day",
+  ylabel = "Percentage of Occurrence",
+  position = "stack",
+  yscale = scales::percent
+)
+  
+```
+
+### Weekly Patterns
+
+```{r}
+#| message: false
+#| echo: false
+#| warning: false
+
+daily_data <- 
+  cleaned_time_sheet |>
+  mutate(wkday = wday(cleaned_time_sheet$start_date, label = TRUE)) |>
+  group_by(start_date, wkday, type) |>
+  summarize(effort = sum(effort_hours)) |>
+  ungroup()
+```
+
+```{r}
+#| message: false
+#| echo: false
+#| warning: false
+
+daily_data |>
+  group_by(start_date, wkday) |>
+  summarize(effort = sum(effort)) |>
+  ggplot(aes(x = wkday, y = effort)) +
+  geom_boxplot() +
+  stat_summary(fun.y="mean",color="red") +
+  geom_jitter(width = 0.15) +
+  labs(
+    x = "Day of the Week",
+    y = "Effort (in hours)"
+  ) +
+  theme_minimal() +
+  scale_y_continuous(breaks = seq(0, 13, by = 1))
+
+daily_data |>
+  group_by(start_date, wkday) |>
+  summarize(effort = sum(effort)) |>
+  group_by(wkday) |>
+  summarize(mean_effort = mean(effort), med_effort = median(effort))
+```
+
+### Concurrent Work
+
+```{r}
+#| message: false
+#| echo: false
+#| warning: false
+
+cleaned_time_sheet |>
+  group_by(start_date, project) |>
+  summarize(projects = n()) |>
+  group_by(start_date) |>
+  summarize(projects = n()) |> 
+  ggplot(aes(x = "", y = projects)) +
+  geom_boxplot(width = 0.3) +
+  geom_jitter(width = 0.1) +
+  labs(
+    x = "",
+    y = "Number of Projects Worked on Per Day"
+  ) +
+  theme_minimal()
+
+cleaned_time_sheet |>
+  group_by(start_date, project) |>
+  summarize(projects = n()) |>
+  group_by(start_date) |>
+  summarize(projects = n()) |> 
+  group_by(projects) |>
+  count() |>
+  ungroup() |>
+  mutate(pct = n / sum(n)) |>
+  ggplot(aes(x = projects, y = pct)) +
+  geom_bar(stat = "identity") +
+    labs(
+    x = "Number of Projects Worked on Per Day",
+    y = "Percentage of occurrences"
+  ) +
+  theme_minimal() +
+  scale_y_continuous(labels = scales::percent)
+```
+
+## **Research**
+
+### Overall
+
+```{r}
+#| message: false
+#| echo: false
+#| warning: false
+
+cleaned_time_sheet |>
+  filter(type == "Research") |>
+  mutate(project = ifelse(project %in% c("Reading", NA), "Research-General", project)) |>
+  group_by(project) |>
+  summarize(effort = sum(effort_hours)) |>
+  mutate(pct = effort / sum(effort)) |>
+  arrange(desc(effort))
+
+cleaned_time_sheet |>
+  filter(type == "Research") |>
+  group_by(start_date) |>
+  summarize(
+    effort = mean(effort_hours),
+    sessions = n()
+  ) |>
+  ungroup() |>
+  ggplot(aes(x = "", y = effort)) +
+  geom_boxplot(width = 0.3) +
+  geom_jitter(width = 0.1) +
+  labs(
+    x = "",
+    y = "Duration (in hours)"
+  ) +
+  theme_minimal()
+
+
+generate_compare_bar_graph(
+  ggplot_data =
+    hourly_calc |>
+    filter(type %in% c("Research")) |>
+    group_by(hour_value, type) |>
+    count() |>
+    ungroup() |>
+    mutate(pct = n / sum(n)) |>
+    ggplot(aes(x = hour_value, y = pct, fill = type)),
+  xlabel = "Hour of the Day",
+  ylabel = "Percentage of Occurrence",
+  position = "stack",
+  yscale = scales::percent
+)
+```
+
+### **Literature Review Paper**
+
+-   How long does it take to work on a full paper?
+
+```{r}
+#| message: false
+#| echo: false
+#| warning: false
+
+generate_time_series_graph(
+    ggplot_data = 
+      cleaned_time_sheet |>
+      filter(project == "Lit Review") |>
+      group_by(wk_index = floor_date(start_date, "week")) |>
+      summarize(effort = sum(effort_hours)) |>
+      ggplot(aes(x = wk_index, y = effort)),
+    xlabel = "Week",
+    ylabel = "Effort (in hours)",
+  ) 
+
+cleaned_time_sheet |>
+  filter(project == "Lit Review") |>
+  group_by(start_date) |>
+  summarize(
+    effort = mean(effort_hours),
+    sessions = n()
+  ) |>
+  ungroup() |>
+  ggplot(aes(x = "", y = effort)) +
+  geom_boxplot(width = 0.3) +
+  geom_jitter(width = 0.1) +
+  labs(
+    x = "",
+    y = "Duration (in hours)"
+  ) +
+  theme_minimal()
+```
+
+## **Type of Work**
+
+### Technical Work
+
+### Research
+
+## **Actual vs. Estimated Effort**
+
+## Parking Lot
 
 -   When am I most productive?
 
 -   What is the regular schedule?
 
-```{=html}
-<!-- -->
-```
 -   Study pattern?
 
-```{=html}
-<!-- -->
-```
 -   Monday to Sunday
-
--   Timing of the day
 
 -   Length for type of work
 
--   How many things are happening concurrently?
-
-Sleep score & time sheets
+-   Difference in work patterns between writing & technical work
 
 Actual vs. estimated effort
 
 Behavioural patterns?
 
-Model:
+Work life balance?
 
--   input - type of assignment, expected hours, done to date
+# Model
+
+Model1:
+
+-   input - timesheet for the day + sleep score
 
 -   process
 
--   output - recommended study schedule?
+-   output - effectiveness score: break down to different aspects
+
+Model2: Extrapolate actual from expected hours?
 
 # Discussion
 
 -   Missing - social aspects, quality of work
 
+-   Weekends / timeoff
+
+-   Different types of flow - technical vs. research
+
+-   Find the focus each day - try to stay with 1 or 2 topics only
+
+-   Prefer to work on morning / early afternoon, and after dinner
+
 # Conclusion
+
+# Appendix {.unnumbered}
+
+# Reference

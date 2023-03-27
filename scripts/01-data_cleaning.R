@@ -18,6 +18,7 @@ cleaned_time_sheet <-
     show_col_types = FALSE
   )
 
+# select columns to keep, and fix naming
 cleaned_time_sheet <-
   cleaned_time_sheet |>
   select(-User, -Email, -Client, -Task, -Billable, -Tags, -`Amount ()`) |>
@@ -28,15 +29,6 @@ cleaned_time_sheet <-
   cleaned_time_sheet |>
   mutate(type = case_when(
 
-    grepl("Anastasia", description, fixed=TRUE) ~ "Research",
-    project == "Industry DDN" ~ "Research",
-    project == "Disfluency perception" ~ "Research",
-    project == "OAPerception" ~ "Research",
-    project == "Reading" ~ "Research",
-    project == "Lit Review" ~ "Research",
-    project == "Finance CA Marginalization" ~ "Research",
-    project == "Research-General" ~ "Research",
-    
     project == "INF2241" ~ "Course Work",
     project == "INF3001" ~ "Course Work",
     project == "INF3104" ~ "Course Work",
@@ -55,12 +47,26 @@ cleaned_time_sheet <-
     project == "Service Work" ~ "Other Activities",
     project == "Professional" ~ "Other Activities",
     
+    grepl("Anastasia", description, fixed=TRUE) ~ "Research",
+    project == "Industry DDN" ~ "Research",
+    project == "Disfluency perception" ~ "Research",
+    project == "OAPerception" ~ "Research",
+    project == "Reading" ~ "Research",
+    project == "Lit Review" ~ "Research",
+    project == "Finance CA Marginalization" ~ "Research",
+    project == "Research-General" ~ "Research",
+    
     is.na(project) ~ "Admin",
     project == "Network" ~ "Admin",
     grepl("Admin", description, fixed=TRUE) ~ "Admin",
     grepl("NSERC", description, fixed=TRUE) ~ "Admin",
     grepl("Grant", description, fixed=TRUE) ~ "Admin",
   ))
+
+# change duration to hours
+cleaned_time_sheet =
+  cleaned_time_sheet |>
+  mutate(effort_hours = as.numeric(duration) / 3600)
 
 write_csv(
   x = cleaned_time_sheet,

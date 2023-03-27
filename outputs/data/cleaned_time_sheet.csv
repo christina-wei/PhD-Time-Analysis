@@ -1,583 +1,583 @@
-project,description,start_date,start_time,end_date,end_time,duration,type
-Industry DDN,Writing,2022-08-15,09:30:11,2022-08-15,11:45:31,02:15:20,Research
-NA,Admin,2022-08-15,17:30:00,2022-08-15,19:00:00,01:30:00,Admin
-Reading,Reading,2022-08-15,20:32:56,2022-08-15,21:14:07,00:41:11,Research
-NA,Admin,2022-08-16,10:04:42,2022-08-16,10:22:25,00:17:43,Admin
-Disfluency perception,Ethics,2022-08-16,10:27:05,2022-08-16,12:09:14,01:42:09,Research
-Disfluency perception,Meeting,2022-08-16,12:30:45,2022-08-16,13:00:57,00:30:12,Research
-NA,Admin,2022-08-16,13:30:05,2022-08-16,15:05:11,01:35:06,Admin
-OAPerception,Meeting,2022-08-16,15:30:30,2022-08-16,16:30:42,01:00:12,Research
-OAPerception,Recruitment,2022-08-16,21:00:23,2022-08-16,21:15:35,00:15:12,Research
-Industry DDN,Writing,2022-08-16,21:14:03,2022-08-16,22:13:55,00:59:52,Research
-Cookie Lab,Lab Meeting,2022-08-17,10:00:55,2022-08-17,11:00:58,01:00:03,Other Activities
-NA,Admin,2022-08-17,11:30:26,2022-08-17,12:00:37,00:30:11,Admin
-OAPerception,Interview and prep,2022-08-17,14:50:56,2022-08-17,19:20:16,04:29:20,Research
-OAPerception,Generate audio transcriptions,2022-08-17,21:00:30,2022-08-17,22:54:57,01:54:27,Research
-OAPerception,Transcribe P55,2022-08-18,09:00:43,2022-08-18,10:49:27,01:48:44,Research
-OAPerception,Interview P23,2022-08-18,10:50:42,2022-08-18,12:10:55,01:20:13,Research
-OAPerception,Device runner P66,2022-08-18,12:50:36,2022-08-18,13:40:44,00:50:08,Research
-OAPerception,Device runner P16,2022-08-18,13:50:26,2022-08-18,14:46:37,00:56:11,Research
-OAPerception,Meeting - data prep,2022-08-18,15:00:22,2022-08-18,15:40:40,00:40:18,Research
-OAPerception,Transcribe P55,2022-08-18,17:45:54,2022-08-18,19:46:13,02:00:19,Research
-OAPerception,Data prep - P55,2022-08-18,21:05:58,2022-08-18,22:21:52,01:15:54,Research
-NA,Meeting - 1:1 Anastasia,2022-08-19,12:00:56,2022-08-19,13:40:17,01:39:21,Research
-OAPerception,Transcribe P23,2022-08-19,16:15:06,2022-08-19,18:51:32,02:36:26,Research
-OAPerception,Device runner P33,2022-08-22,12:50:18,2022-08-22,13:50:27,01:00:09,Research
-OAPerception,Meeting - data analysis,2022-08-22,14:00:23,2022-08-22,14:50:42,00:50:19,Research
-OAPerception,Device runner P4,2022-08-22,14:53:14,2022-08-22,15:41:58,00:48:44,Research
-OAPerception,Interviewer P61,2022-08-22,17:00:27,2022-08-22,17:58:40,00:58:13,Research
-Disfluency perception,Ethics,2022-08-23,08:30:00,2022-08-23,09:00:00,00:30:00,Research
-OAPerception,Device runner P89,2022-08-23,09:00:14,2022-08-23,09:55:01,00:54:47,Research
-Disfluency perception,Ethics,2022-08-23,10:00:16,2022-08-23,11:40:21,01:40:05,Research
-OAPerception,Avatars,2022-08-23,11:30:03,2022-08-23,12:19:13,00:49:10,Research
-NA,"Admin - TA, reimbursement",2022-08-23,14:00:00,2022-08-23,15:00:00,01:00:00,Admin
-Cookie Lab,Lab Meeting,2022-08-24,10:00:00,2022-08-24,11:00:00,01:00:00,Other Activities
-NA,Meeting - 1:1 Cosmin,2022-08-24,11:30:00,2022-08-24,12:00:00,00:30:00,Admin
-NA,Admin - CUI reimbursement,2022-08-24,16:00:00,2022-08-24,17:45:00,01:45:00,Admin
-OAPerception,P66 data prep; P55 coding,2022-08-24,22:30:00,2022-08-25,01:00:00,02:30:00,Research
-OAPerception,Device runner P70,2022-08-25,11:00:00,2022-08-25,11:45:00,00:45:00,Research
-OAPerception,Meeting - discuss coding,2022-08-25,12:30:00,2022-08-25,13:10:00,00:40:00,Research
-OAPerception,Data analysis,2022-08-25,15:00:13,2022-08-25,17:00:25,02:00:12,Research
-OAPerception,Data analysis,2022-08-25,22:00:00,2022-08-25,23:30:00,01:30:00,Research
-OAPerception,Data analysis P55,2022-08-26,23:07:00,2022-08-26,23:37:00,00:30:00,Research
-OAPerception,Data analysis,2022-08-28,17:30:00,2022-08-28,18:35:00,01:05:00,Research
-OAPerception,Data analysis,2022-08-29,13:45:00,2022-08-29,16:25:00,02:40:00,Research
-OAPerception,Transcribe P61,2022-08-29,20:33:00,2022-08-29,22:33:30,02:00:30,Research
-OAPerception,Data analysis,2022-08-29,22:40:00,2022-08-29,23:38:00,00:58:00,Research
-NA,Participant to Sexism study,2022-08-30,10:00:00,2022-08-30,11:00:00,01:00:00,Admin
-OAPerception,Data analysis,2022-08-30,11:15:00,2022-08-30,13:10:00,01:55:00,Research
-OAPerception,Data analysis,2022-09-01,10:00:00,2022-09-01,12:45:07,02:45:07,Research
-OAPerception,Data analysis,2022-09-01,13:24:00,2022-09-01,13:54:00,00:30:00,Research
-OAPerception,Data analysis - clustering,2022-09-01,18:16:00,2022-09-01,19:46:00,01:30:00,Research
-Talks,iSchool DSA Orientation,2022-09-05,14:00:00,2022-09-05,16:30:00,02:30:00,Learning
-OAPerception,Device runner,2022-09-06,09:00:00,2022-09-06,10:00:00,01:00:00,Research
-Talks,Graduate studies orientation,2022-09-06,11:00:00,2022-09-06,13:00:00,02:00:00,Learning
-NA,Meet with Christine and Nicole,2022-09-06,13:30:00,2022-09-06,14:00:00,00:30:00,Admin
-OAPerception,Meeting,2022-09-06,15:30:00,2022-09-06,16:15:00,00:45:00,Research
-OAPerception,Device runner,2022-09-06,17:00:00,2022-09-06,18:00:00,01:00:00,Research
-OAPerception,Data analysis,2022-09-06,18:00:00,2022-09-06,19:00:00,01:00:00,Research
-OAPerception,Data analysis,2022-09-07,09:10:00,2022-09-07,11:30:00,02:20:00,Research
-OAPerception,Data analysis,2022-09-07,17:00:00,2022-09-07,18:45:00,01:45:00,Research
-OAPerception,Data analysis,2022-09-07,21:15:00,2022-09-07,23:45:00,02:30:00,Research
-TA-CCT419,Syllabus date issue,2022-09-08,09:30:00,2022-09-08,09:40:00,00:10:00,TA
-Cookie Lab,Meeting - Cookie Lab,2022-09-08,10:00:00,2022-09-08,10:35:00,00:35:00,Other Activities
-OAPerception,Data analysis,2022-09-08,10:40:00,2022-09-08,11:55:55,01:15:55,Research
-OAPerception,Data analysis,2022-09-08,12:45:00,2022-09-08,13:30:00,00:45:00,Research
-OAPerception,Data analysis,2022-09-08,17:30:00,2022-09-08,19:30:00,02:00:00,Research
-OAPerception,Data analysis,2022-09-08,20:50:00,2022-09-08,22:35:00,01:45:00,Research
-OAPerception,Data analysis,2022-09-09,17:00:00,2022-09-09,18:00:00,01:00:00,Research
-OAPerception,Data analysis,2022-09-10,21:45:00,2022-09-10,23:55:00,02:10:00,Research
-OAPerception,Data analysis,2022-09-11,20:20:00,2022-09-11,21:12:47,00:52:47,Research
-OAPerception,Data analysis,2022-09-11,22:10:00,2022-09-11,23:22:00,01:12:00,Research
-NA,"Admin - transfer course, timesheet, NSERC",2022-09-12,10:50:00,2022-09-12,11:56:00,01:06:00,Admin
-OAPerception,Data analysis,2022-09-12,11:57:00,2022-09-12,12:28:44,00:31:44,Research
-OAPerception,Interview P99,2022-09-12,13:00:00,2022-09-12,13:59:38,00:59:38,Research
-OAPerception,Data analysis,2022-09-12,13:59:00,2022-09-12,15:07:29,01:08:29,Research
-CCT419,UXD and board games ,2022-09-12,17:00:00,2022-09-12,19:45:00,02:45:00,Learning
-OAPerception,Data analysis,2022-09-12,21:30:00,2022-09-12,22:30:00,01:00:00,Research
-OAPerception,Data analysis,2022-09-13,09:50:00,2022-09-13,12:45:50,02:55:50,Research
-INF2241,Class  ,2022-09-13,13:00:00,2022-09-13,15:30:00,02:30:00,Course Work
-OAPerception,Data analysis,2022-09-13,21:30:00,2022-09-13,23:17:01,01:47:01,Research
-OAPerception,Data analysis,2022-09-14,10:00:00,2022-09-14,14:48:36,04:48:36,Research
-INF2241,Reading - Wk2,2022-09-15,09:15:00,2022-09-15,12:30:00,03:15:00,Course Work
-Disfluency perception,Walk through code with Kusum,2022-09-15,15:00:00,2022-09-15,16:55:00,01:55:00,Research
-NA,NSERC info session,2022-09-15,21:48:00,2022-09-15,22:49:51,01:01:51,Admin
-NA,Admin - transfer course,2022-09-16,11:17:00,2022-09-16,11:35:00,00:18:00,Admin
-INF2241,Arduino,2022-09-16,11:35:00,2022-09-16,12:39:08,01:04:08,Course Work
-INF3001,Class,2022-09-16,13:00:00,2022-09-16,15:30:00,02:30:00,Course Work
-INF2241,Arduino project 2,2022-09-16,17:11:00,2022-09-16,18:08:34,00:57:34,Course Work
-NA,NSERC,2022-09-17,20:26:00,2022-09-17,22:24:03,01:58:03,Admin
-NA,NSERC,2022-09-18,12:15:00,2022-09-18,13:15:00,01:00:00,Admin
-NA,NSERC,2022-09-18,21:25:00,2022-09-19,00:47:22,03:22:22,Admin
-CCT419,class + reading,2022-09-19,16:40:00,2022-09-19,20:00:00,03:20:00,Learning
-NA,NSERC,2022-09-19,22:00:00,2022-09-19,23:02:49,01:02:49,Admin
-NA,NSERC,2022-09-20,11:07:00,2022-09-20,12:30:00,01:23:00,Admin
-INF2241,Class,2022-09-20,13:10:00,2022-09-20,16:00:00,02:50:00,Course Work
-NA,NSERC,2022-09-20,16:00:00,2022-09-20,17:15:00,01:15:00,Admin
-NA,NSERC,2022-09-20,18:30:00,2022-09-20,19:44:00,01:14:00,Admin
-NA,NSERC,2022-09-20,19:45:21,2022-09-20,20:37:10,00:51:49,Admin
-NA,NSERC,2022-09-20,21:33:00,2022-09-21,02:29:00,04:56:00,Admin
-Disfluency perception,knowledge transfer,2022-09-21,12:30:00,2022-09-21,14:15:00,01:45:00,Research
-INF3001,Reading,2022-09-21,17:15:00,2022-09-21,18:30:30,01:15:30,Course Work
-NA,NSERC,2022-09-21,20:45:00,2022-09-22,01:24:00,04:39:00,Admin
-Cookie Lab,Meeting - Cookie Lab,2022-09-22,10:00:00,2022-09-22,10:45:00,00:45:00,Other Activities
-Disfluency perception,running application on my machine,2022-09-22,16:30:00,2022-09-22,18:30:00,02:00:00,Research
-NA,NSERC,2022-09-22,18:30:00,2022-09-22,21:00:00,02:30:00,Admin
-Disfluency perception,getting the project to work,2022-09-23,09:50:00,2022-09-23,10:42:00,00:52:00,Research
-INF3001,class,2022-09-23,13:10:00,2022-09-23,15:00:00,01:50:00,Course Work
-INF2241,reading,2022-09-24,12:00:00,2022-09-24,13:45:00,01:45:00,Course Work
-INF2241,Reading,2022-09-24,19:25:00,2022-09-24,22:02:00,02:37:00,Course Work
-INF3001,Reading,2022-09-25,14:06:00,2022-09-25,16:02:28,01:56:28,Course Work
-NA,"Admin - emails, Twitter",2022-09-26,10:51:00,2022-09-26,11:21:00,00:30:00,Admin
-INF3001,presentation,2022-09-26,15:23:00,2022-09-26,16:32:19,01:09:19,Course Work
-CCT419,class,2022-09-26,17:10:00,2022-09-26,20:00:00,02:50:00,Learning
-INF2241,reading and Arduino,2022-09-27,11:30:00,2022-09-27,12:53:00,01:23:00,Course Work
-INF2241,Class,2022-09-27,13:10:00,2022-09-27,16:00:00,02:50:00,Course Work
-TA-INF2208,TA meeting with Anastasia,2022-09-27,16:30:00,2022-09-27,17:10:00,00:40:00,Research
-INF3001,presentation,2022-09-27,21:24:00,2022-09-27,23:55:47,02:31:47,Course Work
-INF3001,presentation,2022-09-28,09:15:22,2022-09-28,10:53:58,01:38:36,Course Work
-Cookie Lab,paper presentation,2022-09-28,14:00:50,2022-09-28,16:00:46,01:59:56,Other Activities
-Cookie Lab,Meeting - Cookie Lab,2022-09-29,10:00:44,2022-09-29,10:45:53,00:45:09,Other Activities
-Reading,stitching together conversation,2022-09-29,11:30:00,2022-09-29,12:30:00,01:00:00,Research
-NA,1:1 with Anastasia,2022-09-29,14:00:00,2022-09-29,15:00:00,01:00:00,Research
-Disfluency perception,debug code,2022-09-29,15:00:16,2022-09-29,16:25:37,01:25:21,Research
-INF2241,project 8 digital hourglass,2022-09-29,17:23:32,2022-09-29,18:23:49,01:00:17,Course Work
-INF2208,class,2022-09-29,18:30:00,2022-09-29,20:30:00,02:00:00,Learning
-INF3001,practice presentation,2022-09-30,10:30:00,2022-09-30,11:33:00,01:03:00,Course Work
-INF3001,Class,2022-09-30,13:00:00,2022-09-30,15:00:00,02:00:00,Course Work
-INF2241,Reading about ethics of CAs,2022-10-01,09:30:00,2022-10-01,12:30:00,03:00:00,Course Work
-Reading,Reading,2022-10-01,20:00:00,2022-10-01,21:45:00,01:45:00,Research
-TA-INF2208,Marking IPPs,2022-10-03,08:44:53,2022-10-03,10:22:37,01:37:44,TA
-INF2241,Reading,2022-10-03,15:39:31,2022-10-03,16:33:49,00:54:18,Course Work
-CCT419,class,2022-10-03,17:10:00,2022-10-03,20:05:00,02:55:00,Learning
-INF2241,Reading,2022-10-03,21:27:57,2022-10-03,22:39:10,01:11:13,Course Work
-Reading,Reading,2022-10-04,12:13:18,2022-10-04,12:53:58,00:40:40,Research
-INF2241,Class,2022-10-04,13:10:00,2022-10-04,16:00:00,02:50:00,Course Work
-INF3001,Reading,2022-10-05,09:06:30,2022-10-05,12:15:20,03:08:50,Course Work
-INF3001,Reading,2022-10-05,14:00:00,2022-10-05,15:01:19,01:01:19,Course Work
-Cookie Lab,Meeting - Cookie Lab,2022-10-06,10:00:00,2022-10-06,10:45:00,00:45:00,Other Activities
-Disfluency perception,"model, play with DialogFlow",2022-10-06,11:30:40,2022-10-06,13:30:41,02:00:01,Research
-Lit Review,Reading,2022-10-06,13:57:31,2022-10-06,18:20:16,04:22:45,Research
-INF2208,class,2022-10-06,18:35:00,2022-10-06,20:30:00,01:55:00,Learning
-Lit Review,Reading,2022-10-06,22:00:23,2022-10-06,23:37:40,01:37:17,Research
-INF2241,Reading,2022-10-07,08:44:12,2022-10-07,11:03:40,02:19:28,Course Work
-INF3001,Reading,2022-10-07,11:03:46,2022-10-07,11:31:56,00:28:10,Course Work
-INF3001,class,2022-10-07,13:10:00,2022-10-07,14:50:00,01:40:00,Course Work
-INF2241,moral prompt,2022-10-07,20:29:53,2022-10-07,22:13:03,01:43:10,Course Work
-Lit Review,Reading,2022-10-07,22:30:46,2022-10-07,23:33:58,01:03:12,Research
-INF2241,Assignment 1,2022-10-08,11:00:00,2022-10-08,12:00:00,01:00:00,Course Work
-Lit Review,Reading,2022-10-08,13:48:48,2022-10-08,15:00:58,01:12:10,Research
-Lit Review,Reading,2022-10-08,21:22:41,2022-10-08,22:57:29,01:34:48,Research
-Lit Review,Reading,2022-10-10,21:36:45,2022-10-10,22:15:23,00:38:38,Research
-INF2241,Assignment 1,2022-10-11,10:27:22,2022-10-11,12:08:43,01:41:21,Course Work
-TA-INF2208,GPP,2022-10-11,12:08:45,2022-10-11,13:15:46,01:07:01,TA
-INF2241,class + assignment 1,2022-10-11,13:10:00,2022-10-11,17:30:00,04:20:00,Course Work
-TA-INF2208,GPP,2022-10-11,17:46:42,2022-10-11,17:56:06,00:09:24,TA
-Lit Review,Reading,2022-10-12,09:03:03,2022-10-12,11:27:42,02:24:39,Research
-INF2241,Assignment 1,2022-10-12,15:05:00,2022-10-12,17:52:34,02:47:34,Course Work
-Lit Review,Reading,2022-10-12,22:39:59,2022-10-12,23:35:02,00:55:03,Research
-Cookie Lab,Lab Meeting ,2022-10-13,10:10:00,2022-10-13,11:00:00,00:50:00,Other Activities
-INF2241,Assignment 1,2022-10-13,11:34:24,2022-10-13,14:14:46,02:40:22,Course Work
-INF2241,Assignment 1,2022-10-13,15:15:34,2022-10-13,15:35:30,00:19:56,Course Work
-TA-INF2208,tutorial,2022-10-13,17:30:00,2022-10-13,19:30:00,02:00:00,TA
-TA-INF2208,presentation 1,2022-10-13,19:30:00,2022-10-13,20:15:00,00:45:00,TA
-INF2208,class,2022-10-13,19:30:12,2022-10-13,20:30:20,01:00:08,Learning
-INF2241,Assignment 1,2022-10-14,11:07:32,2022-10-14,11:55:45,00:48:13,Course Work
-Talks,Toronto Data Workshop,2022-10-14,12:00:00,2022-10-14,13:00:00,01:00:00,Learning
-INF3001,Class,2022-10-14,13:10:27,2022-10-14,15:00:37,01:50:10,Course Work
-INF2241,Assignment 1,2022-10-14,18:30:20,2022-10-14,22:34:16,04:03:56,Course Work
-INF2241,Assignment 1,2022-10-15,10:17:09,2022-10-15,12:33:32,02:16:23,Course Work
-INF2241,Assignment 1,2022-10-15,13:30:57,2022-10-15,14:45:57,01:15:00,Course Work
-INF2241,Assignment 1,2022-10-15,21:30:16,2022-10-15,22:30:16,01:00:00,Course Work
-TA-INF2208,IPP,2022-10-17,09:01:18,2022-10-17,09:44:14,00:42:56,TA
-Cookie Lab,Transcript Preparation Workshop,2022-10-17,10:00:00,2022-10-17,11:00:00,01:00:00,Other Activities
-INF2241,Reading,2022-10-17,11:25:30,2022-10-17,13:08:54,01:43:24,Course Work
-Lit Review,Reading,2022-10-17,14:00:02,2022-10-17,15:40:39,01:40:37,Research
-CCT419,class,2022-10-17,17:10:29,2022-10-17,19:50:29,02:40:00,Learning
-INF2241,Assignment 1,2022-10-17,21:00:50,2022-10-17,21:58:02,00:57:12,Course Work
-INF2241,Assignment 1 - presentation,2022-10-18,11:00:10,2022-10-18,13:00:12,02:00:02,Course Work
-INF2241,class,2022-10-18,13:10:00,2022-10-18,16:00:00,02:50:00,Course Work
-INF2241,Assignment 1,2022-10-18,20:00:00,2022-10-18,21:00:00,01:00:00,Course Work
-INF2241,Assignment 1,2022-10-19,10:30:36,2022-10-19,13:45:23,03:14:47,Course Work
-INF2241,Assignment 1,2022-10-19,15:15:11,2022-10-19,17:33:23,02:18:12,Course Work
-Lit Review,Reading,2022-10-19,20:44:34,2022-10-19,22:02:03,01:17:29,Research
-Cookie Lab,Lab Meeting,2022-10-20,10:10:00,2022-10-20,11:00:00,00:50:00,Other Activities
-NA,1:1 with Anastasia,2022-10-20,11:00:00,2022-10-20,12:00:00,01:00:00,Research
-TA-CCT419,Prepare for class 7 and 8,2022-10-20,13:42:03,2022-10-20,13:58:20,00:16:17,TA
-INF3001,Reading,2022-10-20,14:57:10,2022-10-20,16:36:23,01:39:13,Course Work
-INF2241,Assignment 1,2022-10-20,16:53:06,2022-10-20,17:40:12,00:47:06,Course Work
-INF2208,class,2022-10-20,18:30:00,2022-10-20,20:45:00,02:15:00,Learning
-Lit Review,Reading,2022-10-21,10:10:03,2022-10-21,11:05:04,00:55:01,Research
-Lit Review,Reading,2022-10-21,11:43:28,2022-10-21,12:00:54,00:17:26,Research
-INF3001,Class,2022-10-21,13:10:00,2022-10-21,15:00:00,01:50:00,Course Work
-Lit Review,Reading,2022-10-21,23:00:38,2022-10-22,00:00:39,01:00:01,Research
-Lit Review,Reading,2022-10-22,09:31:02,2022-10-22,12:43:47,03:12:45,Research
-INF2241,Reading,2022-10-22,23:30:29,2022-10-23,00:41:49,01:11:20,Course Work
-INF2241,Reading,2022-10-23,09:42:01,2022-10-23,11:14:20,01:32:19,Course Work
-Lit Review,Reading,2022-10-23,17:30:23,2022-10-23,19:13:45,01:43:22,Research
-Lit Review,Reading,2022-10-23,20:10:00,2022-10-23,23:29:05,03:19:05,Research
-TA-INF2208,GPP,2022-10-24,10:30:31,2022-10-24,11:07:03,00:36:32,TA
-TA-CCT419,Game critique 1,2022-10-24,11:11:28,2022-10-24,13:14:05,02:02:37,TA
-TA-CCT419,Game critique 1,2022-10-24,14:45:15,2022-10-24,15:58:59,01:13:44,TA
-TA-CCT419,Game critique 1,2022-10-24,18:18:07,2022-10-24,19:36:43,01:18:36,TA
-TA-CCT419,Game critique 1,2022-10-24,21:48:05,2022-10-25,01:45:36,03:57:31,TA
-TA-CCT419,Game critique 1,2022-10-25,00:17:39,2022-10-25,02:00:45,01:43:06,TA
-TA-CCT419,Game critique 1,2022-10-25,10:50:45,2022-10-25,13:30:07,02:39:22,TA
-INF2241,Class,2022-10-25,13:10:00,2022-10-25,16:00:00,02:50:00,Course Work
-writing course,class,2022-10-28,10:10:00,2022-10-28,12:00:00,01:50:00,Learning
-INF3001,Class,2022-10-28,13:10:00,2022-10-28,15:00:00,01:50:00,Course Work
-TA-CCT419,Game critique 1,2022-10-28,21:30:00,2022-10-28,22:30:00,01:00:00,TA
-TA-CCT419,Marking + tutorial prep,2022-10-29,18:30:12,2022-10-29,20:30:13,02:00:01,TA
-INF2241,reading,2022-10-29,21:00:00,2022-10-29,22:00:00,01:00:00,Course Work
-Lit Review,Reading,2022-10-29,21:45:17,2022-10-30,01:20:38,03:35:21,Research
-Lit Review,Reading,2022-10-30,19:33:31,2022-10-30,23:46:32,04:13:01,Research
-Lit Review,Synthesis,2022-10-31,12:00:00,2022-10-31,14:30:00,02:30:00,Research
-TA-CCT419,teach class,2022-10-31,16:45:00,2022-10-31,20:00:00,03:15:00,TA
-Lit Review,Meeting with Naver,2022-11-01,09:00:00,2022-11-01,10:00:00,01:00:00,Research
-TA-CCT419,Marking,2022-11-01,10:30:00,2022-11-01,11:30:00,01:00:00,TA
-TA-INF2208,Mark IPPs,2022-11-01,11:30:00,2022-11-01,12:00:00,00:30:00,TA
-INF2241,class,2022-11-01,13:10:00,2022-11-01,16:00:00,02:50:00,Course Work
-Lit Review,Organizing lit review,2022-11-02,09:00:00,2022-11-02,11:00:00,02:00:00,Research
-TA-CCT419,Marking,2022-11-02,14:30:59,2022-11-02,14:45:00,00:14:01,TA
-Lit Review,Reading,2022-11-02,14:57:22,2022-11-02,17:23:42,02:26:20,Research
-Cookie Lab,Lab Meeting,2022-11-03,10:10:20,2022-11-03,11:00:30,00:50:10,Other Activities
-NA,Admin - TA applications,2022-11-03,11:00:47,2022-11-03,12:30:10,01:29:23,Admin
-INF3001,Reading,2022-11-03,14:00:31,2022-11-03,15:00:48,01:00:17,Course Work
-writing course,assignment,2022-11-03,15:00:07,2022-11-03,16:00:35,01:00:28,Learning
-TA-INF2208,Presentation,2022-11-03,18:30:55,2022-11-03,19:20:12,00:49:17,TA
-INF2208,class,2022-11-03,19:20:35,2022-11-03,20:45:35,01:25:00,Learning
-writing course,class,2022-11-04,10:10:40,2022-11-04,11:30:41,01:20:01,Learning
-INF3001,class,2022-11-04,13:10:00,2022-11-04,15:00:00,01:50:00,Course Work
-Lit Review,reading,2022-11-04,21:00:00,2022-11-04,23:15:00,02:15:00,Research
-Lit Review,Reading,2022-11-05,11:00:00,2022-11-05,12:20:00,01:20:00,Research
-Lit Review,Reading,2022-11-05,17:00:05,2022-11-05,18:00:05,01:00:00,Research
-Lit Review,Reading,2022-11-06,11:40:21,2022-11-06,12:44:06,01:03:45,Research
-TA-CCT419,prep lecture,2022-11-06,22:30:00,2022-11-06,23:12:00,00:42:00,TA
-TA-INF2208,GPP,2022-11-07,12:27:30,2022-11-07,12:46:24,00:18:54,TA
-TA-CCT419,prep + lecture,2022-11-07,16:15:00,2022-11-07,20:00:00,03:45:00,TA
-TA-CCT419,Marking,2022-11-08,21:32:30,2022-11-08,23:37:54,02:05:24,TA
-TA-CCT419,Marking,2022-11-10,14:28:05,2022-11-10,18:46:37,04:18:32,TA
-TA-CCT419,Marking,2022-11-10,21:16:50,2022-11-10,23:38:21,02:21:31,TA
-TA-CCT419,Marking,2022-11-10,23:53:18,2022-11-11,01:14:51,01:21:33,TA
-writing course,class,2022-11-11,10:10:39,2022-11-11,12:03:02,01:52:23,Learning
-INF3001,essay,2022-11-12,14:30:34,2022-11-12,17:49:28,03:18:54,Course Work
-INF3001,essay,2022-11-12,19:39:39,2022-11-12,21:18:15,01:38:36,Course Work
-INF3001,essay,2022-11-13,10:16:10,2022-11-13,12:53:26,02:37:16,Course Work
-INF2241,Reading,2022-11-13,21:16:10,2022-11-13,22:50:38,01:34:28,Course Work
-Lit Review,Synthesis,2022-11-14,11:24:17,2022-11-14,13:06:00,01:41:43,Research
-Lit Review,Synthesis,2022-11-14,14:00:23,2022-11-14,14:29:37,00:29:14,Research
-TA-CCT419,Marking,2022-11-14,16:22:24,2022-11-14,16:46:52,00:24:28,TA
-TA-CCT419,Marking,2022-11-15,11:00:21,2022-11-15,11:33:01,00:32:40,TA
-INF2241,Class,2022-11-15,13:10:00,2022-11-15,16:00:00,02:50:00,Course Work
-TA-INF2208,Assignment 1,2022-11-15,16:52:54,2022-11-15,18:04:33,01:11:39,TA
-TA-INF2208,Assignment 1,2022-11-15,18:09:10,2022-11-15,18:53:52,00:44:42,TA
-TA-INF2208,Assignment 1,2022-11-15,20:57:07,2022-11-15,23:29:22,02:32:15,TA
-Lit Review,paper review,2022-11-16,11:00:06,2022-11-16,11:30:06,00:30:00,Research
-Talks,PhD publishing workshop,2022-11-16,11:00:09,2022-11-16,13:00:57,02:00:48,Learning
-Lit Review,paper review,2022-11-16,15:00:07,2022-11-16,16:00:09,01:00:02,Research
-Lit Review,paper review,2022-11-16,20:45:58,2022-11-16,22:53:20,02:07:22,Research
-Cookie Lab,Lab Meeting,2022-11-17,10:10:00,2022-11-17,11:00:00,00:50:00,Other Activities
-NA,TA discussion with Velian,2022-11-17,13:00:00,2022-11-17,13:30:00,00:30:00,Admin
-Lit Review,Meeting,2022-11-17,14:00:00,2022-11-17,15:00:00,01:00:00,Research
-INF2241,Assignment 2,2022-11-17,14:30:00,2022-11-17,18:00:00,03:30:00,Course Work
-INF2208,class,2022-11-17,18:30:50,2022-11-17,20:30:37,01:59:47,Learning
-INF2241,Assignment 2,2022-11-17,21:50:00,2022-11-17,22:20:00,00:30:00,Course Work
-INF3001,Reading,2022-11-17,22:20:56,2022-11-18,00:26:00,02:05:04,Course Work
-writing course,class,2022-11-18,10:10:00,2022-11-18,12:00:00,01:50:00,Learning
-INF3001,class,2022-11-18,13:10:00,2022-11-18,15:00:00,01:50:00,Course Work
-Talks,Qual Analysis Workshop - Slides,2022-11-18,15:30:00,2022-11-18,16:00:00,00:30:00,Learning
-Talks,Qualitative Analysis Workshop,2022-11-19,09:30:00,2022-11-19,15:00:00,05:30:00,Learning
-INF2241,Assignment 2,2022-11-19,17:54:48,2022-11-19,21:30:25,03:35:37,Course Work
-INF2241,Assignment 2,2022-11-20,12:12:01,2022-11-20,13:00:46,00:48:45,Course Work
-INF2241,Assignment 2,2022-11-20,18:23:57,2022-11-20,20:33:32,02:09:35,Course Work
-INF2241,Assignment 2,2022-11-21,09:47:55,2022-11-21,10:57:20,01:09:25,Course Work
-TA-INF2208,A1 calibration,2022-11-21,11:00:00,2022-11-21,11:20:00,00:20:00,TA
-INF2241,Assignment 2,2022-11-21,11:30:36,2022-11-21,13:00:36,01:30:00,Course Work
-INF2241,Assignment 2,2022-11-21,13:22:39,2022-11-21,14:09:26,00:46:47,Course Work
-TA-INF2208,A1 calibration,2022-11-22,08:17:44,2022-11-22,08:53:59,00:36:15,TA
-Lit Review,Meeting with Naver,2022-11-22,08:59:00,2022-11-22,09:29:00,00:30:00,Research
-TA-INF2208,A1 calibration,2022-11-22,09:30:13,2022-11-22,10:16:13,00:46:00,TA
-INF2241,presentation + class,2022-11-22,11:30:00,2022-11-22,16:00:00,04:30:00,Course Work
-INF2241,Assignment 2,2022-11-22,16:00:00,2022-11-22,17:45:00,01:45:00,Course Work
-TA-INF2208,A1 calibration and IPP,2022-11-22,20:00:03,2022-11-22,21:05:17,01:05:14,TA
-INF2241,Assignment 2,2022-11-22,21:16:51,2022-11-22,22:59:35,01:42:44,Course Work
-Reading,Paper reading,2022-11-23,08:50:11,2022-11-23,09:54:29,01:04:18,Research
-INF2241,Assignment 2,2022-11-23,10:25:37,2022-11-23,11:31:50,01:06:13,Course Work
-INF2241,Reading,2022-11-23,13:22:04,2022-11-23,14:32:36,01:10:32,Course Work
-INF2241,Reading,2022-11-23,14:47:34,2022-11-23,15:58:03,01:10:29,Course Work
-INF2241,Assignment 2,2022-11-23,20:37:58,2022-11-23,23:16:53,02:38:55,Course Work
-Lit Review,Reading,2022-11-24,09:12:19,2022-11-24,10:10:06,00:57:47,Research
-Cookie Lab,Lab Meeting,2022-11-24,10:10:00,2022-11-24,11:05:00,00:55:00,Other Activities
-writing course,exercises,2022-11-24,11:35:47,2022-11-24,12:30:10,00:54:23,Learning
-INF3001,reading,2022-11-24,14:24:00,2022-11-24,14:54:00,00:30:00,Course Work
-OAPerception,revision,2022-11-24,14:54:47,2022-11-24,17:38:46,02:43:59,Research
-INF2208,class,2022-11-24,18:40:20,2022-11-24,20:26:55,01:46:35,Learning
-TA-INF2208,G5 remark,2022-11-25,10:10:59,2022-11-25,12:00:59,01:50:00,TA
-INF3001,class,2022-11-25,13:10:00,2022-11-25,15:00:00,01:50:00,Course Work
-TA-CCT419,additional game critiques,2022-11-26,19:19:20,2022-11-26,20:21:32,01:02:12,TA
-INF3001,assignment,2022-11-26,21:58:30,2022-11-26,23:40:26,01:41:56,Course Work
-INF3001,assignment,2022-11-27,09:00:37,2022-11-27,09:45:37,00:45:00,Course Work
-INF2241,Reading,2022-11-27,11:30:00,2022-11-27,12:30:00,01:00:00,Course Work
-INF2241,Reading,2022-11-27,13:45:42,2022-11-27,14:26:42,00:41:00,Course Work
-OAPerception,revision,2022-11-28,09:12:39,2022-11-28,11:02:01,01:49:22,Research
-TA-INF2208,GPP,2022-11-28,11:00:55,2022-11-28,11:24:37,00:23:42,TA
-Reading,Paper reading,2022-11-28,11:47:17,2022-11-28,13:12:15,01:24:58,Research
-Lit Review,Reading,2022-11-28,13:51:18,2022-11-28,14:30:49,00:39:31,Research
-Lit Review,Synthesis,2022-11-28,17:00:47,2022-11-28,19:30:12,02:29:25,Research
-INF2241,Reading,2022-11-29,09:26:59,2022-11-29,11:42:33,02:15:34,Course Work
-INF2241,class + assignment 3,2022-11-29,13:10:00,2022-11-29,16:00:00,02:50:00,Course Work
-INF2241,Assignment 3,2022-11-29,16:30:47,2022-11-29,18:20:12,01:49:25,Course Work
-INF2241,Reading,2022-11-29,22:18:38,2022-11-29,23:17:57,00:59:19,Course Work
-Reading,Synthesis,2022-11-30,09:06:15,2022-11-30,09:55:21,00:49:06,Research
-Lit Review,Reading and Synthesis,2022-11-30,09:55:24,2022-11-30,10:36:36,00:41:12,Research
-Lit Review,Reading and Synthesis,2022-11-30,11:00:40,2022-11-30,12:03:11,01:02:31,Research
-Lit Review,Reading and Synthesis,2022-11-30,12:49:13,2022-11-30,13:32:39,00:43:26,Research
-Lit Review,Reading and Synthesis,2022-11-30,15:45:57,2022-11-30,18:15:21,02:29:24,Research
-Cookie Lab,meeting,2022-12-01,10:10:00,2022-12-01,11:00:00,00:50:00,Other Activities
-NA,Admin - Reading course,2022-12-01,12:00:00,2022-12-01,12:30:00,00:30:00,Admin
-NA,Admin - Anastasia 1:1,2022-12-01,15:15:00,2022-12-01,16:30:00,01:15:00,Research
-INF2208,class,2022-12-01,18:30:00,2022-12-01,20:30:00,02:00:00,Learning
-INF3001,Reading,2022-12-02,10:28:44,2022-12-02,11:20:03,00:51:19,Course Work
-Service Work,Supervisor student task force,2022-12-02,11:30:00,2022-12-02,13:00:00,01:30:00,Other Activities
-INF3001,Class,2022-12-02,13:10:00,2022-12-02,15:00:00,01:50:00,Course Work
-INF2241,Assignment 3,2022-12-02,16:30:00,2022-12-02,17:44:00,01:14:00,Course Work
-TA-CCT419,Usability report,2022-12-02,17:56:40,2022-12-02,22:00:29,04:03:49,TA
-TA-CCT419,Usability report,2022-12-04,09:55:30,2022-12-04,11:57:56,02:02:26,TA
-INF2241,Assignment 3,2022-12-04,12:29:43,2022-12-04,14:00:47,01:31:04,Course Work
-Reading,Paper reading and ChatGPT,2022-12-04,22:15:52,2022-12-04,23:52:47,01:36:55,Research
-TA-INF2208,IPP,2022-12-05,11:24:59,2022-12-05,11:43:24,00:18:25,TA
-Reading,Synthesis,2022-12-05,15:02:45,2022-12-05,16:29:33,01:26:48,Research
-TA-CCT419,Final presentation,2022-12-05,17:10:00,2022-12-05,20:00:00,02:50:00,TA
-INF2241,FinaBot showcase,2022-12-06,09:30:00,2022-12-06,16:00:00,06:30:00,Course Work
-TA-CCT419,Final game - #7,2022-12-07,11:00:00,2022-12-07,12:15:00,01:15:00,TA
-Cookie Lab,Lab Meeting,2022-12-08,10:10:00,2022-12-08,10:40:00,00:30:00,Other Activities
-TA-CCT419,Final game - #6,2022-12-08,11:10:22,2022-12-08,12:30:23,01:20:01,TA
-TA-INF2208,Final presentations,2022-12-08,18:00:00,2022-12-08,20:10:00,02:10:00,TA
-TA-CCT419,Final game - #2,2022-12-08,20:21:39,2022-12-08,21:51:39,01:30:00,TA
-TA-INF2192,Meeting,2022-12-09,10:00:00,2022-12-09,11:00:00,01:00:00,TA
-Service Work,Supervisor student task force,2022-12-09,11:00:00,2022-12-09,13:00:00,02:00:00,Other Activities
-TA-CCT419,"Final game - #1, 4, 9",2022-12-09,20:30:43,2022-12-09,23:37:45,03:07:02,TA
-TA-CCT419,"Final game - #8, 10",2022-12-10,11:30:01,2022-12-10,15:00:01,03:30:00,TA
-TA-CCT419,Final game - #5,2022-12-10,22:30:17,2022-12-11,00:32:18,02:02:01,TA
-INF2241,Assignment 3,2022-12-11,09:40:00,2022-12-11,11:45:00,02:05:00,Course Work
-INF2241,Assignment 3,2022-12-11,19:39:18,2022-12-11,21:23:44,01:44:26,Course Work
-INF2241,Assignment 3,2022-12-11,21:30:42,2022-12-11,23:21:48,01:51:06,Course Work
-Lit Review,Synthesis,2022-12-12,09:55:56,2022-12-12,11:31:32,01:35:36,Research
-Network,Meeting with Matt,2022-12-12,13:55:00,2022-12-12,14:35:00,00:40:00,Admin
-INF2241,Assignment 3,2022-12-12,15:30:20,2022-12-12,18:32:20,03:02:00,Course Work
-Lit Review,Synthesis,2022-12-12,20:10:25,2022-12-12,22:26:17,02:15:52,Research
-Lit Review,Meeting with Naver,2022-12-13,09:00:00,2022-12-13,10:10:00,01:10:00,Research
-TA-INF2208,Final presentations,2022-12-13,11:00:00,2022-12-13,11:53:00,00:53:00,TA
-Talks,Connaught Public Impact Scholarship Info Session,2022-12-13,13:00:00,2022-12-13,14:10:00,01:10:00,Learning
-INF2241,Assignment 3,2022-12-14,08:55:02,2022-12-14,12:07:16,03:12:14,Course Work
-TA-INF2208,final video,2022-12-15,10:00:00,2022-12-15,11:00:00,01:00:00,TA
-TA-INF2208,final video,2022-12-16,10:00:01,2022-12-16,11:00:03,01:00:02,TA
-TA-INF2208,final video,2022-12-17,11:00:09,2022-12-17,12:31:10,01:31:01,TA
-TA-INF2208,final report,2022-12-17,12:40:57,2022-12-17,13:21:48,00:40:51,TA
-TA-INF2208,final report,2022-12-17,14:00:56,2022-12-17,15:25:57,01:25:01,TA
-TA-INF2208,final report,2022-12-17,21:40:35,2022-12-17,23:50:27,02:09:52,TA
-NA,Admin - planning for holiday break,2022-12-18,17:15:20,2022-12-18,17:44:24,00:29:04,Admin
-INF3104,Prep,2022-12-18,17:49:21,2022-12-18,20:14:27,02:25:06,Course Work
-INF3104,Prep,2022-12-18,22:00:48,2022-12-18,23:30:54,01:30:06,Course Work
-Lit Review,Reading,2022-12-19,11:05:07,2022-12-19,12:00:36,00:55:29,Research
-Lit Review,Search term,2022-12-20,21:31:37,2022-12-21,00:41:25,03:09:48,Research
-NA,"Admin - learning journal, reflect on Fall 2022",2023-01-01,11:33:00,2023-01-01,13:03:00,01:30:00,Admin
-Reading,Summarize papers,2023-01-03,08:38:28,2023-01-03,10:11:19,01:32:51,Research
-Reading,Summarize papers,2023-01-03,12:50:48,2023-01-03,13:48:51,00:58:03,Research
-Reading,Summarize papers,2023-01-03,13:48:47,2023-01-03,13:48:47,00:00:00,Research
-Reading,Summarize papers,2023-01-03,16:33:52,2023-01-03,17:22:16,00:48:24,Research
-TA-INF2192,introduction video,2023-01-04,09:15:00,2023-01-04,09:30:00,00:15:00,TA
-Lit Review,PRISMA search,2023-01-04,09:50:47,2023-01-04,12:17:54,02:27:07,Research
-Lit Review,PRISMA search,2023-01-04,13:19:02,2023-01-04,14:32:17,01:13:15,Research
-Reading,Summarize papers,2023-01-05,08:45:28,2023-01-05,10:31:46,01:46:18,Research
-Lit Review,paper review,2023-01-05,19:00:09,2023-01-05,19:32:10,00:32:01,Research
-Lit Review,paper review,2023-01-06,08:32:30,2023-01-06,11:02:58,02:30:28,Research
-INF2169,class,2023-01-09,11:10:00,2023-01-09,13:00:00,01:50:00,Course Work
-INF3104,class,2023-01-09,13:15:00,2023-01-09,15:45:00,02:30:00,Course Work
-INF3104,paper 1,2023-01-09,21:00:08,2023-01-09,23:00:01,01:59:53,Course Work
-NA,Admin - payroll,2023-01-10,10:17:46,2023-01-10,10:51:48,00:34:02,Admin
-TA-INF2192,meeting + set up office hours,2023-01-10,14:00:00,2023-01-10,15:30:00,01:30:00,TA
-Cookie Lab,set up meeting poll,2023-01-10,15:37:00,2023-01-10,16:30:00,00:53:00,Other Activities
-NA,Admin - set up term schedule,2023-01-10,16:11:04,2023-01-10,16:54:35,00:43:31,Admin
-Professional,personal website,2023-01-10,19:26:39,2023-01-10,21:18:16,01:51:37,Other Activities
-Professional,personal website,2023-01-11,09:00:42,2023-01-11,13:00:11,03:59:29,Other Activities
-Professional,personal website,2023-01-11,18:00:10,2023-01-11,18:45:10,00:45:00,Other Activities
-Lit Review,paper review,2023-01-11,19:15:34,2023-01-11,19:46:24,00:30:50,Research
-Lit Review,paper review,2023-01-11,21:38:58,2023-01-11,23:00:19,01:21:21,Research
-Professional,update resume,2023-01-12,08:45:38,2023-01-12,12:48:28,04:02:50,Other Activities
-Lit Review,paper review,2023-01-12,15:42:03,2023-01-12,17:57:59,02:15:56,Research
-Lit Review,paper review,2023-01-13,09:05:06,2023-01-13,11:25:50,02:20:44,Research
-INF3104,class prep - ch2,2023-01-13,12:14:00,2023-01-13,16:15:54,04:01:54,Course Work
-INF3104,class prep - ch3,2023-01-13,21:10:41,2023-01-13,23:21:47,02:11:06,Course Work
-Professional,personal website,2023-01-14,16:14:47,2023-01-14,18:06:16,01:51:29,Other Activities
-Professional,personal website,2023-01-14,21:30:33,2023-01-14,22:43:23,01:12:50,Other Activities
-INF3104,class prep - ch3,2023-01-14,22:43:25,2023-01-15,00:05:17,01:21:52,Course Work
-INF2169,review week 1,2023-01-15,11:00:10,2023-01-15,12:19:06,01:18:56,Course Work
-Lit Review,paper review,2023-01-15,17:26:51,2023-01-15,20:30:09,03:03:18,Research
-INF3104,class prep - ch3,2023-01-16,08:15:03,2023-01-16,08:47:28,00:32:25,Course Work
-INF2169,class,2023-01-16,11:10:00,2023-01-16,13:00:00,01:50:00,Course Work
-INF3104,class,2023-01-16,13:15:00,2023-01-16,15:15:00,02:00:00,Course Work
-Lit Review,paper review,2023-01-16,20:55:50,2023-01-16,23:23:54,02:28:04,Research
-Lit Review,meeting & perception categories,2023-01-17,08:40:08,2023-01-17,11:34:45,02:54:37,Research
-Service Work,Supervisor student task force,2023-01-17,11:48:16,2023-01-17,12:21:32,00:33:16,Other Activities
-INF3104,assignments,2023-01-17,13:27:18,2023-01-17,16:49:50,03:22:32,Course Work
-INF3104,prep - ch4,2023-01-17,22:56:00,2023-01-17,23:26:00,00:30:00,Course Work
-Lit Review,perception categories,2023-01-18,09:57:02,2023-01-18,12:40:26,02:43:24,Research
-Lit Review,paper review,2023-01-18,14:58:58,2023-01-18,18:15:06,03:16:08,Research
-Lit Review,paper structure,2023-01-19,08:45:00,2023-01-19,09:34:00,00:49:00,Research
-INF3104,paper 1,2023-01-19,16:48:28,2023-01-19,19:02:08,02:13:40,Course Work
-INF3104,paper 1,2023-01-19,21:12:16,2023-01-20,00:06:09,02:53:53,Course Work
-Cookie Lab,Lab Meeting,2023-01-20,11:00:00,2023-01-20,11:45:00,00:45:00,Other Activities
-Lit Review,paper structure,2023-01-20,12:00:00,2023-01-20,13:00:00,01:00:00,Research
-INF2169,problem statement,2023-01-20,14:15:00,2023-01-20,15:30:00,01:15:00,Course Work
-Lit Review,paper structure,2023-01-20,15:15:55,2023-01-20,16:15:55,01:00:00,Research
-Lit Review,paper review,2023-01-21,11:26:46,2023-01-21,12:41:34,01:14:48,Research
-INF3104,tutorial 3,2023-01-21,16:33:42,2023-01-21,17:50:24,01:16:42,Course Work
-INF3104,tutorial 3,2023-01-21,22:00:32,2023-01-22,00:12:32,02:12:00,Course Work
-INF3104,paper 1,2023-01-22,16:22:33,2023-01-23,03:05:51,10:43:18,Course Work
-INF2169,class,2023-01-23,11:10:00,2023-01-23,13:00:00,01:50:00,Course Work
-INF3104,class,2023-01-23,13:15:00,2023-01-23,16:00:00,02:45:00,Course Work
-Lit Review,paper review,2023-01-23,22:30:17,2023-01-23,23:00:28,00:30:11,Research
-TA-INF2192,Meeting,2023-01-24,13:00:00,2023-01-24,13:20:00,00:20:00,TA
-Lit Review,paper review,2023-01-24,15:53:29,2023-01-24,18:10:19,02:16:50,Research
-Lit Review,writing - methods,2023-01-24,21:00:02,2023-01-24,23:55:06,02:55:04,Research
-Lit Review,paper review,2023-01-25,10:08:03,2023-01-25,13:04:09,02:56:06,Research
-Lit Review,paper review,2023-01-25,13:50:05,2023-01-25,15:40:23,01:50:18,Research
-Lit Review,writing - introduction,2023-01-25,21:30:57,2023-01-25,23:30:20,01:59:23,Research
-INF2169,research,2023-01-26,10:14:22,2023-01-26,12:08:22,01:54:00,Course Work
-INF3104,prep - ch5,2023-01-26,16:56:30,2023-01-26,19:14:09,02:17:39,Course Work
-Lit Review,Simplify framework,2023-01-26,21:00:32,2023-01-26,22:20:58,01:20:26,Research
-INF2169,research,2023-01-26,22:30:49,2023-01-27,00:58:57,02:28:08,Course Work
-Cookie Lab,Lab Meeting,2023-01-27,11:00:00,2023-01-27,11:45:00,00:45:00,Other Activities
-INF2169,Interview questions,2023-01-27,12:30:00,2023-01-27,13:00:00,00:30:00,Course Work
-NA,Admin - INF3006 syllabus,2023-01-27,13:00:00,2023-01-27,14:00:00,01:00:00,Admin
-Lit Review,rework framework with Anastasia,2023-01-27,13:30:59,2023-01-27,14:30:00,00:59:01,Research
-Cookie Lab,Create research Kanban board,2023-01-27,15:00:45,2023-01-27,15:30:46,00:30:01,Other Activities
-TA-INF2192,project status reports,2023-01-27,16:10:38,2023-01-27,17:39:32,01:28:54,TA
-Lit Review,repopulate framework,2023-01-27,21:26:42,2023-01-27,23:22:39,01:55:57,Research
-Lit Review,repopulate framework,2023-01-28,11:50:26,2023-01-28,13:15:09,01:24:43,Research
-Lit Review,overleaf - content for sections,2023-01-28,14:15:12,2023-01-28,17:20:45,03:05:33,Research
-Lit Review,overleaf - content for sections,2023-01-28,21:40:18,2023-01-28,23:30:59,01:50:41,Research
-Lit Review,overleaf - content for sections,2023-01-29,11:32:58,2023-01-29,13:40:18,02:07:20,Research
-Lit Review,overleaf - writing perception setion,2023-01-29,18:00:16,2023-01-29,19:47:58,01:47:42,Research
-INF2169,RQ and study design,2023-01-29,20:59:37,2023-01-29,22:19:42,01:20:05,Course Work
-INF3104,prep - ch5,2023-01-29,22:21:44,2023-01-29,23:36:24,01:14:40,Course Work
-Lit Review,overleaf - writing perception setion,2023-01-30,10:13:10,2023-01-30,10:48:21,00:35:11,Research
-INF2169,review and class,2023-01-30,10:48:30,2023-01-30,13:25:23,02:36:53,Course Work
-INF3104,class,2023-01-30,13:10:00,2023-01-30,16:00:00,02:50:00,Course Work
-INF2169,RQs and interview questions,2023-01-30,18:00:17,2023-01-30,19:32:30,01:32:13,Course Work
-Lit Review,paper review,2023-01-30,22:12:41,2023-01-30,23:09:43,00:57:02,Research
-Lit Review,overleaf - writing perception setion,2023-01-31,09:47:20,2023-01-31,13:16:38,03:29:18,Research
-Lit Review,overleaf - writing,2023-01-31,17:29:22,2023-01-31,19:20:31,01:51:09,Research
-Lit Review,overleaf - writing,2023-01-31,21:53:07,2023-01-31,22:55:41,01:02:34,Research
-Lit Review,writing - review,2023-02-01,15:00:00,2023-02-01,16:00:00,01:00:00,Research
-Lit Review,paper review,2023-02-01,16:40:32,2023-02-01,20:01:50,03:21:18,Research
-Lit Review,paper review,2023-02-01,21:17:52,2023-02-01,21:41:25,00:23:33,Research
-NA,Grant - SRI scholarship,2023-02-01,21:41:28,2023-02-02,00:10:23,02:28:55,Admin
-NA,Grant - SRI scholarship,2023-02-02,09:56:51,2023-02-02,11:13:40,01:16:49,Admin
-Lit Review,Story of report,2023-02-02,17:30:00,2023-02-02,19:15:00,01:45:00,Research
-INF3104,paper 1 + quiz,2023-02-02,21:20:32,2023-02-03,01:02:23,03:41:51,Course Work
-Cookie Lab,Lab Meeting,2023-02-03,11:00:00,2023-02-03,11:20:00,00:20:00,Other Activities
-NA,Admin - Sarah English teaching talk,2023-02-03,11:30:00,2023-02-03,13:30:00,02:00:00,Admin
-Cookie Lab,Coding workshop,2023-02-03,16:00:00,2023-02-03,17:30:00,01:30:00,Other Activities
-TA-INF2192,project status 3,2023-02-03,19:43:00,2023-02-03,20:13:00,00:30:00,TA
-NA,Grant - SRI scholarship,2023-02-03,20:59:44,2023-02-04,00:16:53,03:17:09,Admin
-NA,Grant - SRI scholarship,2023-02-04,11:02:25,2023-02-04,13:36:32,02:34:07,Admin
-NA,Grant - SRI scholarship,2023-02-04,15:00:52,2023-02-04,19:01:37,04:00:45,Admin
-Lit Review,paper review,2023-02-04,21:18:31,2023-02-04,23:57:38,02:39:07,Research
-Lit Review,paper review,2023-02-05,14:23:03,2023-02-05,15:42:49,01:19:46,Research
-Lit Review,paper review,2023-02-05,17:00:07,2023-02-05,19:28:24,02:28:17,Research
-NA,Grant - SRI scholarship,2023-02-05,19:35:55,2023-02-05,20:21:06,00:45:11,Admin
-Lit Review,paper review,2023-02-05,21:16:21,2023-02-05,23:41:44,02:25:23,Research
-INF2169,review + class,2023-02-06,10:03:54,2023-02-06,13:00:19,02:56:25,Course Work
-INF3104,class,2023-02-06,13:20:28,2023-02-06,16:13:46,02:53:18,Course Work
-Lit Review,paper review,2023-02-06,19:34:41,2023-02-06,23:39:42,04:05:01,Research
-Lit Review,Naver meeting,2023-02-07,09:00:00,2023-02-07,10:00:00,01:00:00,Research
-Lit Review,paper review,2023-02-07,10:35:46,2023-02-07,14:40:35,04:04:49,Research
-Lit Review,paper review,2023-02-07,17:15:50,2023-02-07,18:53:21,01:37:31,Research
-Lit Review,paper review,2023-02-07,20:50:23,2023-02-07,23:40:59,02:50:36,Research
-TA-INF2192,office hour + grade re-evaluation,2023-02-08,09:45:00,2023-02-08,10:30:00,00:45:00,TA
-Lit Review,paper review,2023-02-08,10:59:46,2023-02-08,13:10:32,02:10:46,Research
-Lit Review,paper review,2023-02-08,13:45:10,2023-02-08,15:39:55,01:54:45,Research
-Lit Review,data exploration,2023-02-08,18:00:47,2023-02-08,18:43:52,00:43:05,Research
-Lit Review,data exploration,2023-02-08,19:32:50,2023-02-09,00:07:50,04:35:00,Research
-Lit Review,paper writing,2023-02-09,11:18:27,2023-02-09,16:01:34,04:43:07,Research
-Lit Review,paper writing,2023-02-09,16:50:29,2023-02-09,19:41:29,02:51:00,Research
-Lit Review,paper writing,2023-02-09,21:15:38,2023-02-09,23:25:49,02:10:11,Research
-Cookie Lab,Lab Meeting,2023-02-10,11:00:00,2023-02-10,12:00:00,01:00:00,Other Activities
-TA-INF2192,project status reports,2023-02-10,12:00:00,2023-02-10,12:48:00,00:48:00,TA
-Lit Review,paper writing,2023-02-10,13:47:13,2023-02-10,14:31:01,00:43:48,Research
-INF3104,quiz 5,2023-02-10,14:33:37,2023-02-10,15:27:12,00:53:35,Course Work
-Lit Review,paper writing,2023-02-10,16:09:46,2023-02-10,17:29:43,01:19:57,Research
-Lit Review,paper writing,2023-02-10,21:52:13,2023-02-10,23:29:21,01:37:08,Research
-Lit Review,paper writing,2023-02-11,12:00:06,2023-02-11,12:57:53,00:57:47,Research
-Lit Review,paper writing,2023-02-11,16:00:56,2023-02-11,18:20:19,02:19:23,Research
-Lit Review,paper writing,2023-02-11,18:48:20,2023-02-11,20:52:05,02:03:45,Research
-Lit Review,paper writing,2023-02-11,21:31:39,2023-02-12,00:27:36,02:55:57,Research
-Lit Review,paper writing,2023-02-12,09:43:27,2023-02-12,13:05:18,03:21:51,Research
-Lit Review,paper writing,2023-02-12,13:50:36,2023-02-12,15:19:25,01:28:49,Research
-Lit Review,paper writing,2023-02-12,17:10:34,2023-02-12,19:25:18,02:14:44,Research
-Lit Review,paper writing,2023-02-12,20:13:54,2023-02-12,21:48:26,01:34:32,Research
-Lit Review,paper writing,2023-02-12,22:41:47,2023-02-12,23:16:08,00:34:21,Research
-INF2169,class,2023-02-13,11:10:00,2023-02-13,13:00:00,01:50:00,Course Work
-Lit Review,review with AK,2023-02-13,17:15:00,2023-02-13,18:15:00,01:00:00,Research
-Lit Review,paper writing,2023-02-13,22:00:15,2023-02-13,23:40:02,01:39:47,Research
-TA-INF2192,class feedback,2023-02-14,09:00:00,2023-02-14,12:00:00,03:00:00,TA
-Lit Review,paper writing,2023-02-14,13:42:15,2023-02-14,15:38:29,01:56:14,Research
-Lit Review,paper writing,2023-02-14,15:59:34,2023-02-14,17:59:15,01:59:41,Research
-TA-INF2192,class feedback,2023-02-14,18:30:42,2023-02-14,21:40:52,03:10:10,TA
-Lit Review,paper writing,2023-02-15,08:40:18,2023-02-15,11:58:07,03:17:49,Research
-Lit Review,paper writing,2023-02-15,14:20:25,2023-02-15,18:07:10,03:46:45,Research
-Lit Review,paper writing,2023-02-15,20:33:53,2023-02-15,23:24:15,02:50:22,Research
-Lit Review,paper writing,2023-02-16,08:37:46,2023-02-16,10:41:59,02:04:13,Research
-Lit Review,paper writing,2023-02-16,11:12:48,2023-02-16,11:50:08,00:37:20,Research
-TA-INF2192,answering questions,2023-02-16,15:10:00,2023-02-16,15:40:00,00:30:00,TA
-Lit Review,paper writing,2023-02-16,15:31:16,2023-02-16,15:56:25,00:25:09,Research
-Lit Review,paper writing,2023-02-16,20:05:00,2023-02-17,00:48:30,04:43:30,Research
-Cookie Lab,meeting,2023-02-17,11:00:00,2023-02-17,12:00:00,01:00:00,Other Activities
-TA-INF2192,questions and project status,2023-02-17,12:00:30,2023-02-17,12:35:35,00:35:05,TA
-Lit Review,paper review,2023-02-17,14:00:00,2023-02-17,15:00:00,01:00:00,Research
-Lit Review,paper writing,2023-02-18,12:19:41,2023-02-18,12:56:16,00:36:35,Research
-Lit Review,paper writing,2023-02-18,13:45:22,2023-02-18,15:21:48,01:36:26,Research
-Lit Review,paper writing,2023-02-18,21:11:04,2023-02-18,23:55:44,02:44:40,Research
-INF3104,final paper,2023-02-19,18:00:00,2023-02-19,22:30:00,04:30:00,Course Work
-Lit Review,addressing Naver feedback,2023-02-20,21:00:00,2023-02-20,23:00:00,02:00:00,Research
-TA-INF2192,discovery report,2023-02-21,09:30:27,2023-02-21,12:30:40,03:00:13,TA
-INF3104,paper 3,2023-02-21,12:30:00,2023-02-21,15:26:00,02:56:00,Course Work
-INF2169,paper 1,2023-02-21,17:45:00,2023-02-21,19:50:00,02:05:00,Course Work
-Lit Review,paper review,2023-02-22,08:35:30,2023-02-22,10:16:39,01:41:09,Research
-Lit Review,paper review,2023-02-22,17:31:52,2023-02-22,19:20:34,01:48:42,Research
-INF2169,paper 1,2023-02-22,19:41:00,2023-02-22,20:11:00,00:30:00,Course Work
-INF3104,paper 3,2023-02-22,20:11:37,2023-02-22,22:35:17,02:23:40,Course Work
-INF2169,paper 1,2023-02-23,09:25:19,2023-02-23,11:00:06,01:34:47,Course Work
-INF3104,paper 3,2023-02-23,11:00:52,2023-02-23,11:36:52,00:36:00,Course Work
-INF2169,paper 1,2023-02-23,11:45:23,2023-02-23,13:04:14,01:18:51,Course Work
-INF2169,paper 1,2023-02-23,14:00:01,2023-02-23,17:48:15,03:48:14,Course Work
-TA-INF2192,discovery report,2023-02-23,21:34:40,2023-02-23,23:00:22,01:25:42,TA
-Finance CA Marginalization,Brain dump,2023-02-24,21:00:00,2023-02-24,23:18:00,02:18:00,Research
-Finance CA Marginalization,writing,2023-02-25,09:38:47,2023-02-25,12:51:45,03:12:58,Research
-Finance CA Marginalization,writing,2023-02-25,13:27:59,2023-02-25,14:52:56,01:24:57,Research
-Lit Review,final review,2023-02-26,16:40:57,2023-02-26,17:45:30,01:04:33,Research
-Lit Review,final review,2023-02-26,20:45:39,2023-02-27,02:27:56,05:42:17,Research
-INF2169,class + AK assignment 1,2023-02-27,11:10:00,2023-02-27,13:25:00,02:15:00,Course Work
-INF3104,class,2023-02-27,13:10:00,2023-02-27,16:00:00,02:50:00,Course Work
-Finance CA Marginalization,AK brainstorm,2023-02-27,16:10:00,2023-02-27,16:45:00,00:35:00,Research
-Finance CA Marginalization,writing,2023-02-27,20:13:04,2023-02-28,00:38:44,04:25:40,Research
-Research-General,Naver meeting,2023-02-28,09:00:00,2023-02-28,10:00:00,01:00:00,Research
-TA-INF2192,discovery report,2023-02-28,11:00:08,2023-02-28,13:00:10,02:00:02,TA
-Finance CA Marginalization,writing,2023-02-28,18:19:08,2023-02-28,19:42:48,01:23:40,Research
-Finance CA Marginalization,writing,2023-02-28,21:00:17,2023-03-01,00:55:29,03:55:12,Research
-Finance CA Marginalization,writing,2023-03-01,13:00:01,2023-03-01,15:23:47,02:23:46,Research
-Finance CA Marginalization,writing,2023-03-01,20:00:49,2023-03-01,21:24:49,01:24:00,Research
-INF3104,paper 3,2023-03-02,08:45:39,2023-03-02,11:38:52,02:53:13,Course Work
-writing course,structure coherence,2023-03-02,16:00:52,2023-03-02,17:30:52,01:30:00,Learning
-Cookie Lab,Lab Meeting,2023-03-03,11:00:00,2023-03-03,12:00:00,01:00:00,Other Activities
-TA-INF2192,discovery report,2023-03-03,12:35:05,2023-03-03,16:09:31,03:34:26,TA
-Service Work,Data Science Hackathon,2023-03-04,11:00:00,2023-03-04,17:00:00,06:00:00,Other Activities
-INF3104,paper 3,2023-03-04,21:25:24,2023-03-04,23:54:08,02:28:44,Course Work
-Service Work,Data Science Hackathon,2023-03-05,09:45:05,2023-03-05,17:30:06,07:45:01,Other Activities
-TA-INF2192,discovery report,2023-03-06,08:30:22,2023-03-06,09:49:43,01:19:21,TA
-INF2169,class,2023-03-06,11:00:00,2023-03-06,13:00:00,02:00:00,Course Work
-INF3104,class,2023-03-06,13:00:00,2023-03-06,16:30:00,03:30:00,Course Work
-TA-INF2192,discovery report,2023-03-06,16:44:09,2023-03-06,18:29:40,01:45:31,TA
-TA-INF2192,discovery report,2023-03-06,20:46:12,2023-03-06,21:50:28,01:04:16,TA
-TA-INF2192,playback 1,2023-03-07,09:00:00,2023-03-07,12:00:00,03:00:00,TA
-INF3104,paper 3,2023-03-07,16:54:29,2023-03-07,18:13:05,01:18:36,Course Work
-TA-INF2192,playback 1,2023-03-07,18:30:00,2023-03-07,21:40:00,03:10:00,TA
-TA-INF2192,office hour,2023-03-08,10:15:00,2023-03-08,11:00:00,00:45:00,TA
-INF3104,paper 3,2023-03-08,11:19:35,2023-03-08,14:04:58,02:45:23,Course Work
-INF3104,paper 3,2023-03-08,15:39:51,2023-03-08,19:56:35,04:16:44,Course Work
-INF3104,paper 3,2023-03-08,20:48:48,2023-03-09,00:01:15,03:12:27,Course Work
-INF3104,paper 3,2023-03-09,09:17:41,2023-03-09,10:01:33,00:43:52,Course Work
-INF2169,paper 1,2023-03-09,10:31:59,2023-03-09,11:32:42,01:00:43,Course Work
-INF3104,paper 3,2023-03-09,13:00:10,2023-03-09,13:45:12,00:45:02,Course Work
-writing course,crafting effective sentences,2023-03-09,16:00:15,2023-03-09,17:39:16,01:39:01,Learning
-INF2169,paper 1,2023-03-09,21:41:23,2023-03-09,23:14:20,01:32:57,Course Work
-INF3104,paper 3,2023-03-10,08:46:02,2023-03-10,13:03:58,04:17:56,Course Work
-INF2169,paper 1,2023-03-10,14:28:55,2023-03-10,16:23:57,01:55:02,Course Work
-INF2169,paper 1,2023-03-10,21:32:56,2023-03-10,22:37:28,01:04:32,Course Work
-INF3104,paper 3,2023-03-12,18:08:08,2023-03-12,20:38:04,02:29:56,Course Work
-INF2169,paper 1,2023-03-12,21:28:36,2023-03-13,00:30:24,03:01:48,Course Work
-Talks,AI as Financial Infrastructure,2023-03-13,10:00:00,2023-03-13,11:30:00,01:30:00,Learning
-INF2169,class,2023-03-13,11:45:00,2023-03-13,13:00:00,01:15:00,Course Work
-INF3104,class,2023-03-13,13:10:00,2023-03-13,16:10:00,03:00:00,Course Work
+project,description,start_date,start_time,end_date,end_time,duration,type,effort_hours
+Industry DDN,Writing,2022-08-15,09:30:11,2022-08-15,11:45:31,02:15:20,Research,2.2555555555555555
+NA,Admin,2022-08-15,17:30:00,2022-08-15,19:00:00,01:30:00,Admin,1.5
+Reading,Reading,2022-08-15,20:32:56,2022-08-15,21:14:07,00:41:11,Research,0.6863888888888889
+NA,Admin,2022-08-16,10:04:42,2022-08-16,10:22:25,00:17:43,Admin,0.29527777777777775
+Disfluency perception,Ethics,2022-08-16,10:27:05,2022-08-16,12:09:14,01:42:09,Research,1.7025
+Disfluency perception,Meeting,2022-08-16,12:30:45,2022-08-16,13:00:57,00:30:12,Research,0.5033333333333333
+NA,Admin,2022-08-16,13:30:05,2022-08-16,15:05:11,01:35:06,Admin,1.585
+OAPerception,Meeting,2022-08-16,15:30:30,2022-08-16,16:30:42,01:00:12,Research,1.0033333333333334
+OAPerception,Recruitment,2022-08-16,21:00:23,2022-08-16,21:15:35,00:15:12,Research,0.25333333333333335
+Industry DDN,Writing,2022-08-16,21:14:03,2022-08-16,22:13:55,00:59:52,Research,0.9977777777777778
+Cookie Lab,Lab Meeting,2022-08-17,10:00:55,2022-08-17,11:00:58,01:00:03,Other Activities,1.0008333333333332
+NA,Admin,2022-08-17,11:30:26,2022-08-17,12:00:37,00:30:11,Admin,0.5030555555555556
+OAPerception,Interview and prep,2022-08-17,14:50:56,2022-08-17,19:20:16,04:29:20,Research,4.488888888888889
+OAPerception,Generate audio transcriptions,2022-08-17,21:00:30,2022-08-17,22:54:57,01:54:27,Research,1.9075
+OAPerception,Transcribe P55,2022-08-18,09:00:43,2022-08-18,10:49:27,01:48:44,Research,1.8122222222222222
+OAPerception,Interview P23,2022-08-18,10:50:42,2022-08-18,12:10:55,01:20:13,Research,1.3369444444444445
+OAPerception,Device runner P66,2022-08-18,12:50:36,2022-08-18,13:40:44,00:50:08,Research,0.8355555555555556
+OAPerception,Device runner P16,2022-08-18,13:50:26,2022-08-18,14:46:37,00:56:11,Research,0.9363888888888889
+OAPerception,Meeting - data prep,2022-08-18,15:00:22,2022-08-18,15:40:40,00:40:18,Research,0.6716666666666666
+OAPerception,Transcribe P55,2022-08-18,17:45:54,2022-08-18,19:46:13,02:00:19,Research,2.0052777777777777
+OAPerception,Data prep - P55,2022-08-18,21:05:58,2022-08-18,22:21:52,01:15:54,Research,1.265
+NA,Meeting - 1:1 Anastasia,2022-08-19,12:00:56,2022-08-19,13:40:17,01:39:21,Research,1.6558333333333333
+OAPerception,Transcribe P23,2022-08-19,16:15:06,2022-08-19,18:51:32,02:36:26,Research,2.607222222222222
+OAPerception,Device runner P33,2022-08-22,12:50:18,2022-08-22,13:50:27,01:00:09,Research,1.0025
+OAPerception,Meeting - data analysis,2022-08-22,14:00:23,2022-08-22,14:50:42,00:50:19,Research,0.8386111111111111
+OAPerception,Device runner P4,2022-08-22,14:53:14,2022-08-22,15:41:58,00:48:44,Research,0.8122222222222222
+OAPerception,Interviewer P61,2022-08-22,17:00:27,2022-08-22,17:58:40,00:58:13,Research,0.9702777777777778
+Disfluency perception,Ethics,2022-08-23,08:30:00,2022-08-23,09:00:00,00:30:00,Research,0.5
+OAPerception,Device runner P89,2022-08-23,09:00:14,2022-08-23,09:55:01,00:54:47,Research,0.9130555555555555
+Disfluency perception,Ethics,2022-08-23,10:00:16,2022-08-23,11:40:21,01:40:05,Research,1.6680555555555556
+OAPerception,Avatars,2022-08-23,11:30:03,2022-08-23,12:19:13,00:49:10,Research,0.8194444444444444
+NA,"Admin - TA, reimbursement",2022-08-23,14:00:00,2022-08-23,15:00:00,01:00:00,Admin,1
+Cookie Lab,Lab Meeting,2022-08-24,10:00:00,2022-08-24,11:00:00,01:00:00,Other Activities,1
+NA,Meeting - 1:1 Cosmin,2022-08-24,11:30:00,2022-08-24,12:00:00,00:30:00,Admin,0.5
+NA,Admin - CUI reimbursement,2022-08-24,16:00:00,2022-08-24,17:45:00,01:45:00,Admin,1.75
+OAPerception,P66 data prep; P55 coding,2022-08-24,22:30:00,2022-08-25,01:00:00,02:30:00,Research,2.5
+OAPerception,Device runner P70,2022-08-25,11:00:00,2022-08-25,11:45:00,00:45:00,Research,0.75
+OAPerception,Meeting - discuss coding,2022-08-25,12:30:00,2022-08-25,13:10:00,00:40:00,Research,0.6666666666666666
+OAPerception,Data analysis,2022-08-25,15:00:13,2022-08-25,17:00:25,02:00:12,Research,2.0033333333333334
+OAPerception,Data analysis,2022-08-25,22:00:00,2022-08-25,23:30:00,01:30:00,Research,1.5
+OAPerception,Data analysis P55,2022-08-26,23:07:00,2022-08-26,23:37:00,00:30:00,Research,0.5
+OAPerception,Data analysis,2022-08-28,17:30:00,2022-08-28,18:35:00,01:05:00,Research,1.0833333333333333
+OAPerception,Data analysis,2022-08-29,13:45:00,2022-08-29,16:25:00,02:40:00,Research,2.6666666666666665
+OAPerception,Transcribe P61,2022-08-29,20:33:00,2022-08-29,22:33:30,02:00:30,Research,2.0083333333333333
+OAPerception,Data analysis,2022-08-29,22:40:00,2022-08-29,23:38:00,00:58:00,Research,0.9666666666666667
+NA,Participant to Sexism study,2022-08-30,10:00:00,2022-08-30,11:00:00,01:00:00,Admin,1
+OAPerception,Data analysis,2022-08-30,11:15:00,2022-08-30,13:10:00,01:55:00,Research,1.9166666666666667
+OAPerception,Data analysis,2022-09-01,10:00:00,2022-09-01,12:45:07,02:45:07,Research,2.7519444444444443
+OAPerception,Data analysis,2022-09-01,13:24:00,2022-09-01,13:54:00,00:30:00,Research,0.5
+OAPerception,Data analysis - clustering,2022-09-01,18:16:00,2022-09-01,19:46:00,01:30:00,Research,1.5
+Talks,iSchool DSA Orientation,2022-09-05,14:00:00,2022-09-05,16:30:00,02:30:00,Learning,2.5
+OAPerception,Device runner,2022-09-06,09:00:00,2022-09-06,10:00:00,01:00:00,Research,1
+Talks,Graduate studies orientation,2022-09-06,11:00:00,2022-09-06,13:00:00,02:00:00,Learning,2
+NA,Meet with Christine and Nicole,2022-09-06,13:30:00,2022-09-06,14:00:00,00:30:00,Admin,0.5
+OAPerception,Meeting,2022-09-06,15:30:00,2022-09-06,16:15:00,00:45:00,Research,0.75
+OAPerception,Device runner,2022-09-06,17:00:00,2022-09-06,18:00:00,01:00:00,Research,1
+OAPerception,Data analysis,2022-09-06,18:00:00,2022-09-06,19:00:00,01:00:00,Research,1
+OAPerception,Data analysis,2022-09-07,09:10:00,2022-09-07,11:30:00,02:20:00,Research,2.3333333333333335
+OAPerception,Data analysis,2022-09-07,17:00:00,2022-09-07,18:45:00,01:45:00,Research,1.75
+OAPerception,Data analysis,2022-09-07,21:15:00,2022-09-07,23:45:00,02:30:00,Research,2.5
+TA-CCT419,Syllabus date issue,2022-09-08,09:30:00,2022-09-08,09:40:00,00:10:00,TA,0.16666666666666666
+Cookie Lab,Meeting - Cookie Lab,2022-09-08,10:00:00,2022-09-08,10:35:00,00:35:00,Other Activities,0.5833333333333334
+OAPerception,Data analysis,2022-09-08,10:40:00,2022-09-08,11:55:55,01:15:55,Research,1.2652777777777777
+OAPerception,Data analysis,2022-09-08,12:45:00,2022-09-08,13:30:00,00:45:00,Research,0.75
+OAPerception,Data analysis,2022-09-08,17:30:00,2022-09-08,19:30:00,02:00:00,Research,2
+OAPerception,Data analysis,2022-09-08,20:50:00,2022-09-08,22:35:00,01:45:00,Research,1.75
+OAPerception,Data analysis,2022-09-09,17:00:00,2022-09-09,18:00:00,01:00:00,Research,1
+OAPerception,Data analysis,2022-09-10,21:45:00,2022-09-10,23:55:00,02:10:00,Research,2.1666666666666665
+OAPerception,Data analysis,2022-09-11,20:20:00,2022-09-11,21:12:47,00:52:47,Research,0.8797222222222222
+OAPerception,Data analysis,2022-09-11,22:10:00,2022-09-11,23:22:00,01:12:00,Research,1.2
+NA,"Admin - transfer course, timesheet, NSERC",2022-09-12,10:50:00,2022-09-12,11:56:00,01:06:00,Admin,1.1
+OAPerception,Data analysis,2022-09-12,11:57:00,2022-09-12,12:28:44,00:31:44,Research,0.5288888888888889
+OAPerception,Interview P99,2022-09-12,13:00:00,2022-09-12,13:59:38,00:59:38,Research,0.9938888888888889
+OAPerception,Data analysis,2022-09-12,13:59:00,2022-09-12,15:07:29,01:08:29,Research,1.1413888888888888
+CCT419,UXD and board games ,2022-09-12,17:00:00,2022-09-12,19:45:00,02:45:00,Learning,2.75
+OAPerception,Data analysis,2022-09-12,21:30:00,2022-09-12,22:30:00,01:00:00,Research,1
+OAPerception,Data analysis,2022-09-13,09:50:00,2022-09-13,12:45:50,02:55:50,Research,2.9305555555555554
+INF2241,Class  ,2022-09-13,13:00:00,2022-09-13,15:30:00,02:30:00,Course Work,2.5
+OAPerception,Data analysis,2022-09-13,21:30:00,2022-09-13,23:17:01,01:47:01,Research,1.783611111111111
+OAPerception,Data analysis,2022-09-14,10:00:00,2022-09-14,14:48:36,04:48:36,Research,4.81
+INF2241,Reading - Wk2,2022-09-15,09:15:00,2022-09-15,12:30:00,03:15:00,Course Work,3.25
+Disfluency perception,Walk through code with Kusum,2022-09-15,15:00:00,2022-09-15,16:55:00,01:55:00,Research,1.9166666666666667
+NA,NSERC info session,2022-09-15,21:48:00,2022-09-15,22:49:51,01:01:51,Admin,1.0308333333333333
+NA,Admin - transfer course,2022-09-16,11:17:00,2022-09-16,11:35:00,00:18:00,Admin,0.3
+INF2241,Arduino,2022-09-16,11:35:00,2022-09-16,12:39:08,01:04:08,Course Work,1.068888888888889
+INF3001,Class,2022-09-16,13:00:00,2022-09-16,15:30:00,02:30:00,Course Work,2.5
+INF2241,Arduino project 2,2022-09-16,17:11:00,2022-09-16,18:08:34,00:57:34,Course Work,0.9594444444444444
+NA,NSERC,2022-09-17,20:26:00,2022-09-17,22:24:03,01:58:03,Admin,1.9675
+NA,NSERC,2022-09-18,12:15:00,2022-09-18,13:15:00,01:00:00,Admin,1
+NA,NSERC,2022-09-18,21:25:00,2022-09-19,00:47:22,03:22:22,Admin,3.372777777777778
+CCT419,class + reading,2022-09-19,16:40:00,2022-09-19,20:00:00,03:20:00,Learning,3.3333333333333335
+NA,NSERC,2022-09-19,22:00:00,2022-09-19,23:02:49,01:02:49,Admin,1.0469444444444445
+NA,NSERC,2022-09-20,11:07:00,2022-09-20,12:30:00,01:23:00,Admin,1.3833333333333333
+INF2241,Class,2022-09-20,13:10:00,2022-09-20,16:00:00,02:50:00,Course Work,2.8333333333333335
+NA,NSERC,2022-09-20,16:00:00,2022-09-20,17:15:00,01:15:00,Admin,1.25
+NA,NSERC,2022-09-20,18:30:00,2022-09-20,19:44:00,01:14:00,Admin,1.2333333333333334
+NA,NSERC,2022-09-20,19:45:21,2022-09-20,20:37:10,00:51:49,Admin,0.8636111111111111
+NA,NSERC,2022-09-20,21:33:00,2022-09-21,02:29:00,04:56:00,Admin,4.933333333333334
+Disfluency perception,knowledge transfer,2022-09-21,12:30:00,2022-09-21,14:15:00,01:45:00,Research,1.75
+INF3001,Reading,2022-09-21,17:15:00,2022-09-21,18:30:30,01:15:30,Course Work,1.2583333333333333
+NA,NSERC,2022-09-21,20:45:00,2022-09-22,01:24:00,04:39:00,Admin,4.65
+Cookie Lab,Meeting - Cookie Lab,2022-09-22,10:00:00,2022-09-22,10:45:00,00:45:00,Other Activities,0.75
+Disfluency perception,running application on my machine,2022-09-22,16:30:00,2022-09-22,18:30:00,02:00:00,Research,2
+NA,NSERC,2022-09-22,18:30:00,2022-09-22,21:00:00,02:30:00,Admin,2.5
+Disfluency perception,getting the project to work,2022-09-23,09:50:00,2022-09-23,10:42:00,00:52:00,Research,0.8666666666666667
+INF3001,class,2022-09-23,13:10:00,2022-09-23,15:00:00,01:50:00,Course Work,1.8333333333333333
+INF2241,reading,2022-09-24,12:00:00,2022-09-24,13:45:00,01:45:00,Course Work,1.75
+INF2241,Reading,2022-09-24,19:25:00,2022-09-24,22:02:00,02:37:00,Course Work,2.6166666666666667
+INF3001,Reading,2022-09-25,14:06:00,2022-09-25,16:02:28,01:56:28,Course Work,1.941111111111111
+NA,"Admin - emails, Twitter",2022-09-26,10:51:00,2022-09-26,11:21:00,00:30:00,Admin,0.5
+INF3001,presentation,2022-09-26,15:23:00,2022-09-26,16:32:19,01:09:19,Course Work,1.1552777777777778
+CCT419,class,2022-09-26,17:10:00,2022-09-26,20:00:00,02:50:00,Learning,2.8333333333333335
+INF2241,reading and Arduino,2022-09-27,11:30:00,2022-09-27,12:53:00,01:23:00,Course Work,1.3833333333333333
+INF2241,Class,2022-09-27,13:10:00,2022-09-27,16:00:00,02:50:00,Course Work,2.8333333333333335
+TA-INF2208,TA meeting with Anastasia,2022-09-27,16:30:00,2022-09-27,17:10:00,00:40:00,TA,0.6666666666666666
+INF3001,presentation,2022-09-27,21:24:00,2022-09-27,23:55:47,02:31:47,Course Work,2.5297222222222224
+INF3001,presentation,2022-09-28,09:15:22,2022-09-28,10:53:58,01:38:36,Course Work,1.6433333333333333
+Cookie Lab,paper presentation,2022-09-28,14:00:50,2022-09-28,16:00:46,01:59:56,Other Activities,1.998888888888889
+Cookie Lab,Meeting - Cookie Lab,2022-09-29,10:00:44,2022-09-29,10:45:53,00:45:09,Other Activities,0.7525
+Reading,stitching together conversation,2022-09-29,11:30:00,2022-09-29,12:30:00,01:00:00,Research,1
+NA,1:1 with Anastasia,2022-09-29,14:00:00,2022-09-29,15:00:00,01:00:00,Research,1
+Disfluency perception,debug code,2022-09-29,15:00:16,2022-09-29,16:25:37,01:25:21,Research,1.4225
+INF2241,project 8 digital hourglass,2022-09-29,17:23:32,2022-09-29,18:23:49,01:00:17,Course Work,1.0047222222222223
+INF2208,class,2022-09-29,18:30:00,2022-09-29,20:30:00,02:00:00,Learning,2
+INF3001,practice presentation,2022-09-30,10:30:00,2022-09-30,11:33:00,01:03:00,Course Work,1.05
+INF3001,Class,2022-09-30,13:00:00,2022-09-30,15:00:00,02:00:00,Course Work,2
+INF2241,Reading about ethics of CAs,2022-10-01,09:30:00,2022-10-01,12:30:00,03:00:00,Course Work,3
+Reading,Reading,2022-10-01,20:00:00,2022-10-01,21:45:00,01:45:00,Research,1.75
+TA-INF2208,Marking IPPs,2022-10-03,08:44:53,2022-10-03,10:22:37,01:37:44,TA,1.6288888888888888
+INF2241,Reading,2022-10-03,15:39:31,2022-10-03,16:33:49,00:54:18,Course Work,0.905
+CCT419,class,2022-10-03,17:10:00,2022-10-03,20:05:00,02:55:00,Learning,2.9166666666666665
+INF2241,Reading,2022-10-03,21:27:57,2022-10-03,22:39:10,01:11:13,Course Work,1.1869444444444444
+Reading,Reading,2022-10-04,12:13:18,2022-10-04,12:53:58,00:40:40,Research,0.6777777777777778
+INF2241,Class,2022-10-04,13:10:00,2022-10-04,16:00:00,02:50:00,Course Work,2.8333333333333335
+INF3001,Reading,2022-10-05,09:06:30,2022-10-05,12:15:20,03:08:50,Course Work,3.147222222222222
+INF3001,Reading,2022-10-05,14:00:00,2022-10-05,15:01:19,01:01:19,Course Work,1.0219444444444445
+Cookie Lab,Meeting - Cookie Lab,2022-10-06,10:00:00,2022-10-06,10:45:00,00:45:00,Other Activities,0.75
+Disfluency perception,"model, play with DialogFlow",2022-10-06,11:30:40,2022-10-06,13:30:41,02:00:01,Research,2.000277777777778
+Lit Review,Reading,2022-10-06,13:57:31,2022-10-06,18:20:16,04:22:45,Research,4.379166666666666
+INF2208,class,2022-10-06,18:35:00,2022-10-06,20:30:00,01:55:00,Learning,1.9166666666666667
+Lit Review,Reading,2022-10-06,22:00:23,2022-10-06,23:37:40,01:37:17,Research,1.621388888888889
+INF2241,Reading,2022-10-07,08:44:12,2022-10-07,11:03:40,02:19:28,Course Work,2.3244444444444445
+INF3001,Reading,2022-10-07,11:03:46,2022-10-07,11:31:56,00:28:10,Course Work,0.46944444444444444
+INF3001,class,2022-10-07,13:10:00,2022-10-07,14:50:00,01:40:00,Course Work,1.6666666666666667
+INF2241,moral prompt,2022-10-07,20:29:53,2022-10-07,22:13:03,01:43:10,Course Work,1.7194444444444446
+Lit Review,Reading,2022-10-07,22:30:46,2022-10-07,23:33:58,01:03:12,Research,1.0533333333333332
+INF2241,Assignment 1,2022-10-08,11:00:00,2022-10-08,12:00:00,01:00:00,Course Work,1
+Lit Review,Reading,2022-10-08,13:48:48,2022-10-08,15:00:58,01:12:10,Research,1.2027777777777777
+Lit Review,Reading,2022-10-08,21:22:41,2022-10-08,22:57:29,01:34:48,Research,1.58
+Lit Review,Reading,2022-10-10,21:36:45,2022-10-10,22:15:23,00:38:38,Research,0.6438888888888888
+INF2241,Assignment 1,2022-10-11,10:27:22,2022-10-11,12:08:43,01:41:21,Course Work,1.6891666666666667
+TA-INF2208,GPP,2022-10-11,12:08:45,2022-10-11,13:15:46,01:07:01,TA,1.1169444444444445
+INF2241,class + assignment 1,2022-10-11,13:10:00,2022-10-11,17:30:00,04:20:00,Course Work,4.333333333333333
+TA-INF2208,GPP,2022-10-11,17:46:42,2022-10-11,17:56:06,00:09:24,TA,0.15666666666666668
+Lit Review,Reading,2022-10-12,09:03:03,2022-10-12,11:27:42,02:24:39,Research,2.410833333333333
+INF2241,Assignment 1,2022-10-12,15:05:00,2022-10-12,17:52:34,02:47:34,Course Work,2.792777777777778
+Lit Review,Reading,2022-10-12,22:39:59,2022-10-12,23:35:02,00:55:03,Research,0.9175
+Cookie Lab,Lab Meeting ,2022-10-13,10:10:00,2022-10-13,11:00:00,00:50:00,Other Activities,0.8333333333333334
+INF2241,Assignment 1,2022-10-13,11:34:24,2022-10-13,14:14:46,02:40:22,Course Work,2.6727777777777777
+INF2241,Assignment 1,2022-10-13,15:15:34,2022-10-13,15:35:30,00:19:56,Course Work,0.3322222222222222
+TA-INF2208,tutorial,2022-10-13,17:30:00,2022-10-13,19:30:00,02:00:00,TA,2
+TA-INF2208,presentation 1,2022-10-13,19:30:00,2022-10-13,20:15:00,00:45:00,TA,0.75
+INF2208,class,2022-10-13,19:30:12,2022-10-13,20:30:20,01:00:08,Learning,1.0022222222222221
+INF2241,Assignment 1,2022-10-14,11:07:32,2022-10-14,11:55:45,00:48:13,Course Work,0.8036111111111112
+Talks,Toronto Data Workshop,2022-10-14,12:00:00,2022-10-14,13:00:00,01:00:00,Learning,1
+INF3001,Class,2022-10-14,13:10:27,2022-10-14,15:00:37,01:50:10,Course Work,1.836111111111111
+INF2241,Assignment 1,2022-10-14,18:30:20,2022-10-14,22:34:16,04:03:56,Course Work,4.065555555555555
+INF2241,Assignment 1,2022-10-15,10:17:09,2022-10-15,12:33:32,02:16:23,Course Work,2.2730555555555556
+INF2241,Assignment 1,2022-10-15,13:30:57,2022-10-15,14:45:57,01:15:00,Course Work,1.25
+INF2241,Assignment 1,2022-10-15,21:30:16,2022-10-15,22:30:16,01:00:00,Course Work,1
+TA-INF2208,IPP,2022-10-17,09:01:18,2022-10-17,09:44:14,00:42:56,TA,0.7155555555555555
+Cookie Lab,Transcript Preparation Workshop,2022-10-17,10:00:00,2022-10-17,11:00:00,01:00:00,Other Activities,1
+INF2241,Reading,2022-10-17,11:25:30,2022-10-17,13:08:54,01:43:24,Course Work,1.7233333333333334
+Lit Review,Reading,2022-10-17,14:00:02,2022-10-17,15:40:39,01:40:37,Research,1.6769444444444443
+CCT419,class,2022-10-17,17:10:29,2022-10-17,19:50:29,02:40:00,Learning,2.6666666666666665
+INF2241,Assignment 1,2022-10-17,21:00:50,2022-10-17,21:58:02,00:57:12,Course Work,0.9533333333333334
+INF2241,Assignment 1 - presentation,2022-10-18,11:00:10,2022-10-18,13:00:12,02:00:02,Course Work,2.0005555555555556
+INF2241,class,2022-10-18,13:10:00,2022-10-18,16:00:00,02:50:00,Course Work,2.8333333333333335
+INF2241,Assignment 1,2022-10-18,20:00:00,2022-10-18,21:00:00,01:00:00,Course Work,1
+INF2241,Assignment 1,2022-10-19,10:30:36,2022-10-19,13:45:23,03:14:47,Course Work,3.2463888888888888
+INF2241,Assignment 1,2022-10-19,15:15:11,2022-10-19,17:33:23,02:18:12,Course Work,2.3033333333333332
+Lit Review,Reading,2022-10-19,20:44:34,2022-10-19,22:02:03,01:17:29,Research,1.291388888888889
+Cookie Lab,Lab Meeting,2022-10-20,10:10:00,2022-10-20,11:00:00,00:50:00,Other Activities,0.8333333333333334
+NA,1:1 with Anastasia,2022-10-20,11:00:00,2022-10-20,12:00:00,01:00:00,Research,1
+TA-CCT419,Prepare for class 7 and 8,2022-10-20,13:42:03,2022-10-20,13:58:20,00:16:17,TA,0.2713888888888889
+INF3001,Reading,2022-10-20,14:57:10,2022-10-20,16:36:23,01:39:13,Course Work,1.6536111111111111
+INF2241,Assignment 1,2022-10-20,16:53:06,2022-10-20,17:40:12,00:47:06,Course Work,0.785
+INF2208,class,2022-10-20,18:30:00,2022-10-20,20:45:00,02:15:00,Learning,2.25
+Lit Review,Reading,2022-10-21,10:10:03,2022-10-21,11:05:04,00:55:01,Research,0.9169444444444445
+Lit Review,Reading,2022-10-21,11:43:28,2022-10-21,12:00:54,00:17:26,Research,0.29055555555555557
+INF3001,Class,2022-10-21,13:10:00,2022-10-21,15:00:00,01:50:00,Course Work,1.8333333333333333
+Lit Review,Reading,2022-10-21,23:00:38,2022-10-22,00:00:39,01:00:01,Research,1.0002777777777778
+Lit Review,Reading,2022-10-22,09:31:02,2022-10-22,12:43:47,03:12:45,Research,3.2125
+INF2241,Reading,2022-10-22,23:30:29,2022-10-23,00:41:49,01:11:20,Course Work,1.1888888888888889
+INF2241,Reading,2022-10-23,09:42:01,2022-10-23,11:14:20,01:32:19,Course Work,1.5386111111111112
+Lit Review,Reading,2022-10-23,17:30:23,2022-10-23,19:13:45,01:43:22,Research,1.7227777777777777
+Lit Review,Reading,2022-10-23,20:10:00,2022-10-23,23:29:05,03:19:05,Research,3.3180555555555555
+TA-INF2208,GPP,2022-10-24,10:30:31,2022-10-24,11:07:03,00:36:32,TA,0.6088888888888889
+TA-CCT419,Game critique 1,2022-10-24,11:11:28,2022-10-24,13:14:05,02:02:37,TA,2.0436111111111113
+TA-CCT419,Game critique 1,2022-10-24,14:45:15,2022-10-24,15:58:59,01:13:44,TA,1.228888888888889
+TA-CCT419,Game critique 1,2022-10-24,18:18:07,2022-10-24,19:36:43,01:18:36,TA,1.31
+TA-CCT419,Game critique 1,2022-10-24,21:48:05,2022-10-25,01:45:36,03:57:31,TA,3.9586111111111113
+TA-CCT419,Game critique 1,2022-10-25,00:17:39,2022-10-25,02:00:45,01:43:06,TA,1.7183333333333333
+TA-CCT419,Game critique 1,2022-10-25,10:50:45,2022-10-25,13:30:07,02:39:22,TA,2.656111111111111
+INF2241,Class,2022-10-25,13:10:00,2022-10-25,16:00:00,02:50:00,Course Work,2.8333333333333335
+writing course,class,2022-10-28,10:10:00,2022-10-28,12:00:00,01:50:00,Learning,1.8333333333333333
+INF3001,Class,2022-10-28,13:10:00,2022-10-28,15:00:00,01:50:00,Course Work,1.8333333333333333
+TA-CCT419,Game critique 1,2022-10-28,21:30:00,2022-10-28,22:30:00,01:00:00,TA,1
+TA-CCT419,Marking + tutorial prep,2022-10-29,18:30:12,2022-10-29,20:30:13,02:00:01,TA,2.000277777777778
+INF2241,reading,2022-10-29,21:00:00,2022-10-29,22:00:00,01:00:00,Course Work,1
+Lit Review,Reading,2022-10-29,21:45:17,2022-10-30,01:20:38,03:35:21,Research,3.589166666666667
+Lit Review,Reading,2022-10-30,19:33:31,2022-10-30,23:46:32,04:13:01,Research,4.216944444444445
+Lit Review,Synthesis,2022-10-31,12:00:00,2022-10-31,14:30:00,02:30:00,Research,2.5
+TA-CCT419,teach class,2022-10-31,16:45:00,2022-10-31,20:00:00,03:15:00,TA,3.25
+Lit Review,Meeting with Naver,2022-11-01,09:00:00,2022-11-01,10:00:00,01:00:00,Research,1
+TA-CCT419,Marking,2022-11-01,10:30:00,2022-11-01,11:30:00,01:00:00,TA,1
+TA-INF2208,Mark IPPs,2022-11-01,11:30:00,2022-11-01,12:00:00,00:30:00,TA,0.5
+INF2241,class,2022-11-01,13:10:00,2022-11-01,16:00:00,02:50:00,Course Work,2.8333333333333335
+Lit Review,Organizing lit review,2022-11-02,09:00:00,2022-11-02,11:00:00,02:00:00,Research,2
+TA-CCT419,Marking,2022-11-02,14:30:59,2022-11-02,14:45:00,00:14:01,TA,0.2336111111111111
+Lit Review,Reading,2022-11-02,14:57:22,2022-11-02,17:23:42,02:26:20,Research,2.438888888888889
+Cookie Lab,Lab Meeting,2022-11-03,10:10:20,2022-11-03,11:00:30,00:50:10,Other Activities,0.8361111111111111
+NA,Admin - TA applications,2022-11-03,11:00:47,2022-11-03,12:30:10,01:29:23,Admin,1.4897222222222222
+INF3001,Reading,2022-11-03,14:00:31,2022-11-03,15:00:48,01:00:17,Course Work,1.0047222222222223
+writing course,assignment,2022-11-03,15:00:07,2022-11-03,16:00:35,01:00:28,Learning,1.0077777777777779
+TA-INF2208,Presentation,2022-11-03,18:30:55,2022-11-03,19:20:12,00:49:17,TA,0.8213888888888888
+INF2208,class,2022-11-03,19:20:35,2022-11-03,20:45:35,01:25:00,Learning,1.4166666666666667
+writing course,class,2022-11-04,10:10:40,2022-11-04,11:30:41,01:20:01,Learning,1.333611111111111
+INF3001,class,2022-11-04,13:10:00,2022-11-04,15:00:00,01:50:00,Course Work,1.8333333333333333
+Lit Review,reading,2022-11-04,21:00:00,2022-11-04,23:15:00,02:15:00,Research,2.25
+Lit Review,Reading,2022-11-05,11:00:00,2022-11-05,12:20:00,01:20:00,Research,1.3333333333333333
+Lit Review,Reading,2022-11-05,17:00:05,2022-11-05,18:00:05,01:00:00,Research,1
+Lit Review,Reading,2022-11-06,11:40:21,2022-11-06,12:44:06,01:03:45,Research,1.0625
+TA-CCT419,prep lecture,2022-11-06,22:30:00,2022-11-06,23:12:00,00:42:00,TA,0.7
+TA-INF2208,GPP,2022-11-07,12:27:30,2022-11-07,12:46:24,00:18:54,TA,0.315
+TA-CCT419,prep + lecture,2022-11-07,16:15:00,2022-11-07,20:00:00,03:45:00,TA,3.75
+TA-CCT419,Marking,2022-11-08,21:32:30,2022-11-08,23:37:54,02:05:24,TA,2.09
+TA-CCT419,Marking,2022-11-10,14:28:05,2022-11-10,18:46:37,04:18:32,TA,4.308888888888889
+TA-CCT419,Marking,2022-11-10,21:16:50,2022-11-10,23:38:21,02:21:31,TA,2.358611111111111
+TA-CCT419,Marking,2022-11-10,23:53:18,2022-11-11,01:14:51,01:21:33,TA,1.3591666666666666
+writing course,class,2022-11-11,10:10:39,2022-11-11,12:03:02,01:52:23,Learning,1.8730555555555555
+INF3001,essay,2022-11-12,14:30:34,2022-11-12,17:49:28,03:18:54,Course Work,3.315
+INF3001,essay,2022-11-12,19:39:39,2022-11-12,21:18:15,01:38:36,Course Work,1.6433333333333333
+INF3001,essay,2022-11-13,10:16:10,2022-11-13,12:53:26,02:37:16,Course Work,2.621111111111111
+INF2241,Reading,2022-11-13,21:16:10,2022-11-13,22:50:38,01:34:28,Course Work,1.5744444444444445
+Lit Review,Synthesis,2022-11-14,11:24:17,2022-11-14,13:06:00,01:41:43,Research,1.6952777777777779
+Lit Review,Synthesis,2022-11-14,14:00:23,2022-11-14,14:29:37,00:29:14,Research,0.4872222222222222
+TA-CCT419,Marking,2022-11-14,16:22:24,2022-11-14,16:46:52,00:24:28,TA,0.4077777777777778
+TA-CCT419,Marking,2022-11-15,11:00:21,2022-11-15,11:33:01,00:32:40,TA,0.5444444444444444
+INF2241,Class,2022-11-15,13:10:00,2022-11-15,16:00:00,02:50:00,Course Work,2.8333333333333335
+TA-INF2208,Assignment 1,2022-11-15,16:52:54,2022-11-15,18:04:33,01:11:39,TA,1.1941666666666666
+TA-INF2208,Assignment 1,2022-11-15,18:09:10,2022-11-15,18:53:52,00:44:42,TA,0.745
+TA-INF2208,Assignment 1,2022-11-15,20:57:07,2022-11-15,23:29:22,02:32:15,TA,2.5375
+Lit Review,paper review,2022-11-16,11:00:06,2022-11-16,11:30:06,00:30:00,Research,0.5
+Talks,PhD publishing workshop,2022-11-16,11:00:09,2022-11-16,13:00:57,02:00:48,Learning,2.013333333333333
+Lit Review,paper review,2022-11-16,15:00:07,2022-11-16,16:00:09,01:00:02,Research,1.0005555555555556
+Lit Review,paper review,2022-11-16,20:45:58,2022-11-16,22:53:20,02:07:22,Research,2.122777777777778
+Cookie Lab,Lab Meeting,2022-11-17,10:10:00,2022-11-17,11:00:00,00:50:00,Other Activities,0.8333333333333334
+NA,TA discussion with Velian,2022-11-17,13:00:00,2022-11-17,13:30:00,00:30:00,Admin,0.5
+Lit Review,Meeting,2022-11-17,14:00:00,2022-11-17,15:00:00,01:00:00,Research,1
+INF2241,Assignment 2,2022-11-17,14:30:00,2022-11-17,18:00:00,03:30:00,Course Work,3.5
+INF2208,class,2022-11-17,18:30:50,2022-11-17,20:30:37,01:59:47,Learning,1.996388888888889
+INF2241,Assignment 2,2022-11-17,21:50:00,2022-11-17,22:20:00,00:30:00,Course Work,0.5
+INF3001,Reading,2022-11-17,22:20:56,2022-11-18,00:26:00,02:05:04,Course Work,2.0844444444444443
+writing course,class,2022-11-18,10:10:00,2022-11-18,12:00:00,01:50:00,Learning,1.8333333333333333
+INF3001,class,2022-11-18,13:10:00,2022-11-18,15:00:00,01:50:00,Course Work,1.8333333333333333
+Talks,Qual Analysis Workshop - Slides,2022-11-18,15:30:00,2022-11-18,16:00:00,00:30:00,Learning,0.5
+Talks,Qualitative Analysis Workshop,2022-11-19,09:30:00,2022-11-19,15:00:00,05:30:00,Learning,5.5
+INF2241,Assignment 2,2022-11-19,17:54:48,2022-11-19,21:30:25,03:35:37,Course Work,3.593611111111111
+INF2241,Assignment 2,2022-11-20,12:12:01,2022-11-20,13:00:46,00:48:45,Course Work,0.8125
+INF2241,Assignment 2,2022-11-20,18:23:57,2022-11-20,20:33:32,02:09:35,Course Work,2.1597222222222223
+INF2241,Assignment 2,2022-11-21,09:47:55,2022-11-21,10:57:20,01:09:25,Course Work,1.1569444444444446
+TA-INF2208,A1 calibration,2022-11-21,11:00:00,2022-11-21,11:20:00,00:20:00,TA,0.3333333333333333
+INF2241,Assignment 2,2022-11-21,11:30:36,2022-11-21,13:00:36,01:30:00,Course Work,1.5
+INF2241,Assignment 2,2022-11-21,13:22:39,2022-11-21,14:09:26,00:46:47,Course Work,0.7797222222222222
+TA-INF2208,A1 calibration,2022-11-22,08:17:44,2022-11-22,08:53:59,00:36:15,TA,0.6041666666666666
+Lit Review,Meeting with Naver,2022-11-22,08:59:00,2022-11-22,09:29:00,00:30:00,Research,0.5
+TA-INF2208,A1 calibration,2022-11-22,09:30:13,2022-11-22,10:16:13,00:46:00,TA,0.7666666666666667
+INF2241,presentation + class,2022-11-22,11:30:00,2022-11-22,16:00:00,04:30:00,Course Work,4.5
+INF2241,Assignment 2,2022-11-22,16:00:00,2022-11-22,17:45:00,01:45:00,Course Work,1.75
+TA-INF2208,A1 calibration and IPP,2022-11-22,20:00:03,2022-11-22,21:05:17,01:05:14,TA,1.0872222222222223
+INF2241,Assignment 2,2022-11-22,21:16:51,2022-11-22,22:59:35,01:42:44,Course Work,1.7122222222222223
+Reading,Paper reading,2022-11-23,08:50:11,2022-11-23,09:54:29,01:04:18,Research,1.0716666666666668
+INF2241,Assignment 2,2022-11-23,10:25:37,2022-11-23,11:31:50,01:06:13,Course Work,1.103611111111111
+INF2241,Reading,2022-11-23,13:22:04,2022-11-23,14:32:36,01:10:32,Course Work,1.1755555555555555
+INF2241,Reading,2022-11-23,14:47:34,2022-11-23,15:58:03,01:10:29,Course Work,1.1747222222222222
+INF2241,Assignment 2,2022-11-23,20:37:58,2022-11-23,23:16:53,02:38:55,Course Work,2.6486111111111112
+Lit Review,Reading,2022-11-24,09:12:19,2022-11-24,10:10:06,00:57:47,Research,0.9630555555555556
+Cookie Lab,Lab Meeting,2022-11-24,10:10:00,2022-11-24,11:05:00,00:55:00,Other Activities,0.9166666666666666
+writing course,exercises,2022-11-24,11:35:47,2022-11-24,12:30:10,00:54:23,Learning,0.9063888888888889
+INF3001,reading,2022-11-24,14:24:00,2022-11-24,14:54:00,00:30:00,Course Work,0.5
+OAPerception,revision,2022-11-24,14:54:47,2022-11-24,17:38:46,02:43:59,Research,2.7330555555555556
+INF2208,class,2022-11-24,18:40:20,2022-11-24,20:26:55,01:46:35,Learning,1.7763888888888888
+TA-INF2208,G5 remark,2022-11-25,10:10:59,2022-11-25,12:00:59,01:50:00,TA,1.8333333333333333
+INF3001,class,2022-11-25,13:10:00,2022-11-25,15:00:00,01:50:00,Course Work,1.8333333333333333
+TA-CCT419,additional game critiques,2022-11-26,19:19:20,2022-11-26,20:21:32,01:02:12,TA,1.0366666666666666
+INF3001,assignment,2022-11-26,21:58:30,2022-11-26,23:40:26,01:41:56,Course Work,1.698888888888889
+INF3001,assignment,2022-11-27,09:00:37,2022-11-27,09:45:37,00:45:00,Course Work,0.75
+INF2241,Reading,2022-11-27,11:30:00,2022-11-27,12:30:00,01:00:00,Course Work,1
+INF2241,Reading,2022-11-27,13:45:42,2022-11-27,14:26:42,00:41:00,Course Work,0.6833333333333333
+OAPerception,revision,2022-11-28,09:12:39,2022-11-28,11:02:01,01:49:22,Research,1.8227777777777778
+TA-INF2208,GPP,2022-11-28,11:00:55,2022-11-28,11:24:37,00:23:42,TA,0.395
+Reading,Paper reading,2022-11-28,11:47:17,2022-11-28,13:12:15,01:24:58,Research,1.416111111111111
+Lit Review,Reading,2022-11-28,13:51:18,2022-11-28,14:30:49,00:39:31,Research,0.6586111111111111
+Lit Review,Synthesis,2022-11-28,17:00:47,2022-11-28,19:30:12,02:29:25,Research,2.4902777777777776
+INF2241,Reading,2022-11-29,09:26:59,2022-11-29,11:42:33,02:15:34,Course Work,2.2594444444444446
+INF2241,class + assignment 3,2022-11-29,13:10:00,2022-11-29,16:00:00,02:50:00,Course Work,2.8333333333333335
+INF2241,Assignment 3,2022-11-29,16:30:47,2022-11-29,18:20:12,01:49:25,Course Work,1.823611111111111
+INF2241,Reading,2022-11-29,22:18:38,2022-11-29,23:17:57,00:59:19,Course Work,0.9886111111111111
+Reading,Synthesis,2022-11-30,09:06:15,2022-11-30,09:55:21,00:49:06,Research,0.8183333333333334
+Lit Review,Reading and Synthesis,2022-11-30,09:55:24,2022-11-30,10:36:36,00:41:12,Research,0.6866666666666666
+Lit Review,Reading and Synthesis,2022-11-30,11:00:40,2022-11-30,12:03:11,01:02:31,Research,1.0419444444444443
+Lit Review,Reading and Synthesis,2022-11-30,12:49:13,2022-11-30,13:32:39,00:43:26,Research,0.7238888888888889
+Lit Review,Reading and Synthesis,2022-11-30,15:45:57,2022-11-30,18:15:21,02:29:24,Research,2.49
+Cookie Lab,meeting,2022-12-01,10:10:00,2022-12-01,11:00:00,00:50:00,Other Activities,0.8333333333333334
+NA,Admin - Reading course,2022-12-01,12:00:00,2022-12-01,12:30:00,00:30:00,Admin,0.5
+NA,Admin - Anastasia 1:1,2022-12-01,15:15:00,2022-12-01,16:30:00,01:15:00,Research,1.25
+INF2208,class,2022-12-01,18:30:00,2022-12-01,20:30:00,02:00:00,Learning,2
+INF3001,Reading,2022-12-02,10:28:44,2022-12-02,11:20:03,00:51:19,Course Work,0.8552777777777778
+Service Work,Supervisor student task force,2022-12-02,11:30:00,2022-12-02,13:00:00,01:30:00,Other Activities,1.5
+INF3001,Class,2022-12-02,13:10:00,2022-12-02,15:00:00,01:50:00,Course Work,1.8333333333333333
+INF2241,Assignment 3,2022-12-02,16:30:00,2022-12-02,17:44:00,01:14:00,Course Work,1.2333333333333334
+TA-CCT419,Usability report,2022-12-02,17:56:40,2022-12-02,22:00:29,04:03:49,TA,4.063611111111111
+TA-CCT419,Usability report,2022-12-04,09:55:30,2022-12-04,11:57:56,02:02:26,TA,2.0405555555555557
+INF2241,Assignment 3,2022-12-04,12:29:43,2022-12-04,14:00:47,01:31:04,Course Work,1.5177777777777777
+Reading,Paper reading and ChatGPT,2022-12-04,22:15:52,2022-12-04,23:52:47,01:36:55,Research,1.6152777777777778
+TA-INF2208,IPP,2022-12-05,11:24:59,2022-12-05,11:43:24,00:18:25,TA,0.30694444444444446
+Reading,Synthesis,2022-12-05,15:02:45,2022-12-05,16:29:33,01:26:48,Research,1.4466666666666668
+TA-CCT419,Final presentation,2022-12-05,17:10:00,2022-12-05,20:00:00,02:50:00,TA,2.8333333333333335
+INF2241,FinaBot showcase,2022-12-06,09:30:00,2022-12-06,16:00:00,06:30:00,Course Work,6.5
+TA-CCT419,Final game - #7,2022-12-07,11:00:00,2022-12-07,12:15:00,01:15:00,TA,1.25
+Cookie Lab,Lab Meeting,2022-12-08,10:10:00,2022-12-08,10:40:00,00:30:00,Other Activities,0.5
+TA-CCT419,Final game - #6,2022-12-08,11:10:22,2022-12-08,12:30:23,01:20:01,TA,1.333611111111111
+TA-INF2208,Final presentations,2022-12-08,18:00:00,2022-12-08,20:10:00,02:10:00,TA,2.1666666666666665
+TA-CCT419,Final game - #2,2022-12-08,20:21:39,2022-12-08,21:51:39,01:30:00,TA,1.5
+TA-INF2192,Meeting,2022-12-09,10:00:00,2022-12-09,11:00:00,01:00:00,TA,1
+Service Work,Supervisor student task force,2022-12-09,11:00:00,2022-12-09,13:00:00,02:00:00,Other Activities,2
+TA-CCT419,"Final game - #1, 4, 9",2022-12-09,20:30:43,2022-12-09,23:37:45,03:07:02,TA,3.1172222222222223
+TA-CCT419,"Final game - #8, 10",2022-12-10,11:30:01,2022-12-10,15:00:01,03:30:00,TA,3.5
+TA-CCT419,Final game - #5,2022-12-10,22:30:17,2022-12-11,00:32:18,02:02:01,TA,2.033611111111111
+INF2241,Assignment 3,2022-12-11,09:40:00,2022-12-11,11:45:00,02:05:00,Course Work,2.0833333333333335
+INF2241,Assignment 3,2022-12-11,19:39:18,2022-12-11,21:23:44,01:44:26,Course Work,1.7405555555555556
+INF2241,Assignment 3,2022-12-11,21:30:42,2022-12-11,23:21:48,01:51:06,Course Work,1.8516666666666666
+Lit Review,Synthesis,2022-12-12,09:55:56,2022-12-12,11:31:32,01:35:36,Research,1.5933333333333333
+Network,Meeting with Matt,2022-12-12,13:55:00,2022-12-12,14:35:00,00:40:00,Admin,0.6666666666666666
+INF2241,Assignment 3,2022-12-12,15:30:20,2022-12-12,18:32:20,03:02:00,Course Work,3.033333333333333
+Lit Review,Synthesis,2022-12-12,20:10:25,2022-12-12,22:26:17,02:15:52,Research,2.2644444444444445
+Lit Review,Meeting with Naver,2022-12-13,09:00:00,2022-12-13,10:10:00,01:10:00,Research,1.1666666666666667
+TA-INF2208,Final presentations,2022-12-13,11:00:00,2022-12-13,11:53:00,00:53:00,TA,0.8833333333333333
+Talks,Connaught Public Impact Scholarship Info Session,2022-12-13,13:00:00,2022-12-13,14:10:00,01:10:00,Learning,1.1666666666666667
+INF2241,Assignment 3,2022-12-14,08:55:02,2022-12-14,12:07:16,03:12:14,Course Work,3.203888888888889
+TA-INF2208,final video,2022-12-15,10:00:00,2022-12-15,11:00:00,01:00:00,TA,1
+TA-INF2208,final video,2022-12-16,10:00:01,2022-12-16,11:00:03,01:00:02,TA,1.0005555555555556
+TA-INF2208,final video,2022-12-17,11:00:09,2022-12-17,12:31:10,01:31:01,TA,1.5169444444444444
+TA-INF2208,final report,2022-12-17,12:40:57,2022-12-17,13:21:48,00:40:51,TA,0.6808333333333333
+TA-INF2208,final report,2022-12-17,14:00:56,2022-12-17,15:25:57,01:25:01,TA,1.4169444444444443
+TA-INF2208,final report,2022-12-17,21:40:35,2022-12-17,23:50:27,02:09:52,TA,2.1644444444444444
+NA,Admin - planning for holiday break,2022-12-18,17:15:20,2022-12-18,17:44:24,00:29:04,Admin,0.48444444444444446
+INF3104,Prep,2022-12-18,17:49:21,2022-12-18,20:14:27,02:25:06,Course Work,2.4183333333333334
+INF3104,Prep,2022-12-18,22:00:48,2022-12-18,23:30:54,01:30:06,Course Work,1.5016666666666667
+Lit Review,Reading,2022-12-19,11:05:07,2022-12-19,12:00:36,00:55:29,Research,0.9247222222222222
+Lit Review,Search term,2022-12-20,21:31:37,2022-12-21,00:41:25,03:09:48,Research,3.1633333333333336
+NA,"Admin - learning journal, reflect on Fall 2022",2023-01-01,11:33:00,2023-01-01,13:03:00,01:30:00,Admin,1.5
+Reading,Summarize papers,2023-01-03,08:38:28,2023-01-03,10:11:19,01:32:51,Research,1.5475
+Reading,Summarize papers,2023-01-03,12:50:48,2023-01-03,13:48:51,00:58:03,Research,0.9675
+Reading,Summarize papers,2023-01-03,13:48:47,2023-01-03,13:48:47,00:00:00,Research,0
+Reading,Summarize papers,2023-01-03,16:33:52,2023-01-03,17:22:16,00:48:24,Research,0.8066666666666666
+TA-INF2192,introduction video,2023-01-04,09:15:00,2023-01-04,09:30:00,00:15:00,TA,0.25
+Lit Review,PRISMA search,2023-01-04,09:50:47,2023-01-04,12:17:54,02:27:07,Research,2.4519444444444445
+Lit Review,PRISMA search,2023-01-04,13:19:02,2023-01-04,14:32:17,01:13:15,Research,1.2208333333333334
+Reading,Summarize papers,2023-01-05,08:45:28,2023-01-05,10:31:46,01:46:18,Research,1.7716666666666667
+Lit Review,paper review,2023-01-05,19:00:09,2023-01-05,19:32:10,00:32:01,Research,0.5336111111111111
+Lit Review,paper review,2023-01-06,08:32:30,2023-01-06,11:02:58,02:30:28,Research,2.5077777777777777
+INF2169,class,2023-01-09,11:10:00,2023-01-09,13:00:00,01:50:00,Course Work,1.8333333333333333
+INF3104,class,2023-01-09,13:15:00,2023-01-09,15:45:00,02:30:00,Course Work,2.5
+INF3104,paper 1,2023-01-09,21:00:08,2023-01-09,23:00:01,01:59:53,Course Work,1.9980555555555555
+NA,Admin - payroll,2023-01-10,10:17:46,2023-01-10,10:51:48,00:34:02,Admin,0.5672222222222222
+TA-INF2192,meeting + set up office hours,2023-01-10,14:00:00,2023-01-10,15:30:00,01:30:00,TA,1.5
+Cookie Lab,set up meeting poll,2023-01-10,15:37:00,2023-01-10,16:30:00,00:53:00,Other Activities,0.8833333333333333
+NA,Admin - set up term schedule,2023-01-10,16:11:04,2023-01-10,16:54:35,00:43:31,Admin,0.7252777777777778
+Professional,personal website,2023-01-10,19:26:39,2023-01-10,21:18:16,01:51:37,Other Activities,1.8602777777777777
+Professional,personal website,2023-01-11,09:00:42,2023-01-11,13:00:11,03:59:29,Other Activities,3.991388888888889
+Professional,personal website,2023-01-11,18:00:10,2023-01-11,18:45:10,00:45:00,Other Activities,0.75
+Lit Review,paper review,2023-01-11,19:15:34,2023-01-11,19:46:24,00:30:50,Research,0.5138888888888888
+Lit Review,paper review,2023-01-11,21:38:58,2023-01-11,23:00:19,01:21:21,Research,1.3558333333333332
+Professional,update resume,2023-01-12,08:45:38,2023-01-12,12:48:28,04:02:50,Other Activities,4.0472222222222225
+Lit Review,paper review,2023-01-12,15:42:03,2023-01-12,17:57:59,02:15:56,Research,2.2655555555555558
+Lit Review,paper review,2023-01-13,09:05:06,2023-01-13,11:25:50,02:20:44,Research,2.3455555555555554
+INF3104,class prep - ch2,2023-01-13,12:14:00,2023-01-13,16:15:54,04:01:54,Course Work,4.031666666666666
+INF3104,class prep - ch3,2023-01-13,21:10:41,2023-01-13,23:21:47,02:11:06,Course Work,2.185
+Professional,personal website,2023-01-14,16:14:47,2023-01-14,18:06:16,01:51:29,Other Activities,1.8580555555555556
+Professional,personal website,2023-01-14,21:30:33,2023-01-14,22:43:23,01:12:50,Other Activities,1.2138888888888888
+INF3104,class prep - ch3,2023-01-14,22:43:25,2023-01-15,00:05:17,01:21:52,Course Work,1.3644444444444443
+INF2169,review week 1,2023-01-15,11:00:10,2023-01-15,12:19:06,01:18:56,Course Work,1.3155555555555556
+Lit Review,paper review,2023-01-15,17:26:51,2023-01-15,20:30:09,03:03:18,Research,3.055
+INF3104,class prep - ch3,2023-01-16,08:15:03,2023-01-16,08:47:28,00:32:25,Course Work,0.5402777777777777
+INF2169,class,2023-01-16,11:10:00,2023-01-16,13:00:00,01:50:00,Course Work,1.8333333333333333
+INF3104,class,2023-01-16,13:15:00,2023-01-16,15:15:00,02:00:00,Course Work,2
+Lit Review,paper review,2023-01-16,20:55:50,2023-01-16,23:23:54,02:28:04,Research,2.4677777777777776
+Lit Review,meeting & perception categories,2023-01-17,08:40:08,2023-01-17,11:34:45,02:54:37,Research,2.910277777777778
+Service Work,Supervisor student task force,2023-01-17,11:48:16,2023-01-17,12:21:32,00:33:16,Other Activities,0.5544444444444444
+INF3104,assignments,2023-01-17,13:27:18,2023-01-17,16:49:50,03:22:32,Course Work,3.3755555555555556
+INF3104,prep - ch4,2023-01-17,22:56:00,2023-01-17,23:26:00,00:30:00,Course Work,0.5
+Lit Review,perception categories,2023-01-18,09:57:02,2023-01-18,12:40:26,02:43:24,Research,2.723333333333333
+Lit Review,paper review,2023-01-18,14:58:58,2023-01-18,18:15:06,03:16:08,Research,3.2688888888888887
+Lit Review,paper structure,2023-01-19,08:45:00,2023-01-19,09:34:00,00:49:00,Research,0.8166666666666667
+INF3104,paper 1,2023-01-19,16:48:28,2023-01-19,19:02:08,02:13:40,Course Work,2.227777777777778
+INF3104,paper 1,2023-01-19,21:12:16,2023-01-20,00:06:09,02:53:53,Course Work,2.8980555555555556
+Cookie Lab,Lab Meeting,2023-01-20,11:00:00,2023-01-20,11:45:00,00:45:00,Other Activities,0.75
+Lit Review,paper structure,2023-01-20,12:00:00,2023-01-20,13:00:00,01:00:00,Research,1
+INF2169,problem statement,2023-01-20,14:15:00,2023-01-20,15:30:00,01:15:00,Course Work,1.25
+Lit Review,paper structure,2023-01-20,15:15:55,2023-01-20,16:15:55,01:00:00,Research,1
+Lit Review,paper review,2023-01-21,11:26:46,2023-01-21,12:41:34,01:14:48,Research,1.2466666666666666
+INF3104,tutorial 3,2023-01-21,16:33:42,2023-01-21,17:50:24,01:16:42,Course Work,1.2783333333333333
+INF3104,tutorial 3,2023-01-21,22:00:32,2023-01-22,00:12:32,02:12:00,Course Work,2.2
+INF3104,paper 1,2023-01-22,16:22:33,2023-01-23,03:05:51,10:43:18,Course Work,10.721666666666666
+INF2169,class,2023-01-23,11:10:00,2023-01-23,13:00:00,01:50:00,Course Work,1.8333333333333333
+INF3104,class,2023-01-23,13:15:00,2023-01-23,16:00:00,02:45:00,Course Work,2.75
+Lit Review,paper review,2023-01-23,22:30:17,2023-01-23,23:00:28,00:30:11,Research,0.5030555555555556
+TA-INF2192,Meeting,2023-01-24,13:00:00,2023-01-24,13:20:00,00:20:00,TA,0.3333333333333333
+Lit Review,paper review,2023-01-24,15:53:29,2023-01-24,18:10:19,02:16:50,Research,2.2805555555555554
+Lit Review,writing - methods,2023-01-24,21:00:02,2023-01-24,23:55:06,02:55:04,Research,2.917777777777778
+Lit Review,paper review,2023-01-25,10:08:03,2023-01-25,13:04:09,02:56:06,Research,2.935
+Lit Review,paper review,2023-01-25,13:50:05,2023-01-25,15:40:23,01:50:18,Research,1.8383333333333334
+Lit Review,writing - introduction,2023-01-25,21:30:57,2023-01-25,23:30:20,01:59:23,Research,1.9897222222222222
+INF2169,research,2023-01-26,10:14:22,2023-01-26,12:08:22,01:54:00,Course Work,1.9
+INF3104,prep - ch5,2023-01-26,16:56:30,2023-01-26,19:14:09,02:17:39,Course Work,2.2941666666666665
+Lit Review,Simplify framework,2023-01-26,21:00:32,2023-01-26,22:20:58,01:20:26,Research,1.3405555555555555
+INF2169,research,2023-01-26,22:30:49,2023-01-27,00:58:57,02:28:08,Course Work,2.468888888888889
+Cookie Lab,Lab Meeting,2023-01-27,11:00:00,2023-01-27,11:45:00,00:45:00,Other Activities,0.75
+INF2169,Interview questions,2023-01-27,12:30:00,2023-01-27,13:00:00,00:30:00,Course Work,0.5
+NA,Admin - INF3006 syllabus,2023-01-27,13:00:00,2023-01-27,14:00:00,01:00:00,Admin,1
+Lit Review,rework framework with Anastasia,2023-01-27,13:30:59,2023-01-27,14:30:00,00:59:01,Research,0.9836111111111111
+Cookie Lab,Create research Kanban board,2023-01-27,15:00:45,2023-01-27,15:30:46,00:30:01,Other Activities,0.5002777777777778
+TA-INF2192,project status reports,2023-01-27,16:10:38,2023-01-27,17:39:32,01:28:54,TA,1.4816666666666667
+Lit Review,repopulate framework,2023-01-27,21:26:42,2023-01-27,23:22:39,01:55:57,Research,1.9325
+Lit Review,repopulate framework,2023-01-28,11:50:26,2023-01-28,13:15:09,01:24:43,Research,1.4119444444444444
+Lit Review,overleaf - content for sections,2023-01-28,14:15:12,2023-01-28,17:20:45,03:05:33,Research,3.0925
+Lit Review,overleaf - content for sections,2023-01-28,21:40:18,2023-01-28,23:30:59,01:50:41,Research,1.8447222222222222
+Lit Review,overleaf - content for sections,2023-01-29,11:32:58,2023-01-29,13:40:18,02:07:20,Research,2.1222222222222222
+Lit Review,overleaf - writing perception setion,2023-01-29,18:00:16,2023-01-29,19:47:58,01:47:42,Research,1.795
+INF2169,RQ and study design,2023-01-29,20:59:37,2023-01-29,22:19:42,01:20:05,Course Work,1.3347222222222221
+INF3104,prep - ch5,2023-01-29,22:21:44,2023-01-29,23:36:24,01:14:40,Course Work,1.2444444444444445
+Lit Review,overleaf - writing perception setion,2023-01-30,10:13:10,2023-01-30,10:48:21,00:35:11,Research,0.5863888888888888
+INF2169,review and class,2023-01-30,10:48:30,2023-01-30,13:25:23,02:36:53,Course Work,2.6147222222222224
+INF3104,class,2023-01-30,13:10:00,2023-01-30,16:00:00,02:50:00,Course Work,2.8333333333333335
+INF2169,RQs and interview questions,2023-01-30,18:00:17,2023-01-30,19:32:30,01:32:13,Course Work,1.5369444444444444
+Lit Review,paper review,2023-01-30,22:12:41,2023-01-30,23:09:43,00:57:02,Research,0.9505555555555556
+Lit Review,overleaf - writing perception setion,2023-01-31,09:47:20,2023-01-31,13:16:38,03:29:18,Research,3.4883333333333333
+Lit Review,overleaf - writing,2023-01-31,17:29:22,2023-01-31,19:20:31,01:51:09,Research,1.8525
+Lit Review,overleaf - writing,2023-01-31,21:53:07,2023-01-31,22:55:41,01:02:34,Research,1.0427777777777778
+Lit Review,writing - review,2023-02-01,15:00:00,2023-02-01,16:00:00,01:00:00,Research,1
+Lit Review,paper review,2023-02-01,16:40:32,2023-02-01,20:01:50,03:21:18,Research,3.355
+Lit Review,paper review,2023-02-01,21:17:52,2023-02-01,21:41:25,00:23:33,Research,0.3925
+NA,Grant - SRI scholarship,2023-02-01,21:41:28,2023-02-02,00:10:23,02:28:55,Admin,2.4819444444444443
+NA,Grant - SRI scholarship,2023-02-02,09:56:51,2023-02-02,11:13:40,01:16:49,Admin,1.2802777777777778
+Lit Review,Story of report,2023-02-02,17:30:00,2023-02-02,19:15:00,01:45:00,Research,1.75
+INF3104,paper 1 + quiz,2023-02-02,21:20:32,2023-02-03,01:02:23,03:41:51,Course Work,3.6975
+Cookie Lab,Lab Meeting,2023-02-03,11:00:00,2023-02-03,11:20:00,00:20:00,Other Activities,0.3333333333333333
+NA,Admin - Sarah English teaching talk,2023-02-03,11:30:00,2023-02-03,13:30:00,02:00:00,Admin,2
+Cookie Lab,Coding workshop,2023-02-03,16:00:00,2023-02-03,17:30:00,01:30:00,Other Activities,1.5
+TA-INF2192,project status 3,2023-02-03,19:43:00,2023-02-03,20:13:00,00:30:00,TA,0.5
+NA,Grant - SRI scholarship,2023-02-03,20:59:44,2023-02-04,00:16:53,03:17:09,Admin,3.285833333333333
+NA,Grant - SRI scholarship,2023-02-04,11:02:25,2023-02-04,13:36:32,02:34:07,Admin,2.568611111111111
+NA,Grant - SRI scholarship,2023-02-04,15:00:52,2023-02-04,19:01:37,04:00:45,Admin,4.0125
+Lit Review,paper review,2023-02-04,21:18:31,2023-02-04,23:57:38,02:39:07,Research,2.6519444444444447
+Lit Review,paper review,2023-02-05,14:23:03,2023-02-05,15:42:49,01:19:46,Research,1.3294444444444444
+Lit Review,paper review,2023-02-05,17:00:07,2023-02-05,19:28:24,02:28:17,Research,2.471388888888889
+NA,Grant - SRI scholarship,2023-02-05,19:35:55,2023-02-05,20:21:06,00:45:11,Admin,0.7530555555555556
+Lit Review,paper review,2023-02-05,21:16:21,2023-02-05,23:41:44,02:25:23,Research,2.4230555555555555
+INF2169,review + class,2023-02-06,10:03:54,2023-02-06,13:00:19,02:56:25,Course Work,2.9402777777777778
+INF3104,class,2023-02-06,13:20:28,2023-02-06,16:13:46,02:53:18,Course Work,2.888333333333333
+Lit Review,paper review,2023-02-06,19:34:41,2023-02-06,23:39:42,04:05:01,Research,4.083611111111111
+Lit Review,Naver meeting,2023-02-07,09:00:00,2023-02-07,10:00:00,01:00:00,Research,1
+Lit Review,paper review,2023-02-07,10:35:46,2023-02-07,14:40:35,04:04:49,Research,4.080277777777778
+Lit Review,paper review,2023-02-07,17:15:50,2023-02-07,18:53:21,01:37:31,Research,1.6252777777777778
+Lit Review,paper review,2023-02-07,20:50:23,2023-02-07,23:40:59,02:50:36,Research,2.8433333333333333
+TA-INF2192,office hour + grade re-evaluation,2023-02-08,09:45:00,2023-02-08,10:30:00,00:45:00,TA,0.75
+Lit Review,paper review,2023-02-08,10:59:46,2023-02-08,13:10:32,02:10:46,Research,2.1794444444444445
+Lit Review,paper review,2023-02-08,13:45:10,2023-02-08,15:39:55,01:54:45,Research,1.9125
+Lit Review,data exploration,2023-02-08,18:00:47,2023-02-08,18:43:52,00:43:05,Research,0.7180555555555556
+Lit Review,data exploration,2023-02-08,19:32:50,2023-02-09,00:07:50,04:35:00,Research,4.583333333333333
+Lit Review,paper writing,2023-02-09,11:18:27,2023-02-09,16:01:34,04:43:07,Research,4.7186111111111115
+Lit Review,paper writing,2023-02-09,16:50:29,2023-02-09,19:41:29,02:51:00,Research,2.85
+Lit Review,paper writing,2023-02-09,21:15:38,2023-02-09,23:25:49,02:10:11,Research,2.169722222222222
+Cookie Lab,Lab Meeting,2023-02-10,11:00:00,2023-02-10,12:00:00,01:00:00,Other Activities,1
+TA-INF2192,project status reports,2023-02-10,12:00:00,2023-02-10,12:48:00,00:48:00,TA,0.8
+Lit Review,paper writing,2023-02-10,13:47:13,2023-02-10,14:31:01,00:43:48,Research,0.73
+INF3104,quiz 5,2023-02-10,14:33:37,2023-02-10,15:27:12,00:53:35,Course Work,0.8930555555555556
+Lit Review,paper writing,2023-02-10,16:09:46,2023-02-10,17:29:43,01:19:57,Research,1.3325
+Lit Review,paper writing,2023-02-10,21:52:13,2023-02-10,23:29:21,01:37:08,Research,1.6188888888888888
+Lit Review,paper writing,2023-02-11,12:00:06,2023-02-11,12:57:53,00:57:47,Research,0.9630555555555556
+Lit Review,paper writing,2023-02-11,16:00:56,2023-02-11,18:20:19,02:19:23,Research,2.3230555555555554
+Lit Review,paper writing,2023-02-11,18:48:20,2023-02-11,20:52:05,02:03:45,Research,2.0625
+Lit Review,paper writing,2023-02-11,21:31:39,2023-02-12,00:27:36,02:55:57,Research,2.9325
+Lit Review,paper writing,2023-02-12,09:43:27,2023-02-12,13:05:18,03:21:51,Research,3.3641666666666667
+Lit Review,paper writing,2023-02-12,13:50:36,2023-02-12,15:19:25,01:28:49,Research,1.4802777777777778
+Lit Review,paper writing,2023-02-12,17:10:34,2023-02-12,19:25:18,02:14:44,Research,2.2455555555555557
+Lit Review,paper writing,2023-02-12,20:13:54,2023-02-12,21:48:26,01:34:32,Research,1.5755555555555556
+Lit Review,paper writing,2023-02-12,22:41:47,2023-02-12,23:16:08,00:34:21,Research,0.5725
+INF2169,class,2023-02-13,11:10:00,2023-02-13,13:00:00,01:50:00,Course Work,1.8333333333333333
+Lit Review,review with AK,2023-02-13,17:15:00,2023-02-13,18:15:00,01:00:00,Research,1
+Lit Review,paper writing,2023-02-13,22:00:15,2023-02-13,23:40:02,01:39:47,Research,1.6630555555555555
+TA-INF2192,class feedback,2023-02-14,09:00:00,2023-02-14,12:00:00,03:00:00,TA,3
+Lit Review,paper writing,2023-02-14,13:42:15,2023-02-14,15:38:29,01:56:14,Research,1.9372222222222222
+Lit Review,paper writing,2023-02-14,15:59:34,2023-02-14,17:59:15,01:59:41,Research,1.9947222222222223
+TA-INF2192,class feedback,2023-02-14,18:30:42,2023-02-14,21:40:52,03:10:10,TA,3.1694444444444443
+Lit Review,paper writing,2023-02-15,08:40:18,2023-02-15,11:58:07,03:17:49,Research,3.2969444444444442
+Lit Review,paper writing,2023-02-15,14:20:25,2023-02-15,18:07:10,03:46:45,Research,3.779166666666667
+Lit Review,paper writing,2023-02-15,20:33:53,2023-02-15,23:24:15,02:50:22,Research,2.8394444444444447
+Lit Review,paper writing,2023-02-16,08:37:46,2023-02-16,10:41:59,02:04:13,Research,2.0702777777777777
+Lit Review,paper writing,2023-02-16,11:12:48,2023-02-16,11:50:08,00:37:20,Research,0.6222222222222222
+TA-INF2192,answering questions,2023-02-16,15:10:00,2023-02-16,15:40:00,00:30:00,TA,0.5
+Lit Review,paper writing,2023-02-16,15:31:16,2023-02-16,15:56:25,00:25:09,Research,0.4191666666666667
+Lit Review,paper writing,2023-02-16,20:05:00,2023-02-17,00:48:30,04:43:30,Research,4.725
+Cookie Lab,meeting,2023-02-17,11:00:00,2023-02-17,12:00:00,01:00:00,Other Activities,1
+TA-INF2192,questions and project status,2023-02-17,12:00:30,2023-02-17,12:35:35,00:35:05,TA,0.5847222222222223
+Lit Review,paper review,2023-02-17,14:00:00,2023-02-17,15:00:00,01:00:00,Research,1
+Lit Review,paper writing,2023-02-18,12:19:41,2023-02-18,12:56:16,00:36:35,Research,0.6097222222222223
+Lit Review,paper writing,2023-02-18,13:45:22,2023-02-18,15:21:48,01:36:26,Research,1.6072222222222223
+Lit Review,paper writing,2023-02-18,21:11:04,2023-02-18,23:55:44,02:44:40,Research,2.7444444444444445
+INF3104,final paper,2023-02-19,18:00:00,2023-02-19,22:30:00,04:30:00,Course Work,4.5
+Lit Review,addressing Naver feedback,2023-02-20,21:00:00,2023-02-20,23:00:00,02:00:00,Research,2
+TA-INF2192,discovery report,2023-02-21,09:30:27,2023-02-21,12:30:40,03:00:13,TA,3.0036111111111112
+INF3104,paper 3,2023-02-21,12:30:00,2023-02-21,15:26:00,02:56:00,Course Work,2.933333333333333
+INF2169,paper 1,2023-02-21,17:45:00,2023-02-21,19:50:00,02:05:00,Course Work,2.0833333333333335
+Lit Review,paper review,2023-02-22,08:35:30,2023-02-22,10:16:39,01:41:09,Research,1.6858333333333333
+Lit Review,paper review,2023-02-22,17:31:52,2023-02-22,19:20:34,01:48:42,Research,1.8116666666666668
+INF2169,paper 1,2023-02-22,19:41:00,2023-02-22,20:11:00,00:30:00,Course Work,0.5
+INF3104,paper 3,2023-02-22,20:11:37,2023-02-22,22:35:17,02:23:40,Course Work,2.3944444444444444
+INF2169,paper 1,2023-02-23,09:25:19,2023-02-23,11:00:06,01:34:47,Course Work,1.5797222222222222
+INF3104,paper 3,2023-02-23,11:00:52,2023-02-23,11:36:52,00:36:00,Course Work,0.6
+INF2169,paper 1,2023-02-23,11:45:23,2023-02-23,13:04:14,01:18:51,Course Work,1.3141666666666667
+INF2169,paper 1,2023-02-23,14:00:01,2023-02-23,17:48:15,03:48:14,Course Work,3.803888888888889
+TA-INF2192,discovery report,2023-02-23,21:34:40,2023-02-23,23:00:22,01:25:42,TA,1.4283333333333332
+Finance CA Marginalization,Brain dump,2023-02-24,21:00:00,2023-02-24,23:18:00,02:18:00,Research,2.3
+Finance CA Marginalization,writing,2023-02-25,09:38:47,2023-02-25,12:51:45,03:12:58,Research,3.216111111111111
+Finance CA Marginalization,writing,2023-02-25,13:27:59,2023-02-25,14:52:56,01:24:57,Research,1.4158333333333333
+Lit Review,final review,2023-02-26,16:40:57,2023-02-26,17:45:30,01:04:33,Research,1.0758333333333334
+Lit Review,final review,2023-02-26,20:45:39,2023-02-27,02:27:56,05:42:17,Research,5.704722222222222
+INF2169,class + AK assignment 1,2023-02-27,11:10:00,2023-02-27,13:25:00,02:15:00,Course Work,2.25
+INF3104,class,2023-02-27,13:10:00,2023-02-27,16:00:00,02:50:00,Course Work,2.8333333333333335
+Finance CA Marginalization,AK brainstorm,2023-02-27,16:10:00,2023-02-27,16:45:00,00:35:00,Research,0.5833333333333334
+Finance CA Marginalization,writing,2023-02-27,20:13:04,2023-02-28,00:38:44,04:25:40,Research,4.427777777777778
+Research-General,Naver meeting,2023-02-28,09:00:00,2023-02-28,10:00:00,01:00:00,Research,1
+TA-INF2192,discovery report,2023-02-28,11:00:08,2023-02-28,13:00:10,02:00:02,TA,2.0005555555555556
+Finance CA Marginalization,writing,2023-02-28,18:19:08,2023-02-28,19:42:48,01:23:40,Research,1.3944444444444444
+Finance CA Marginalization,writing,2023-02-28,21:00:17,2023-03-01,00:55:29,03:55:12,Research,3.92
+Finance CA Marginalization,writing,2023-03-01,13:00:01,2023-03-01,15:23:47,02:23:46,Research,2.3961111111111113
+Finance CA Marginalization,writing,2023-03-01,20:00:49,2023-03-01,21:24:49,01:24:00,Research,1.4
+INF3104,paper 3,2023-03-02,08:45:39,2023-03-02,11:38:52,02:53:13,Course Work,2.8869444444444445
+writing course,structure coherence,2023-03-02,16:00:52,2023-03-02,17:30:52,01:30:00,Learning,1.5
+Cookie Lab,Lab Meeting,2023-03-03,11:00:00,2023-03-03,12:00:00,01:00:00,Other Activities,1
+TA-INF2192,discovery report,2023-03-03,12:35:05,2023-03-03,16:09:31,03:34:26,TA,3.573888888888889
+Service Work,Data Science Hackathon,2023-03-04,11:00:00,2023-03-04,17:00:00,06:00:00,Other Activities,6
+INF3104,paper 3,2023-03-04,21:25:24,2023-03-04,23:54:08,02:28:44,Course Work,2.4788888888888887
+Service Work,Data Science Hackathon,2023-03-05,09:45:05,2023-03-05,17:30:06,07:45:01,Other Activities,7.750277777777778
+TA-INF2192,discovery report,2023-03-06,08:30:22,2023-03-06,09:49:43,01:19:21,TA,1.3225
+INF2169,class,2023-03-06,11:00:00,2023-03-06,13:00:00,02:00:00,Course Work,2
+INF3104,class,2023-03-06,13:00:00,2023-03-06,16:30:00,03:30:00,Course Work,3.5
+TA-INF2192,discovery report,2023-03-06,16:44:09,2023-03-06,18:29:40,01:45:31,TA,1.7586111111111111
+TA-INF2192,discovery report,2023-03-06,20:46:12,2023-03-06,21:50:28,01:04:16,TA,1.0711111111111111
+TA-INF2192,playback 1,2023-03-07,09:00:00,2023-03-07,12:00:00,03:00:00,TA,3
+INF3104,paper 3,2023-03-07,16:54:29,2023-03-07,18:13:05,01:18:36,Course Work,1.31
+TA-INF2192,playback 1,2023-03-07,18:30:00,2023-03-07,21:40:00,03:10:00,TA,3.1666666666666665
+TA-INF2192,office hour,2023-03-08,10:15:00,2023-03-08,11:00:00,00:45:00,TA,0.75
+INF3104,paper 3,2023-03-08,11:19:35,2023-03-08,14:04:58,02:45:23,Course Work,2.756388888888889
+INF3104,paper 3,2023-03-08,15:39:51,2023-03-08,19:56:35,04:16:44,Course Work,4.278888888888889
+INF3104,paper 3,2023-03-08,20:48:48,2023-03-09,00:01:15,03:12:27,Course Work,3.2075
+INF3104,paper 3,2023-03-09,09:17:41,2023-03-09,10:01:33,00:43:52,Course Work,0.7311111111111112
+INF2169,paper 1,2023-03-09,10:31:59,2023-03-09,11:32:42,01:00:43,Course Work,1.0119444444444445
+INF3104,paper 3,2023-03-09,13:00:10,2023-03-09,13:45:12,00:45:02,Course Work,0.7505555555555555
+writing course,crafting effective sentences,2023-03-09,16:00:15,2023-03-09,17:39:16,01:39:01,Learning,1.6502777777777777
+INF2169,paper 1,2023-03-09,21:41:23,2023-03-09,23:14:20,01:32:57,Course Work,1.5491666666666666
+INF3104,paper 3,2023-03-10,08:46:02,2023-03-10,13:03:58,04:17:56,Course Work,4.2988888888888885
+INF2169,paper 1,2023-03-10,14:28:55,2023-03-10,16:23:57,01:55:02,Course Work,1.9172222222222222
+INF2169,paper 1,2023-03-10,21:32:56,2023-03-10,22:37:28,01:04:32,Course Work,1.0755555555555556
+INF3104,paper 3,2023-03-12,18:08:08,2023-03-12,20:38:04,02:29:56,Course Work,2.4988888888888887
+INF2169,paper 1,2023-03-12,21:28:36,2023-03-13,00:30:24,03:01:48,Course Work,3.03
+Talks,AI as Financial Infrastructure,2023-03-13,10:00:00,2023-03-13,11:30:00,01:30:00,Learning,1.5
+INF2169,class,2023-03-13,11:45:00,2023-03-13,13:00:00,01:15:00,Course Work,1.25
+INF3104,class,2023-03-13,13:10:00,2023-03-13,16:10:00,03:00:00,Course Work,3
