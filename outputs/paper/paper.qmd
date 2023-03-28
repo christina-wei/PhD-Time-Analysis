@@ -23,6 +23,10 @@ bibliography: ref.bib
 # Load packages 
 library(tidyverse)
 library(here)
+library(knitr)
+library(kableExtra)
+library(viridis)
+
 source(here("scripts/03-helper_functions.R"))
 
 # read in cleaned data
@@ -31,68 +35,445 @@ cleaned_time_sheet = read_csv(
   file = here("outputs/data/cleaned_time_sheet.csv"),
   show_col_types = FALSE
 )
+
+# set factor
+cleaned_time_sheet$type =
+  factor(cleaned_time_sheet$type,
+         levels = c(
+           "Research",
+           "Course Work",
+           "TA",
+           "Admin",
+           "Learning",
+           "Other Activities"
+         )
+  )
 ```
-
-# Introduction
-
-# Data
-
--   Timesheet tracked in Toggl Track
-
-    -   Explain variables, categories
-
--   Sleep data - automatically tracked through Fitbit
-
--   Deliverable data - created at the beginning of each term to track major deliverables
-
--   Data cleaning procedures
-
--   Sources of error - retrospective entering of data, or forgetting to track; categorization arbitrary and may not reflect the actual work
-
-# Results
-
-## Timesheet Data
-
-### Data Charateristics
-
-**Timesheet**
-
--   From 2022-08-15 to 2023-03-13
-
--   582 entries
 
 ```{r}
 #| message: false
 #| echo: false
 #| warning: false
+
+## Variations of timesheet data
+
+# Calculate daily data
+daily_data <- 
+  cleaned_time_sheet |>
+  mutate(wkday = wday(cleaned_time_sheet$start_date, label = TRUE)) |>
+  group_by(start_date, wkday, type) |>
+  summarize(effort = sum(effort_hours)) |>
+  ungroup()
+
+# Calculate data for hours of each day
+hourly_calc <- 
+  cleaned_time_sheet |>
+  slice(rep(1:n(), each = 24)) |>
+  mutate(hour_value = rep(0:23, times = nrow(cleaned_time_sheet))) |>
+  mutate(
+    worked = (start_date == end_date & 
+                hour(start_time) <= hour_value & 
+                convert_hms_to_hours(end_time) > hour_value
+              ) |
+              (start_date < end_date & 
+                 (convert_hms_to_hours(end_time) > hour_value |
+                    hour(start_time) <= hour_value)
+               )
+    ) |>
+  filter(worked) |>
+  select(-worked)
+```
+
+# Introduction
+
+TBD
+
+# Data
+
+## Source & Data Cleaning
+
+The timesheet data used for this analysis is based on task tracking from August 15, 2022 to March 13, 2023. I used the an mobile application Toggl Track[^1] on my phone to keep track of my academic activities every day. There are in total 581 time entries tracked for the given time period.
+
+[^1]: https://toggl.com/track/
+
+```{r}
+#| message: false
+#| echo: false
+#| warning: false
+#| include: false
 
 min(cleaned_time_sheet$start_date)
 max(cleaned_time_sheet$end_date)
 nrow(cleaned_time_sheet)
 ```
 
+The following information is tracked for each time entry:
+
+-   `Description` of the activity that is being tracked
+
+-   `Project` where the activity belongs to, such as class code (e.g. INF3104) or research project (e.g. Lit Review). Sometimes this value is not populated in the timesheet
+
+-   `Start date`, `start time`, `end date`, and `end time` of the tracked activity
+
+The raw timesheet data is exported directly from the Toggl Track application. I applied data cleaning routine to include additional information on the type of work, as well as the effort duration in hours for each entry. The `type` of work is defined as:
+
+-   Course Work - time spent on course related activities, like attending classes, working on assignments
+
+-   TA - time spent on teaching assistant obligations, like marking assignments and
+
+-   Research - activities related to research, including reading papers, thematic analysis, and writing
+
+-   Admin - administrative tasks like applying for grants, filling in timesheets
+
+-   Learning - learning activities outside of coursework, like workshops, writing help, orientations
+
+-   Other Activities - catches miscellaneous activities like lab meetings, updating personal websites
+
+Data was cleaned and analyzed using the open source statistically programming language R [@r], using functionalities from `tidyverse` [@rTidyverse], `ggplot2` [@rGgplot2], `dplyr` [@rDplyr], `readr` [@rReadr], `tibble` [@rTibble], `here` [@rHere], `kableExtra` [@rKableExtra] and `knitr` [@rKnitr].
+
+Please see @tbl-sample for a sample of the timesheet data.
+
+```{r}
+#| message: false
+#| echo: false
+#| warning: false
+#| label: tbl-sample
+#| tbl-cap: Sample of the timesheet data
+ 
+cleaned_time_sheet |>
+  tail() |>
+  kable(
+    format = "latex",
+    booktabs = TRUE,
+    digits = 1
+  ) |>
+  kable_styling(latex_options = "scale_down")
+
+```
+
+## Data Limitations
+
+As the timesheet data depends on my action to manually tracked my time accurately, there is definitely the potential for *human errors* in the data. Specifically, there may be missing data that I forgot to enter into the application. Also, some data are entered retrospectively after the actual activity happened, which could impact the accuracy of time tracked. Also, there are potential issues of tracking time to the wrong project or description that's not reflective of the actual activity.
+
+The selected *granularity* of data used in timesheet tracking is also a potential limitation. There are aspects that are not currently captured which may be useful for analysis. For example, data can be enriched by tracking productivity, location, and more details on the activities for each session. Some of these attributes are not tracked because they do not have a field on the application to be entered. But even if the additional fields are available on the app, there is also the consideration to balance the ease of performing data tracking vs. the amount of data to be tracked. If the act of tracking data becomes cumbersome to do, I may stop tracking time all together to avoid the hassle, which results in more loss in data than not having more data attributes.
+
+There is also an interesting limitation on the *consistency* of project categorization over time as more knowledge is gained on how to efficiently organize projects. For example, my one-on-one meetings with my supervisor were not categorized into any projects initially because I wasn't sure where to put them. After a few months, I created the project "Research-General" to capture general activities related to research, and have tagged future one-on-one meetings into this category. For this particular situation, the data cleaning routine moved the untagged 1:1 meetings into the "Research-General" project. However, there may be other activities with different projects over time that were not adjusted.
+
+\<Data not complete - before and after\>
+
+-   Sleep data - automatically tracked through Fitbit
+
+-   Deliverable data - created at the beginning of each term to track major deliverables
+
+# Results
+
+## Type of Work
+
+From August 15, 2022 to March 13, 2023, I have tracked 1034 hours over 581 sessions. Looking at @fig-time-spent, most of my time are spent on Research (398 hours, 38%) and Course Work (343 hours, 33%) type of work. Performing teaching assistant duties takes about 12% of my time with 124 hours. The remaining 17% of my time are pretty equally split across Learning, Admin, and Other Activities.
+
+```{r}
+#| message: false
+#| echo: false
+#| warning: false
+#| label: fig-time-spent
+#| fig-cap: Amount of time spent on each type of activity
+
+# Piecharts: https://r-charts.com/part-whole/pie-chart-ggplot2/
+cleaned_time_sheet |>
+  group_by(type) |>
+  summarize(effort = sum(effort_hours)) |>
+  mutate(effort_pct = effort / sum(effort)) |>
+  ggplot(aes(x = "", y = effort_pct, fill = fct_rev(type))) +
+  geom_col(color = "black") +
+  geom_label(aes(label = round(effort, 0)),
+             position = position_stack(vjust = 0.5),
+             size = 3,
+             show.legend = FALSE) +
+  coord_polar(theta = "y") +
+  labs(
+    y = "Effort (Hours)",
+    fill = "Type"
+  ) +
+  scale_fill_viridis(discrete = TRUE) #colorblind-friendly palette
+```
+
+To understand better the time spent on Research and Course Work, let's drill down to the project level details. Looking at Research time specifically, @fig-time-spent-bytype-1 shows that a significant amount of time is spent on working on the literature review paper (Lit Review) at 253 hours, which is the first research paper that I worked on as the lead author. The marginalization in financial industry (Finance CA Marginalization) is a workshop paper I authored, where I spent 21 hours working on the manuscript. The projects on older adults' perception on conversational agents (OAPerception), industry digital design marginalization (Industry DDN) and perceptions of conversational agents with disfluency (Disfluency perception) do not have complete data, as work done before August 15, 2022 was not tracked. The "Other" category shows that I spent 21 hours in the tracked period on general research activities, such as reading literature to keep up to date with research.
+
+Looking at time spent on Course Work in @fig-time-spent-bytype-2 , there are two courses that are taking significant amount of time: INF2241 Critical Making at 142 hours and INF3104 Data Science Foundations at 103 hours. Both of these courses are technical in nature, as the course work requires both programming skills as well as written communication skills to summarize findings. It is worth noting that INF3104 and INF2169 are courses that I am currently taking, and there will be more time spent on them that will not reflected in this analysis.
+
+```{r}
+#| message: false
+#| echo: false
+#| warning: false
+#| label: fig-time-spent-bytype
+#| fig-cap: Break down time spent for Research and Course Work
+#| fig-subcap: ["Research","Course Work"]
+#| layout-ncol: 2
+#| layout-nrow: 1
+
+generate_compare_bar_graph(
+  ggplot_data = 
+    cleaned_time_sheet |>
+    filter(type == "Research") |>
+    mutate(project = ifelse(project %in% c(NA, "Reading", "Research-General"),
+                            "Other",
+                            project)
+           ) |>
+    group_by(project) |>
+    summarize(effort = sum(effort_hours)) |>
+    ggplot(aes(x = factor(project, 
+                          level = c("Lit Review", 
+                                    "OAPerception", 
+                                    "Finance CA Marginalization", 
+                                    "Disfluency perception", 
+                                    "Industry DDN",
+                                    "Other")),
+               y = effort)),
+  position = "identity",
+  angle = 45,
+  vjust = 1,
+  hjust = 1,
+  xlabel = "Project",
+  ylabel = "Effort (hours)"
+) +
+  geom_text(aes(label = round(effort, 0)), vjust = -0.2) +
+  ylim(0, 260)
+
+generate_compare_bar_graph(
+  ggplot_data = 
+    cleaned_time_sheet |>
+    filter(type == "Course Work") |>
+    group_by(project) |>
+    summarize(effort = sum(effort_hours)) |>
+    ggplot(aes(x = factor(project, 
+                          level = c("INF2241", "INF3104", "INF3001", "INF2169")), 
+               y = effort)),
+  position = "identity",
+  xlabel = "Course",
+  ylabel = "Effort (hours)"
+) +
+  geom_text(aes(label = round(effort, 0)), vjust = -0.2) +
+  ylim(0, 145)
+```
+
+## Session Characteristics
+
+The average time spent on each session is 1.8 hours, with a standard deviation of 1.1 hours. The minimum amount of time spent on a session is \~10 minutes on TA marking activities, while the maximum amount of time spent in one session is 10.7 hours working on paper 1 for INF3104. (see @tbl-session-summary for summary statistics)
+
+```{r}
+#| message: false
+#| echo: false
+#| warning: false
+#| label: tbl-session-summary
+#| tbl-cap: Summary statistics for each session
+
+cleaned_time_sheet |>
+  summarize(
+    "Avg Session Time" = mean(effort_hours),
+    "SD Session Time" = sd(effort_hours),
+    "Min Session Time" = min(effort_hours),
+    "Max Session Time" = max(effort_hours)
+    ) |>
+  kable(
+    booktabs = TRUE,
+    align = "c",
+    digits = 1
+  )
+```
+
+Looking at the **length of time** spent per session, @fig-session-bylength-1 shows that the typical length of sessions are less than 3 hours (87%), with most of them within the 1 to 2 hours range (41%). It is rare to have sessions over 4 hours long (\<5%). Breaking down the sessions by type of work, we see in @fig-session-bylength-2 that the medians of the session for each type are not significantly different, and are within the range of 1-2 hours per session. Course work and other activities have some large outliers in data that are over 6 hours long.
+
+```{r}
+#| message: false
+#| echo: false
+#| warning: false
+#| label: fig-session-bylength
+#| fig-cap: Visualize sessions by length of time
+#| fig-subcap: ["Percentage sessions for different lengths of time","Distribution of session length by type"]
+#| layout-ncol: 2
+#| layout-nrow: 1
+
+generate_compare_bar_graph(
+  ggplot_data = 
+    cleaned_time_sheet |>
+    filter(type %in% c("TA", "Research", "Course Work", "Learning")) |>
+    mutate(effort_bin = case_when(
+      effort_hours < 1 ~ "< 1",
+      effort_hours >= 1 & effort_hours < 2 ~ "1 - 2",
+      effort_hours >= 2 & effort_hours < 3 ~ "2 - 3",
+      effort_hours >= 3 & effort_hours < 4 ~ "3 - 4",
+      effort_hours >= 4 & effort_hours < 5 ~ "4 - 5",
+      effort_hours >= 5 ~ "> 5"
+    )) |>
+    group_by(effort_bin, type) |>
+    count() |>
+    ungroup() |>
+    mutate(pct = n / sum(n)) |>
+    ggplot(aes(x = factor(effort_bin, 
+                          level = c("< 1", "1 - 2", "2 - 3", "3 - 4", "4 - 5", "> 5")), 
+               y = pct, 
+               fill = type)),
+  position = "stack",
+  yscale = scales::percent,
+  xlabel = "Length of session (in hours)",
+  ylabel = "Percentage of occurrence"
+)
+
+cleaned_time_sheet |>
+  ggplot(aes(x = type, y = effort_hours)) +
+  geom_boxplot(outlier.shape = NA) +
+  geom_jitter(width = 0.3, alpha = 0.4) +
+  labs(
+    x = "",
+    y = "Effort per session (hours)"
+  ) +
+  scale_y_continuous(breaks = seq(0, 11, 1)) +
+  theme_minimal()
+```
+
+Let's take a look at the outlier sessions (\>4 hours) for each type of work (@tbl-over-4hrs):
+
+-   *Research* - there are 11 outlier sessions, clustered mostly between 4-5 hours, with the maximum length at 5.7 hours
+
+-   *Course Work* - there are 9 outlier sessions, with a couple of large outliers at 10.7 hours and 6.5 hours. All the outlier sessions are related to courses INF2241 and INF3104
+
+-   *TA* - there are 2 outlier sessions, both are related to assignment mark with length around 4 hours
+
+-   *Admin* - there are 3 outlier sessions, all of them related to scholarship applications
+
+-   *Learning* - the 1 outlier is the Critical Computing workshop that lasted 5.5 hours
+
+-   *Other Activities* - there are 3 outlier sessions, two of them (6 and 7.5 hours) are related to the Data Science Hackathon that I participated as a mentor for full days. The other outlier is spending 4 hours updating my resume
+
+```{r}
+#| message: false
+#| echo: false
+#| warning: false
+#| label: tbl-over-4hrs
+#| tbl-cap: Summary statistics for sessions that are over 4 hours long
+
+cleaned_time_sheet |>
+  filter(effort_hours > 4) |>
+  group_by(type) |>
+  summarize(
+    count = n(),
+    avg_effort = mean(effort_hours),
+    max_effort = max(effort_hours)
+  ) |>
+  mutate(work_performed = c(
+    "data analysis, paper writing, paper review",
+    "assignments from INF2241, INF3104",
+    "CCT419 (UX and board games) marking",
+    "NSERC application, SRI scholarship",
+    "Critical Computing - qualitative analysis workshop",
+    "Data Science Hackathon, update resume"
+  )) |>
+  arrange(type, desc(count)) |>
+  kable(
+    booktabs = TRUE,
+    digits = 1,
+    linesep = "",
+    align = 'lcccl',
+    col.names = c("Type", "Count", "Avg Effort", "Max Effort" ,"Tasks")
+  )
+```
+
+## Daily Patterns
+
+To understand the patterns for **hours of the day** that I am working, @fig-session-byhour visualizes the percentage of sessions that are occurring during each hour of the day. Overall, it looks most of the working time are between 8am and midnight, with two periods of time that have the most frequent number of work sessions: between 11am to 4pm, and between 9pm and midnight. The earliest I started working is around 8am, and the latest that I finished work is around 4am.
+
+```{r}
+#| message: false
+#| echo: false
+#| warning: false
+#| label: fig-session-byhour
+#| fig-cap: Percentage of sessions occurring during each hour of the day
+
+generate_compare_bar_graph(
+  ggplot_data =
+    hourly_calc |>
+    #filter(type %in% c("Course Work", "Learning", "Research", "TA")) |>
+    group_by(hour_value, type) |>
+    count() |>
+    ungroup() |>
+    mutate(pct = n / sum(n)) |>
+    ggplot(aes(x = hour_value, y = pct, fill = type)),
+  xlabel = "Hour of the Day",
+  ylabel = "Percentage of Occurrence",
+  position = "stack",
+  yscale = scales::percent
+)
+```
+
+### Concurrent Work
+
 ```{r}
 #| message: false
 #| echo: false
 #| warning: false
 
 cleaned_time_sheet |>
-  group_by(type) |>
-  summarize(effort = sum(effort_hours)) |>
-  arrange(desc(effort))
+  group_by(start_date, project) |>
+  summarize(projects = n()) |>
+  group_by(start_date) |>
+  summarize(projects = n()) |> 
+  ggplot(aes(x = "", y = projects)) +
+  geom_boxplot(width = 0.3) +
+  geom_jitter(width = 0.1) +
+  labs(
+    x = "",
+    y = "Number of Projects Worked on Per Day"
+  ) +
+  theme_minimal()
 
-# Piecharts: https://r-charts.com/part-whole/pie-chart-ggplot2/
-# Update this to %
 cleaned_time_sheet |>
-  group_by(type) |>
-  summarize(effort = sum(effort_hours)) |>
-  mutate(effort_pct = effort / sum(effort)) |>
-  ggplot(aes(x = "", y = effort_pct, fill = type)) +
-  geom_col(color = "black") +
-  coord_polar(theta = "y")
+  group_by(start_date, project) |>
+  summarize(projects = n()) |>
+  group_by(start_date) |>
+  summarize(projects = n()) |> 
+  group_by(projects) |>
+  count() |>
+  ungroup() |>
+  mutate(pct = n / sum(n)) |>
+  ggplot(aes(x = projects, y = pct)) +
+  geom_bar(stat = "identity") +
+  labs(
+    x = "Number of Projects Worked on Per Day",
+    y = "Percentage of occurrences"
+  ) +
+  theme_minimal() +
+  scale_y_continuous(labels = scales::percent)
 ```
 
-### Trend Over Time
+## Weekly Patterns
+
+```{r}
+#| message: false
+#| echo: false
+#| warning: false
+
+daily_data |>
+  group_by(start_date, wkday) |>
+  summarize(effort = sum(effort)) |>
+  ggplot(aes(x = wkday, y = effort)) +
+  geom_boxplot() +
+  stat_summary(fun.y="mean",color="red") +
+  geom_jitter(width = 0.15) +
+  labs(
+    x = "Day of the Week",
+    y = "Effort (in hours)"
+  ) +
+  theme_minimal() +
+  scale_y_continuous(breaks = seq(0, 13, by = 1))
+
+daily_data |>
+  group_by(start_date, wkday) |>
+  summarize(effort = sum(effort)) |>
+  group_by(wkday) |>
+  summarize(mean_effort = mean(effort), med_effort = median(effort))
+```
+
+## Trend Over Time
 
 ```{r}
 #| message: false
@@ -128,159 +509,7 @@ generate_compare_bar_graph(
 )
 ```
 
-### Daily Patterns
-
-```{r}
-#| message: false
-#| echo: false
-#| warning: false
-
-# Duration of each session
-cleaned_time_sheet |>
-  group_by(start_date) |>
-  summarize(
-    effort = mean(effort_hours),
-    sessions = n()
-  ) |>
-  ungroup() |>
-  ggplot(aes(x = "", y = effort)) +
-  geom_boxplot(width = 0.3) +
-  geom_jitter(width = 0.1) +
-  labs(
-    x = "",
-    y = "Duration (in hours)"
-  ) +
-  theme_minimal()
-```
-
-```{r}
-#| message: false
-#| echo: false
-#| warning: false
-
-# Hours of each day
-hourly_calc <- 
-  cleaned_time_sheet |>
-  slice(rep(1:n(), each = 24)) |>
-  mutate(hour_value = rep(0:23, times = nrow(cleaned_time_sheet))) |>
-  mutate(
-    worked = (start_date == end_date & 
-                hour(start_time) <= hour_value & 
-                convert_hms_to_hours(end_time) > hour_value
-              ) |
-              (start_date < end_date & 
-                 (convert_hms_to_hours(end_time) > hour_value |
-                    hour(start_time) <= hour_value)
-               )
-    ) |>
-  filter(worked) |>
-  select(-worked)
-```
-
-```{r}
-#| message: false
-#| echo: false
-#| warning: false
-
-generate_compare_bar_graph(
-  ggplot_data =
-    hourly_calc |>
-    filter(type %in% c("Course Work", "Learning", "Research", "TA")) |>
-    group_by(hour_value, type) |>
-    count() |>
-    ungroup() |>
-    mutate(pct = n / sum(n)) |>
-    ggplot(aes(x = hour_value, y = pct, fill = type)),
-  xlabel = "Hour of the Day",
-  ylabel = "Percentage of Occurrence",
-  position = "stack",
-  yscale = scales::percent
-)
-  
-```
-
-### Weekly Patterns
-
-```{r}
-#| message: false
-#| echo: false
-#| warning: false
-
-daily_data <- 
-  cleaned_time_sheet |>
-  mutate(wkday = wday(cleaned_time_sheet$start_date, label = TRUE)) |>
-  group_by(start_date, wkday, type) |>
-  summarize(effort = sum(effort_hours)) |>
-  ungroup()
-```
-
-```{r}
-#| message: false
-#| echo: false
-#| warning: false
-
-daily_data |>
-  group_by(start_date, wkday) |>
-  summarize(effort = sum(effort)) |>
-  ggplot(aes(x = wkday, y = effort)) +
-  geom_boxplot() +
-  stat_summary(fun.y="mean",color="red") +
-  geom_jitter(width = 0.15) +
-  labs(
-    x = "Day of the Week",
-    y = "Effort (in hours)"
-  ) +
-  theme_minimal() +
-  scale_y_continuous(breaks = seq(0, 13, by = 1))
-
-daily_data |>
-  group_by(start_date, wkday) |>
-  summarize(effort = sum(effort)) |>
-  group_by(wkday) |>
-  summarize(mean_effort = mean(effort), med_effort = median(effort))
-```
-
-### Concurrent Work
-
-```{r}
-#| message: false
-#| echo: false
-#| warning: false
-
-cleaned_time_sheet |>
-  group_by(start_date, project) |>
-  summarize(projects = n()) |>
-  group_by(start_date) |>
-  summarize(projects = n()) |> 
-  ggplot(aes(x = "", y = projects)) +
-  geom_boxplot(width = 0.3) +
-  geom_jitter(width = 0.1) +
-  labs(
-    x = "",
-    y = "Number of Projects Worked on Per Day"
-  ) +
-  theme_minimal()
-
-cleaned_time_sheet |>
-  group_by(start_date, project) |>
-  summarize(projects = n()) |>
-  group_by(start_date) |>
-  summarize(projects = n()) |> 
-  group_by(projects) |>
-  count() |>
-  ungroup() |>
-  mutate(pct = n / sum(n)) |>
-  ggplot(aes(x = projects, y = pct)) +
-  geom_bar(stat = "identity") +
-    labs(
-    x = "Number of Projects Worked on Per Day",
-    y = "Percentage of occurrences"
-  ) +
-  theme_minimal() +
-  scale_y_continuous(labels = scales::percent)
-```
-
-## **Research**
+## Research
 
 ### Overall
 
@@ -331,7 +560,7 @@ generate_compare_bar_graph(
 )
 ```
 
-### **Literature Review Paper**
+### Literature Review Paper
 
 -   How long does it take to work on a full paper?
 
@@ -369,33 +598,7 @@ cleaned_time_sheet |>
   theme_minimal()
 ```
 
-## **Type of Work**
-
-### Technical Work
-
-### Research
-
-## **Actual vs. Estimated Effort**
-
-## Parking Lot
-
--   When am I most productive?
-
--   What is the regular schedule?
-
--   Study pattern?
-
--   Monday to Sunday
-
--   Length for type of work
-
--   Difference in work patterns between writing & technical work
-
-Actual vs. estimated effort
-
-Behavioural patterns?
-
-Work life balance?
+## Actual vs. Estimated Effort
 
 # Model
 
@@ -413,13 +616,15 @@ Model2: Extrapolate actual from expected hours?
 
 -   Missing - social aspects, quality of work
 
--   Weekends / timeoff
+-   Weekends / timeoff / work life balance
 
 -   Different types of flow - technical vs. research
 
 -   Find the focus each day - try to stay with 1 or 2 topics only
 
 -   Prefer to work on morning / early afternoon, and after dinner
+
+-   Time fixed by events - like going to school, meetings that I do not control
 
 # Conclusion
 

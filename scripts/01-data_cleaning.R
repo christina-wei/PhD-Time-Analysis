@@ -66,7 +66,8 @@ cleaned_time_sheet <-
 # change duration to hours
 cleaned_time_sheet =
   cleaned_time_sheet |>
-  mutate(effort_hours = as.numeric(duration) / 3600)
+  mutate(effort_hours = as.numeric(duration) / 3600) |>
+  filter(effort_hours > 0)
 
 write_csv(
   x = cleaned_time_sheet,
