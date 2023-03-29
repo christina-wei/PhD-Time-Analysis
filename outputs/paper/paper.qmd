@@ -256,7 +256,7 @@ generate_compare_bar_graph(
   ylim(0, 145)
 ```
 
-## Session Characteristics
+## Session Patterns
 
 The average time spent on each session is 1.8 hours, with a standard deviation of 1.1 hours. The minimum amount of time spent on a session is \~10 minutes on TA marking activities, while the maximum amount of time spent in one session is 10.7 hours working on paper 1 for INF3104. (see @tbl-session-summary for summary statistics)
 
@@ -378,9 +378,7 @@ cleaned_time_sheet |>
   )
 ```
 
-## Daily Patterns
-
-To understand the patterns for **hours of the day** that I am working, @fig-session-byhour visualizes the percentage of sessions that are occurring during each hour of the day. Overall, it looks most of the working time are between 8am and midnight, with two periods of time that have the most frequent number of work sessions: between 11am to 4pm, and between 9pm and midnight. The earliest I started working is around 8am, and the latest that I finished work is around 4am.
+To understand the patterns for **hours of the day** that I am working, @fig-session-byhour visualizes the percentage of sessions that are occurring during each hour of the day. Overall, it looks most of the working time are between 8am and midnight, with two periods of time that have the most frequent number of work sessions: between 11am to 4pm, and between 9pm and midnight. The earliest I started working is around 8am, and the latest that I finished work is around 4am. As for hours of the day by different types of work, it looks like Course Work takes a larger proportion of sessions in the early afternoons (12pm - 3pm), and Research takes a larger proportion in late evenings (9pm to midnight).
 
 ```{r}
 #| message: false
@@ -405,26 +403,101 @@ generate_compare_bar_graph(
 )
 ```
 
-### Concurrent Work
+## Daily Patterns
+
+The average time spent on work each day is 5.7 hours, with a standard deviation of 2.5 hours. The minimum amount of time that I worked in a day was 0.5 hours, while the maximum amount of time working in one day is 12.5 hours. On average I worked on 2 different projects each day. The minimum number of projects I worked on in a day is 1, while the maximum number of projects I worked in a day is 6 (see @tbl-day-summary for summary statistics).
 
 ```{r}
 #| message: false
 #| echo: false
 #| warning: false
+#| label: tbl-day-summary
+#| tbl-cap: Summary statistics for each day on number of sessions and effort
 
-cleaned_time_sheet |>
+tmp_daily_effort <-
+  daily_data |>
+  group_by(start_date) |>
+  summarize(effort = sum(effort))
+
+tmp_daily_projects <-
+  cleaned_time_sheet |>
   group_by(start_date, project) |>
   summarize(projects = n()) |>
   group_by(start_date) |>
-  summarize(projects = n()) |> 
-  ggplot(aes(x = "", y = projects)) +
-  geom_boxplot(width = 0.3) +
-  geom_jitter(width = 0.1) +
+  summarize(projects = n()) 
+
+tmp_daily <- merge(tmp_daily_effort, tmp_daily_projects, by="start_date")
+rm(tmp_daily_effort)
+rm(tmp_daily_projects)
+
+tibble(
+  Statistics = c("Mean", "SD", "Min", "Max"),
+  "Hours Worked" = c(mean(tmp_daily$effort),
+                     sd(tmp_daily$effort),
+                     min(tmp_daily$effort),
+                     max(tmp_daily$effort)),
+  "Number of Projects" = c(as.integer(mean(tmp_daily$projects)),
+                           as.integer(sd(tmp_daily$projects)),
+                           as.integer(min(tmp_daily$projects)),
+                           as.integer(max(tmp_daily$projects))),
+) |>
+  kable(
+    booktabs = TRUE,
+    digits = 1,
+    align = 'c'
+  )
+```
+
+### Hours Worked Per Day
+
+Looking at the distribution of the hours worked per day @fig-day-effort-1, most of the values are centered around the mean of 5.7 hours between 4 - 8 hours per day. There are some extra long days in the dataset, with close to 10 days that I have worked for over 10 hours per day. There are usually right before a specific deadline for submitting a grant application or a large assignment. Assessing the trend for hours worked on each day of the week in @fig-day-effort-2, it looks like I spend slightly more time working from Monday to Thursday with around 6 - 7 hours a day, a slightly less time working on weekends from Friday to Sunday with around 4 - 5 hours a day.
+
+```{r}
+#| message: false
+#| echo: false
+#| warning: false
+#| label: fig-day-effort
+#| fig-cap: Hours worked each day
+#| fig-subcap: ["Distribution of hours worked per day","Hours worked per day for each day of the week"]
+#| layout-ncol: 2
+#| layout-nrow: 1
+
+tmp_daily |>
+  ggplot(aes(x = effort)) +
+  geom_histogram(binwidth = 1, boundary = 0, color = "white") +
+  theme_minimal() +
   labs(
-    x = "",
-    y = "Number of Projects Worked on Per Day"
+    x = "Number of Hours Per Day",
+    y = "Number of occurrences"
   ) +
-  theme_minimal()
+  scale_x_continuous(breaks = seq(0, 13, by = 1))
+
+tmp_daily |>
+  mutate(wkday = wday(start_date, label = TRUE)) |>
+  ggplot(aes(x = wkday, y = effort)) +
+  geom_boxplot(outlier.shape = NA) +
+  geom_jitter(width = 0.3, alpha = 0.4) +
+  labs(
+    x = "Day of the Week",
+    y = "Number of Hours Per Day"
+  ) +
+  theme_minimal() +
+  scale_y_continuous(breaks = seq(0, 13, by = 1))
+```
+
+### Number of Projects Per Day
+
+It will also be interesting to understand how many **different projects** I am working on each day. Analyzing my timesheet overall (@fig-day-numprojects-1), I am usually working on between 1 to 3 projects per day, with the maximum of 6 projects per day. Drilling down into the data, there are some differences in the number of projects based on the day of the week (@fig-day-numprojects-2). It looks like Saturdays and Sundays are mostly focused on 1 or 2 projects, while on weekdays I work on a higher number of projects per day, mostly between 2 to 3 projects.
+
+```{r}
+#| message: false
+#| echo: false
+#| warning: false
+#| label: fig-day-numprojects
+#| fig-cap: Numbers of projects worked on per day
+#| fig-subcap: ["Distribution of number of projects per day","Number of projects per day for each day of the week"]
+#| layout-ncol: 2
+#| layout-nrow: 1
 
 cleaned_time_sheet |>
   group_by(start_date, project) |>
@@ -443,174 +516,217 @@ cleaned_time_sheet |>
   ) +
   theme_minimal() +
   scale_y_continuous(labels = scales::percent)
+
+
+cleaned_time_sheet |>
+  group_by(start_date, project) |>
+  summarize(projects = n()) |>
+  group_by(start_date) |>
+  summarize(projects = n()) |>
+  ungroup() |>
+  mutate(wkday = wday(start_date, label = TRUE)) |>
+  ggplot(aes(x = wkday, y = projects)) +
+  geom_boxplot(outlier.shape = NA) +
+  geom_jitter(width = 0.3, alpha = 0.4) +
+  labs(
+    x = "Day of the week",
+    y = "Number of projects per day"
+  ) +
+  theme_minimal()
 ```
 
-## Weekly Patterns
+As a student who is currently in the course work portion of my PhD, my schedule is driven by the courses I am taking per semester. Therefore, I analyzed the data based for each semester to see if there are differences in the number of projects per day. Comparing the graphs between Fall 2022 (@fig-day-numprojects-semester-1) and Winter 2023 (@fig-day-numprojects-semester-2) semesters, there are noticeable differences during the weekdays between the two. In Fall 2022, Thursdays stand out as an outlier with a higher number of projects per day, with many of them working on 6 projects. In Winter 2023, Mondays are pretty consistent at 3 projects a day, while Fridays have a wider distribution of values. Weekends do not seem different between the two semesters, working on 1-2 projects per day.
 
 ```{r}
 #| message: false
 #| echo: false
 #| warning: false
+#| label: fig-day-numprojects-semester
+#| fig-cap: Numbers of projects worked on per day for each semester
+#| fig-subcap: ["Fall 2022 (Sep - Dec)","Winter 2023 (Jan - Mar)"]
+#| layout-ncol: 2
+#| layout-nrow: 1
 
-daily_data |>
-  group_by(start_date, wkday) |>
-  summarize(effort = sum(effort)) |>
-  ggplot(aes(x = wkday, y = effort)) +
-  geom_boxplot() +
-  stat_summary(fun.y="mean",color="red") +
-  geom_jitter(width = 0.15) +
+cleaned_time_sheet |>
+  filter(start_date > as.Date("2022-09-01") & start_date <= as.Date("2022-12-15")) |>
+  group_by(start_date, project) |>
+  summarize(projects = n()) |>
+  group_by(start_date) |>
+  summarize(projects = n()) |>
+  ungroup() |>
+  mutate(wkday = wday(start_date, label = TRUE)) |>
+  ggplot(aes(x = wkday, y = projects)) +
+  geom_boxplot(outlier.shape = NA) +
+  geom_jitter(width = 0.3, alpha = 0.4) +
   labs(
-    x = "Day of the Week",
-    y = "Effort (in hours)"
+    x = "Day of the week",
+    y = "Number of projects per day"
   ) +
-  theme_minimal() +
-  scale_y_continuous(breaks = seq(0, 13, by = 1))
+  theme_minimal()
 
-daily_data |>
-  group_by(start_date, wkday) |>
-  summarize(effort = sum(effort)) |>
-  group_by(wkday) |>
-  summarize(mean_effort = mean(effort), med_effort = median(effort))
+cleaned_time_sheet |>
+  filter(start_date > as.Date("2023-01-09")) |>
+  group_by(start_date, project) |>
+  summarize(projects = n()) |>
+  group_by(start_date) |>
+  summarize(projects = n()) |>
+  ungroup() |>
+  mutate(wkday = wday(start_date, label = TRUE)) |>
+  ggplot(aes(x = wkday, y = projects)) +
+  geom_boxplot(outlier.shape = NA) +
+  geom_jitter(width = 0.3, alpha = 0.4) +
+  labs(
+    x = "Day of the week",
+    y = "Number of projects per day"
+  ) +
+  theme_minimal()
 ```
 
 ## Trend Over Time
 
+Analyzing my weekly effort over time (@fig-overtime), I can see a slight upward trend over time as I am spending more time overall on academic matters. Most of the increase comes from efforts spent on research related work in 2023. Also, there are three different semesters that are captured here: Summer 2022, Fall 2022, and Winter 2023. Each semester seems to have a different pattern. In Summer 2022, I was spending about 20 hours a week mostly focused on research projects. In Fall 2023, the majority of my time are spent on course work and TA related activities. In this semester, Winter 2023, most of my time are spent on research and course work activities. There is also a noticeable decrease in time in December, where I took a break over the holidays.
+
 ```{r}
 #| message: false
 #| echo: false
 #| warning: false
+#| label: fig-overtime
+#| fig-cap: Weekly effort over time
 
 # Weekly trend
 # https://stackoverflow.com/questions/67847174/convert-daily-data-into-weekly-data-and-summarize-multiple-columns-in-r
-
-#line graph overall
-generate_time_series_graph(
-  ggplot_data = 
-    cleaned_time_sheet |>
-    group_by(wk_index = floor_date(start_date, "week")) |>
-    summarize(effort = sum(effort_hours)) |>
-    ggplot(aes(x = wk_index, y = effort)),
-  xlabel = "Time",
-  ylabel = "Weekly Effort (in hours)",
-) +
-geom_smooth(method = lm, se = FALSE)
 
 # bar graph comparison over time
 generate_compare_bar_graph(
   ggplot_data =
     cleaned_time_sheet |>
-    filter(type %in% c("TA", "Research", "Course Work")) |>
+    mutate(type = ifelse(type %in% c("Research", "Course Work", "TA"), 
+                         as.character(type), 
+                         "Other")) |>
     group_by(wk_index = floor_date(start_date, "week"), type) |>
     summarize(effort = sum(effort_hours)) |>
-    ggplot(aes(x = wk_index, y = effort, fill = type)),
+    ggplot(aes(x = wk_index, 
+               y = effort, 
+               fill = factor(type, level = c("Research", "Course Work", "TA", "Other")))),
   position = "stack", 
   xlabel = "Week",
-  ylabel = "Effort (in hours)"
-)
+  ylabel = "Weekly Effort (hours)",
+  fill_label = "Project",
+) +
+  geom_vline(xintercept = as.Date("2022-09-08"), linetype = "dotted") +
+  geom_vline(xintercept = as.Date("2022-12-14"), linetype = "dotted") +
+  geom_vline(xintercept = as.Date("2023-01-05"), linetype = "dotted") +
+  scale_x_date(date_breaks = "1 months", date_labels = "%b-%y")
 ```
 
-## Research
+### Course Work & TA
 
-### Overall
+As both course work and TA are structured based on each semester, their trends are analyzed together in this section. Looking at the trend over time for course work for both Fall 2022 and Winter 2023 semester in @fig-overtime-course-ta-1, it looks like there is a pattern where there are more work at the beginning and the end of the semester, with some down time in the middle. As for TA work ( @fig-overtime-course-ta-2), while the workload is mostly steady at a few hours a week, there are noticeable peaks when a large amount of time is needed for fast turnaround on deliverables.
 
 ```{r}
 #| message: false
 #| echo: false
 #| warning: false
-
-cleaned_time_sheet |>
-  filter(type == "Research") |>
-  mutate(project = ifelse(project %in% c("Reading", NA), "Research-General", project)) |>
-  group_by(project) |>
-  summarize(effort = sum(effort_hours)) |>
-  mutate(pct = effort / sum(effort)) |>
-  arrange(desc(effort))
-
-cleaned_time_sheet |>
-  filter(type == "Research") |>
-  group_by(start_date) |>
-  summarize(
-    effort = mean(effort_hours),
-    sessions = n()
-  ) |>
-  ungroup() |>
-  ggplot(aes(x = "", y = effort)) +
-  geom_boxplot(width = 0.3) +
-  geom_jitter(width = 0.1) +
-  labs(
-    x = "",
-    y = "Duration (in hours)"
-  ) +
-  theme_minimal()
-
+#| label: fig-overtime-course-ta
+#| fig-cap: Weekly effort for differe type of work
+#| fig-subcap: ["Course Work","Teaching Assistant"]
+#| layout-ncol: 2
+#| layout-nrow: 1
 
 generate_compare_bar_graph(
-  ggplot_data =
-    hourly_calc |>
-    filter(type %in% c("Research")) |>
-    group_by(hour_value, type) |>
-    count() |>
-    ungroup() |>
-    mutate(pct = n / sum(n)) |>
-    ggplot(aes(x = hour_value, y = pct, fill = type)),
-  xlabel = "Hour of the Day",
-  ylabel = "Percentage of Occurrence",
-  position = "stack",
-  yscale = scales::percent
-)
-```
-
-### Literature Review Paper
-
--   How long does it take to work on a full paper?
-
-```{r}
-#| message: false
-#| echo: false
-#| warning: false
-
-generate_time_series_graph(
     ggplot_data = 
       cleaned_time_sheet |>
-      filter(project == "Lit Review") |>
+      filter(type == "Course Work") |>
       group_by(wk_index = floor_date(start_date, "week")) |>
       summarize(effort = sum(effort_hours)) |>
       ggplot(aes(x = wk_index, y = effort)),
     xlabel = "Week",
     ylabel = "Effort (in hours)",
-  ) 
-
-cleaned_time_sheet |>
-  filter(project == "Lit Review") |>
-  group_by(start_date) |>
-  summarize(
-    effort = mean(effort_hours),
-    sessions = n()
-  ) |>
-  ungroup() |>
-  ggplot(aes(x = "", y = effort)) +
-  geom_boxplot(width = 0.3) +
-  geom_jitter(width = 0.1) +
-  labs(
-    x = "",
-    y = "Duration (in hours)"
+    position = "stack", 
   ) +
-  theme_minimal()
+  scale_x_date(date_breaks = "1 months", date_labels = "%b-%y")
+
+generate_compare_bar_graph(
+    ggplot_data = 
+      cleaned_time_sheet |>
+      filter(type == "TA") |>
+      group_by(wk_index = floor_date(start_date, "week")) |>
+      summarize(effort = sum(effort_hours)) |>
+      ggplot(aes(x = wk_index, y = effort)),
+    xlabel = "Week",
+    ylabel = "Effort (in hours)",
+    position = "stack", 
+  ) +
+  scale_x_date(date_breaks = "1 months", date_labels = "%b-%y")
 ```
 
-## Actual vs. Estimated Effort
+### Research
+
+Since August 2022, I have been spending on average of 14.2 hours per week on research related activities. There is high variation (standard deviation = 11.3 hours) in the weekly effort on research, with minimum of 1.1 hours and maximum of 51 hours (see @tbl-research). The variation is correlated with the submissions deadlines for conferences and journals, as the number of hours spent on research increases dramatically in the weeks leading up to the deadline (@fig-research). One good example is the time spent on the systematic literature review paper (Lit Review), where there are a couple of weeks with over 40 hours before the deadline.
+
+Based on the graph in @fig-research, there are usually only 1 or 2 research projects that I'm working on at a given time. As a research project finishes, then I can take on new projects for research. This rolling schedule can be seen with the OA Perception project as the main focus in August and September. After this project is finished, the next major project, Lit Review is started in October and continue to be the main focus until end of February. It is also interesting to observe the differences between being the lead author on Lit Review where there are high peaks of writing time before submission versus a contributing researcher on OA Perception where it is a steady amount of work before the deadline.
+
+```{r}
+#| message: false
+#| echo: false
+#| warning: false
+#| label: tbl-research
+#| tbl-cap: Summary statistics for weekly effort on research related activities
+
+cleaned_time_sheet |>
+  filter(type == "Research") |>
+  group_by(wk_index = floor_date(start_date, "week")) |>
+  summarize(effort = sum(effort_hours)) |>
+  ungroup() |>
+  summarize(
+    mean(effort), sd(effort), min(effort), max(effort),
+  ) |>
+  kable(
+    booktabs = TRUE,
+    digits = 1,
+    align = "c",
+    col.names = c("Mean", "SD", "Min", "Max")
+  )
+```
+
+```{r}
+#| message: false
+#| echo: false
+#| warning: false
+#| label: fig-research
+#| fig-cap: Weekly effort for differe type of work
+
+generate_compare_bar_graph(
+    ggplot_data = 
+      cleaned_time_sheet |>
+      filter(type == "Research") |>
+      mutate(project = ifelse(project %in% c("Disfluency perception",
+                                             "Finance CA Marginalization", 
+                                             "Lit Review", 
+                                             "OAPerception"), 
+                              project, 
+                              "Other")) |>
+      group_by(wk_index = floor_date(start_date, "week"), project) |>
+      summarize(effort = sum(effort_hours)) |>
+      ggplot(aes(x = wk_index, y = effort, fill = project)),
+    xlabel = "Week",
+    ylabel = "Effort (in hours)",
+    fill_label = "Project",
+    position = "stack",
+    nrow = 2
+  ) +
+  scale_x_date(date_breaks = "1 months", date_labels = "%b-%y")
+```
 
 # Model
 
 Model1:
 
--   input - timesheet for the day + sleep score
+-   Input - type, deadline, technical?, total effort, % complete
 
--   process
+-   Process -
 
--   output - effectiveness score: break down to different aspects
-
-Model2: Extrapolate actual from expected hours?
+-   Output - estimated completion date & proposed weekly schedule
 
 # Discussion
 
