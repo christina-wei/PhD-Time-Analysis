@@ -27,6 +27,7 @@ library(knitr)
 library(kableExtra)
 library(viridis)
 
+source(here("scripts/02-model.R"))
 source(here("scripts/03-helper_functions.R"))
 
 # read in cleaned data
@@ -720,13 +721,155 @@ generate_compare_bar_graph(
 
 # Model
 
-Model1:
+There are two prediction models created to help me with time management: one is to predict the number of hours available working on a deliverable based on a given targeted delivery date; the other is based on the estimated effort in hours to project the estimated completion date. Also, a calibration routine is used to control the model parameters used in calibration. These models assume that weekly patterns of hours spent working per day in the past is representative of future behavioural working patterns.
 
--   Input - type, deadline, technical?, total effort, % complete
+## Calibrate Model Parameters
 
--   Process -
+The model parameter used in the prediction models are based on the average hours spent working for each day of the week. There are some optional inputs that users can use to filter timesheet data: using start date and end date to select a specific period, or to specific the type of work (e.g. Research) to be used in calibration. The timesheet data is then used to compute the average number of hours per day, which is then summarized by calculating the average hours for each day of the week.
 
--   Output - estimated completion date & proposed weekly schedule
+Here is an example of invoking the calibration routine based on all available timesheet data with the output model parameters in @tbl-calibration-all.
+
+``` r
+calibrate_model()
+```
+
+```{r}
+#| message: false
+#| echo: false
+#| warning: false
+#| label: tbl-calibration-all
+#| tbl-cap: Sample of model parameter output with no filtering criteria
+
+calibrate_model() |>
+  kable(
+    booktabs = TRUE,
+    linesep = ""
+  )
+```
+
+Here is another example of invoking the calibration routine based on timesheet data from January 9 to April 1, 2023, using only entries related to Research type of work. The corresponding model parameters are shown in @tbl-calibration-research.
+
+``` r
+calibrate_model(as.Date("2023-01-09"), as.Date("2023-04-01"), "Research")
+```
+
+```{r}
+#| message: false
+#| echo: false
+#| warning: false
+#| label: tbl-calibration-research
+#| tbl-cap: Sample of model parameter output filtered from Jan 9 to Apr 1, 2023 and Research
+
+calibrate_model(as.Date("2023-01-09"), as.Date("2023-04-01"), "Research") |>
+  kable(
+    booktabs = TRUE,
+    linesep = ""
+  )
+```
+
+## Predict Hours Available Between Dates
+
+This function is used to estimate the number of hours I have available to work on a project if I have a target completion date in mind. As such, the input parameters for this function are defined as the following:
+
+-   `model_param` specifies the calibrated number of hours worked for each day of the week (e.g. @tbl-calibration-all)
+
+-   `start_date(optional)` specifies the start date of the project. If not specified, it will default to today's date
+
+-   `end_date` specifies the target completion date of the project
+
+-   `pct_effort(optional)` specifies the multiplier to be applied to the calibrate hours in model parameters. For example, specifying 1.2 here will scale up the calibrated hours by 120%.
+
+-   `include_weekends(optional)` specifies whether the estimated hours should include Saturdays and Sundays. If not specified this value is default to be TRUE to include weekends in prediction.
+
+To estimate the number of hours, the algorithm is projecting the list of dates that are available between the start date and the end date, calculating the number of days available for each day of the week (e.g. 3 Mondays, 2 Tuesdays ..), multiplying them by the average number of hours for each day of the week, then scaling them up by the `pct_effort` parameter to generate the final estimate.
+
+$$
+total\_hours = \sum_{i=1}^{N} \beta_{i} * n_{i} * \alpha
+$$ {#eq-predict-hours}
+
+The parameters in @eq-predict-hours are:
+
+-   i = day of the week (e.g. 1 = Mon, 2 = Tues ..)
+
+-   N = 1 to 7 if include_weekends = TRUE; 1 to 5 if include_weekends = FALSE
+
+-   $\beta_{i}$ = average hours for the day of the week
+
+-   $n_{i}$ = number of the day of the week (e.g. 3 Mondays)
+
+-   $\alpha$ = pct_effort multiplier value for effort scaling
+
+For example, the following code snippet estimates the number of hours I have available between now and April 17 based all the timesheet data available. Based on the prediction model, I have 106 hours available for work, and it also generates a detailed daily schedule for my review (sample schedule in @tbl-predict-hours).
+
+``` r
+model_param <- calibrate_model()
+predict_hours_available(model_param, end_date = as.Date("2023-04-17"))
+```
+
+```{r}
+#| message: false
+#| echo: false
+#| warning: false
+#| label: tbl-predict-hours
+#| tbl-cap: Sample output of detailed daily schedule from predict hours available algorithm
+
+predict_hours_available(calibrate_model(), end_date = as.Date("2023-04-17"))$schedule |>
+  head() |>
+  kable(
+    booktabs = TRUE,
+    linesep = ""
+  )
+```
+
+## Predict Completion Date
+
+On the other hand, I can also predict the estimated completion date if I have an estimated number of effort for a project. The algorithm of this prediction is similar to predicting the hours available between two date by using the average number of hours worked for each day of the week as the baseline. Specifically, the input parameters for this function are defined as the following:
+
+-   `model_param` specifies the calibrated number of hours worked for each day of the week (e.g. @tbl-calibration-all)
+
+-   `start_date(optional)` specifies the start date of the project. If not specified, it will default to today's date
+
+-   `effort_hours` specifies the estimated number of hours for the project
+
+-   `pct_effort(optional)` specifies the multiplier to be applied to the calibrate hours in model parameters. For example, specifying 1.2 here will scale up the calibrated hours by 120%.
+
+-   `include_weekends(optional)` specifies whether the estimated hours should include Saturdays and Sundays. If not specified this value is default to be TRUE to include weekends in prediction.
+
+To estimate the completion date, the algorithm generates a sequence of daily dates from start date based on criteria of whether to include weekend dates, then populating each date by the estimated hours for each day of the week multiplied by the `pct_effort` parameter. When the cumulative sum of the daily efforts exceeds the estimate number of hours for the project, then the routine is stopped with the final date in the sequence returned as the estimated date of completion.
+
+As an example, I would like to use this prediction model to help me estimate the date that I will be completing the Final Paper for the Data Science Foundations course. I would like to use this semester's timesheet related to course work to estimate my behavioural patterns. I am estimating the remaining effort on the paper is 10 hours, and I can spend about 50% of my total efforts working on this. Lastly, I do not want to work on weekends. The code snippet below demonstrates the translation of my requirements into parameters for calibration and prediction models. The model predicts that I will be able to complete the assignment on April 7, 2023 with the detailed schedule generated in @tbl-predict-date.
+
+``` r
+model_param <- calibrate_model(
+  from_date = as.Date("2023-01-09"),
+  to_date = as.Date("2023-03-30"),
+  work_type = "Course Work")
+
+predict_completion_date(
+  model_param, 
+  effort_hours = 10,
+  pct_effort = 0.5,
+  include_weekends = FALSE)
+```
+
+```{r}
+#| message: false
+#| echo: false
+#| warning: false
+#| label: tbl-predict-date
+#| tbl-cap: Sample output of detailed daily schedule from predict completion date algorithm
+
+predict_completion_date(
+  calibrate_model(as.Date("2023-01-09"), as.Date("2023-03-30"), "Course Work"),
+  start_date = as.Date("2023-03-31"),
+  effort_hours = 10,
+  pct_effort = 0.5, 
+  include_weekends = FALSE)$schedule |>
+  kable(
+    booktabs = TRUE,
+    linesep = ""
+  )
+```
 
 # Discussion
 
@@ -741,6 +884,10 @@ Model1:
 -   Prefer to work on morning / early afternoon, and after dinner
 
 -   Time fixed by events - like going to school, meetings that I do not control
+
+## Future Improvements
+
+The prediction models are built on the assumptions that past behavioural patterns can be used to predict future patterns. However, this may not always hold true. For example, I am currently in the course work period of my PhD studies, where a large amount of my time is driven by
 
 # Conclusion
 
