@@ -73,20 +73,3 @@ write_csv(
   x = cleaned_time_sheet,
   file = "outputs/data/cleaned_time_sheet.csv"
 )
-
-#### Sleep data ####
-
-cleaned_sleep_score <-
-  read_csv(
-    file = "inputs/data/sleep_score.csv",
-    show_col_types = FALSE
-  )
-
-
-#### Due dates ####
-
-cleaned_deliverables <-
-  read_csv(
-    file = "inputs/data/deliverables.csv",
-    show_col_types = FALSE
-  )

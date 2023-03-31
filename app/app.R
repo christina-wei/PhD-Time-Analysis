@@ -1,3 +1,12 @@
+#### Preamble ####
+# Purpose: Application to calculate various estimates using the calibrated prediction models
+# Author: Christina Wei
+# Data: March 30, 2023
+# Contact: christina.wei@mail.utoronto.ca
+# License: MIT
+# Prerequisites:
+  # 01-data_cleaning.R as the calibration model uses time sheet data
+
 #
 # This is a Shiny web application. You can run the application by clicking
 # the 'Run App' button above.

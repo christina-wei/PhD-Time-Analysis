@@ -5,7 +5,7 @@
 # Contact: christina.wei@mail.utoronto.ca
 # License: MIT
 # Prerequisites:
-  # Run 01-data_cleaning.R to have cleaned data used for calibration
+  # Run 01-data_cleaning.R to generate cleaned data
 
 #### Workspace setup ####
 
