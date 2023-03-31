@@ -41,5 +41,3 @@ Type in the command `runApp('app')` in the root directory to run the application
     -   Introduction
 
     -   Estimand
-
--   Remove traces that this is a class project
