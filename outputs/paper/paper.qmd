@@ -893,4 +893,8 @@ The prediction models are built on the assumptions that past behavioural pattern
 
 # Appendix {.unnumbered}
 
+Shiny App
+
+![](shiny_app_screenshot.png)
+
 # Reference

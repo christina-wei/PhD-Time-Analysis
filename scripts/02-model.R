@@ -124,9 +124,13 @@ predict_completion_date <- function(model_param,
   detailed_schedule <- 
     merge(detailed_schedule, daily_hours, by = "wkday") |>
     arrange(date) |>
-    mutate(cumulative = cumsum(avg_effort))
+    mutate(
+      hours = avg_effort,
+      cumulative = cumsum(avg_effort)) |>
+    select(date, wkday, hours, cumulative)
   
   slice_index = max(which(detailed_schedule$cumulative < effort_hours)) + 1
+  slice_index = min(slice_index, nrow(detailed_schedule))
 
   detailed_schedule <-
     slice(detailed_schedule, 1:slice_index)
