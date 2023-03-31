@@ -2,7 +2,7 @@
 title: "TBD"
 title-block-banner: true
 abstract: "TBD"
-thanks: "Code and data supporting this analysis is available at: https://github.com/christina-wei/TBD.git"
+thanks: "Code and data supporting this analysis is available at: hhttps://github.com/christina-wei/PhD-Time-Analysis.git"
 author: Christina Wei
 date: today
 date-format: long
@@ -28,7 +28,7 @@ library(kableExtra)
 library(viridis)
 
 source(here("scripts/02-model.R"))
-source(here("scripts/03-helper_functions.R"))
+source(here("scripts/05-helper_functions.R"))
 
 # read in cleaned data
 
@@ -165,6 +165,10 @@ There is also an interesting limitation on the *consistency* of project categori
 -   Sleep data - automatically tracked through Fitbit
 
 -   Deliverable data - created at the beginning of each term to track major deliverables
+
+-   Missing - social aspects, quality of work
+
+-   Time fixed by events - like going to school, meetings that I do not control
 
 # Results
 
@@ -876,21 +880,41 @@ predict_completion_date(
 
 # Discussion
 
--   Missing - social aspects, quality of work
+The first
 
--   Weekends / timeoff / work life balance
+## Adjustment Going from Industry into Academia
+
+Since I was working full time for the last 15 years, I am quite familiar with the workday structure of 8 hour working days from Monday to Friday. Based on my previous schedule at working full time, I was spending on average about 10 hours a day, which is about 50 hours per week. While the work can be tiring sometimes, it was generally manageable and I was able to find a balance between work and life.
+
+Comparing between the workload between full time work and as a PhD student, I feel that it is harder as a PhD student to balance the work with personal life. This is evident in the timesheet analysis that working on weekends is a common occurrence (@fig-day-effort-2). Based on my timesheet data, I am surprised to see that most weeks I am spending slightly less than 40 hours a week (@fig-overtime), which time-wise is less than the \~50 hours a week that I did in my full-time job. If I am quantitatively working less hours as a PhD student, why does it feel more tiring? There are a few potential contributing factors to this: level of familiarity, type of work, and mixture of cognitive demands in tasks.
+
+First, I am still learning the skills needed in order to excel in my PhD journey. As I have not done academic research previously, I need to learn foundational knowledge associated with it, as well as applying them to the projects that I am working on. There are many aspects of new learning associated with research: how to think about a research problem, how to synthesize findings, how to write a paper suitable for a conference to name a few. Compare this to my full time job, I am very familiar with leading a product development team to implement new applications in the financial industry. When faced with new problems, I can derive based on past experiences on different ways to approach and resolve them. The new learnings associated with being a PhD student feels unfamiliar, therefore it feels more tiring compare to previous work-related activities.
+
+Secondly, there are fundamentally different types of work done as an academic researcher vs. industry practitioner. Academic research is more of a creative process, to seek out domains that have not been explored before and to generate new macro knowledge fo fill these gaps. The process can be unstructured and lacking a sense of achievement as it is not a linear progress. Industry practitioners, specifically those on the implementation side, are generally applying existing knowledge to specific use cases for their applications. There is also knowledge creation in the process, but it is usually at the micro level to adapt general knowledge towards specific applications. There are usually concrete deliverables defined and it is easier to have a sense of achievement based on this. The creative mindset of academia vs. execute mindset of industry may also be a factor for feeling that PhD work is harder, as it is difficult to grasp a sense of concrete achievement.
+
+Lastly, there are different mixtures of tasks that I work on during the course of a day between PhD and full-time work. Based on this timesheet analysis, most of my time as a PhD student are spent on research, course work and and teaching assistant obligations. All of these are mentally demanding tasks that require my full attention. On the other hand, full-time jobs have some activities requiring lower mental engagement scattered throughout the day, like attending general information meetings (e.g. town halls), daily stand-up meetings, and reviewing customer feedback. These activities give me a mental break from highly cognitive work, reducing the feeling of tiredness.
+
+## Getting in the Flow
 
 -   Different types of flow - technical vs. research
 
--   Find the focus each day - try to stay with 1 or 2 topics only
-
 -   Prefer to work on morning / early afternoon, and after dinner
 
--   Time fixed by events - like going to school, meetings that I do not control
+## Areas of Improvement
 
-## Future Improvements
+While overall I am satisfied with my efforts over the last 8 months as a PhD student and feel like I am progressing well in my studies, this analysis shows me some areas of improvement to be more efficient in my time management as well as achieving better work-life balance.
+
+First, I can be more efficient with my time by defining a couple of topics to focus on at the beginning of each day, and engage in work sessions that are no longer than 2 hours in length. This is in line with my behavioural patterns, as I tend to have study sessions around 2 hours length, and focus on 1 to 3 projects per day. The caveat to this is if I get into the flow of the work, then the work sessions can be longer as not to disturb the deep engagement for the session.
+
+Second, this analysis shows that I have been spending significant amount of time working on weekends, which is not ideal for work-life balance and spending time with family. Tracking social times to analyze work life balance?
+
+Third, better planning - use the model
+
+## Limitations
 
 The prediction models are built on the assumptions that past behavioural patterns can be used to predict future patterns. However, this may not always hold true. For example, I am currently in the course work period of my PhD studies, where a large amount of my time is driven by
+
+Changing schedules - regime switching (e.g. finishing course work)
 
 # Conclusion
 
