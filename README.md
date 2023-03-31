@@ -43,3 +43,4 @@ Type in the command `runApp('app')` in the root directory to run the application
     -   Introduction
 
     -   Estimand
+    
