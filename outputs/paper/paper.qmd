@@ -20,7 +20,7 @@ bibliography: ref.bib
 
 #### Workspace set-up and read in data ####
 
-# Load packages 
+# Load packages
 library(tidyverse)
 library(here)
 library(knitr)
@@ -32,13 +32,13 @@ source(here("scripts/03-helper_functions.R"))
 
 # read in cleaned data
 
-cleaned_time_sheet = read_csv(
+cleaned_time_sheet <- read_csv(
   file = here("outputs/data/cleaned_time_sheet.csv"),
   show_col_types = FALSE
 )
 
 # set factor
-cleaned_time_sheet$type =
+cleaned_time_sheet$type <-
   factor(cleaned_time_sheet$type,
          levels = c(
            "Research",
@@ -59,7 +59,7 @@ cleaned_time_sheet$type =
 ## Variations of timesheet data
 
 # Calculate daily data
-daily_data <- 
+daily_data <-
   cleaned_time_sheet |>
   mutate(wkday = wday(cleaned_time_sheet$start_date, label = TRUE)) |>
   group_by(start_date, wkday, type) |>
@@ -67,16 +67,16 @@ daily_data <-
   ungroup()
 
 # Calculate data for hours of each day
-hourly_calc <- 
+hourly_calc <-
   cleaned_time_sheet |>
-  slice(rep(1:n(), each = 24)) |>
+  slice(rep(seq_len(n()), each = 24)) |>
   mutate(hour_value = rep(0:23, times = nrow(cleaned_time_sheet))) |>
   mutate(
-    worked = (start_date == end_date & 
-                hour(start_time) <= hour_value & 
+    worked = (start_date == end_date &
+                hour(start_time) <= hour_value &
                 convert_hms_to_hours(end_time) > hour_value
               ) |
-              (start_date < end_date & 
+              (start_date < end_date &
                  (convert_hms_to_hours(end_time) > hour_value |
                     hour(start_time) <= hour_value)
                )
@@ -140,7 +140,7 @@ Please see @tbl-sample for a sample of the timesheet data.
 #| warning: false
 #| label: tbl-sample
 #| tbl-cap: Sample of the timesheet data
- 
+
 cleaned_time_sheet |>
   tail() |>
   kable(
@@ -213,7 +213,7 @@ Looking at time spent on Course Work in @fig-time-spent-bytype-2 , there are two
 #| layout-nrow: 1
 
 generate_compare_bar_graph(
-  ggplot_data = 
+  ggplot_data =
     cleaned_time_sheet |>
     filter(type == "Research") |>
     mutate(project = ifelse(project %in% c(NA, "Reading", "Research-General"),
@@ -222,11 +222,11 @@ generate_compare_bar_graph(
            ) |>
     group_by(project) |>
     summarize(effort = sum(effort_hours)) |>
-    ggplot(aes(x = factor(project, 
-                          level = c("Lit Review", 
-                                    "OAPerception", 
-                                    "Finance CA Marginalization", 
-                                    "Disfluency perception", 
+    ggplot(aes(x = factor(project,
+                          level = c("Lit Review",
+                                    "OAPerception",
+                                    "Finance CA Marginalization",
+                                    "Disfluency perception",
                                     "Industry DDN",
                                     "Other")),
                y = effort)),
@@ -241,13 +241,14 @@ generate_compare_bar_graph(
   ylim(0, 260)
 
 generate_compare_bar_graph(
-  ggplot_data = 
+  ggplot_data =
     cleaned_time_sheet |>
     filter(type == "Course Work") |>
     group_by(project) |>
     summarize(effort = sum(effort_hours)) |>
-    ggplot(aes(x = factor(project, 
-                          level = c("INF2241", "INF3104", "INF3001", "INF2169")), 
+    ggplot(aes(x = factor(
+                      project,
+                      level = c("INF2241", "INF3104", "INF3001", "INF2169")),
                y = effort)),
   position = "identity",
   xlabel = "Course",
@@ -295,7 +296,7 @@ Looking at the **length of time** spent per session, @fig-session-bylength-1 sho
 #| layout-nrow: 1
 
 generate_compare_bar_graph(
-  ggplot_data = 
+  ggplot_data =
     cleaned_time_sheet |>
     filter(type %in% c("TA", "Research", "Course Work", "Learning")) |>
     mutate(effort_bin = case_when(
@@ -310,9 +311,10 @@ generate_compare_bar_graph(
     count() |>
     ungroup() |>
     mutate(pct = n / sum(n)) |>
-    ggplot(aes(x = factor(effort_bin, 
-                          level = c("< 1", "1 - 2", "2 - 3", "3 - 4", "4 - 5", "> 5")), 
-               y = pct, 
+    ggplot(aes(x = factor(
+                    effort_bin,
+                    level = c("< 1", "1 - 2", "2 - 3", "3 - 4", "4 - 5", "> 5")),
+               y = pct,
                fill = type)),
   position = "stack",
   yscale = scales::percent,
@@ -374,8 +376,8 @@ cleaned_time_sheet |>
     booktabs = TRUE,
     digits = 1,
     linesep = "",
-    align = 'lcccl',
-    col.names = c("Type", "Count", "Avg Effort", "Max Effort" ,"Tasks")
+    align = "lcccl",
+    col.names = c("Type", "Count", "Avg Effort", "Max Effort", "Tasks")
   )
 ```
 
@@ -425,9 +427,9 @@ tmp_daily_projects <-
   group_by(start_date, project) |>
   summarize(projects = n()) |>
   group_by(start_date) |>
-  summarize(projects = n()) 
+  summarize(projects = n())
 
-tmp_daily <- merge(tmp_daily_effort, tmp_daily_projects, by="start_date")
+tmp_daily <- merge(tmp_daily_effort, tmp_daily_projects, by = "start_date")
 rm(tmp_daily_effort)
 rm(tmp_daily_projects)
 
@@ -445,7 +447,7 @@ tibble(
   kable(
     booktabs = TRUE,
     digits = 1,
-    align = 'c'
+    align = "c"
   )
 ```
 
@@ -504,7 +506,7 @@ cleaned_time_sheet |>
   group_by(start_date, project) |>
   summarize(projects = n()) |>
   group_by(start_date) |>
-  summarize(projects = n()) |> 
+  summarize(projects = n()) |>
   group_by(projects) |>
   count() |>
   ungroup() |>
@@ -601,15 +603,15 @@ Analyzing my weekly effort over time (@fig-overtime), I can see a slight upward 
 generate_compare_bar_graph(
   ggplot_data =
     cleaned_time_sheet |>
-    mutate(type = ifelse(type %in% c("Research", "Course Work", "TA"), 
-                         as.character(type), 
+    mutate(type = ifelse(type %in% c("Research", "Course Work", "TA"),
+                         as.character(type),
                          "Other")) |>
     group_by(wk_index = floor_date(start_date, "week"), type) |>
     summarize(effort = sum(effort_hours)) |>
-    ggplot(aes(x = wk_index, 
-               y = effort, 
+    ggplot(aes(x = wk_index,
+               y = effort,
                fill = factor(type, level = c("Research", "Course Work", "TA", "Other")))),
-  position = "stack", 
+  position = "stack",
   xlabel = "Week",
   ylabel = "Weekly Effort (hours)",
   fill_label = "Project",
@@ -635,7 +637,7 @@ As both course work and TA are structured based on each semester, their trends a
 #| layout-nrow: 1
 
 generate_compare_bar_graph(
-    ggplot_data = 
+    ggplot_data =
       cleaned_time_sheet |>
       filter(type == "Course Work") |>
       group_by(wk_index = floor_date(start_date, "week")) |>
@@ -643,12 +645,12 @@ generate_compare_bar_graph(
       ggplot(aes(x = wk_index, y = effort)),
     xlabel = "Week",
     ylabel = "Effort (in hours)",
-    position = "stack", 
+    position = "stack",
   ) +
   scale_x_date(date_breaks = "1 months", date_labels = "%b-%y")
 
 generate_compare_bar_graph(
-    ggplot_data = 
+    ggplot_data =
       cleaned_time_sheet |>
       filter(type == "TA") |>
       group_by(wk_index = floor_date(start_date, "week")) |>
@@ -656,7 +658,7 @@ generate_compare_bar_graph(
       ggplot(aes(x = wk_index, y = effort)),
     xlabel = "Week",
     ylabel = "Effort (in hours)",
-    position = "stack", 
+    position = "stack",
   ) +
   scale_x_date(date_breaks = "1 months", date_labels = "%b-%y")
 ```
@@ -698,14 +700,14 @@ cleaned_time_sheet |>
 #| fig-cap: Weekly effort for differe type of work
 
 generate_compare_bar_graph(
-    ggplot_data = 
+    ggplot_data =
       cleaned_time_sheet |>
       filter(type == "Research") |>
       mutate(project = ifelse(project %in% c("Disfluency perception",
-                                             "Finance CA Marginalization", 
-                                             "Lit Review", 
-                                             "OAPerception"), 
-                              project, 
+                                             "Finance CA Marginalization",
+                                             "Lit Review",
+                                             "OAPerception"),
+                              project,
                               "Other")) |>
       group_by(wk_index = floor_date(start_date, "week"), project) |>
       summarize(effort = sum(effort_hours)) |>
@@ -863,10 +865,11 @@ predict_completion_date(
   calibrate_model(as.Date("2023-01-09"), as.Date("2023-03-30"), "Course Work"),
   start_date = as.Date("2023-03-31"),
   effort_hours = 10,
-  pct_effort = 0.5, 
+  pct_effort = 0.5,
   include_weekends = FALSE)$schedule |>
   kable(
     booktabs = TRUE,
+    digits = 1,
     linesep = ""
   )
 ```
@@ -893,8 +896,8 @@ The prediction models are built on the assumptions that past behavioural pattern
 
 # Appendix {.unnumbered}
 
-Shiny App
+See @fig-app-screenshot for a snapshot of the Shiny application.
 
-![](shiny_app_screenshot.png)
+![Screenshot of the application for prediction models](shiny_app_screenshot.png){#fig-app-screenshot}
 
 # Reference

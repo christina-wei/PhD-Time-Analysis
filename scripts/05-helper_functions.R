@@ -12,7 +12,7 @@ library(tidyverse)
 
 # Convert HMS to hours
 convert_hms_to_hours <- function(time) {
-  as.numeric(time)/3600  
+  as.numeric(time) / 3600
 }
 
 # Generate time series graph with linear regression
@@ -25,7 +25,7 @@ generate_time_series_graph <- function(
     nrow = NULL,
     yscale = scales::number #scales::percent
 ) {
-  
+
   ggplot_data +
     geom_line() +
     scale_y_continuous(labels = yscale) +
@@ -52,7 +52,7 @@ generate_compare_bar_graph <- function(
     nrow = NULL,
     yscale = scales::number #scales::percent
 ) {
-  
+
   ggplot_data +
     geom_bar(stat = "identity", position = position) +
     scale_y_continuous(labels = yscale) +

@@ -48,8 +48,6 @@ check_validity <- function(cleaned_time_sheet) {
     expect_equal(sum(cleaned_time_sheet$end_date > today()), 0)
     expect_equal(sum(cleaned_time_sheet$effort_hours <= 0), 0)
     expect_lte(length(unique(cleaned_time_sheet$type)), 10)
-    
+
   })
 }
-
-#expect_type / expect_gt / expect_lt / expect_true / expect_equal

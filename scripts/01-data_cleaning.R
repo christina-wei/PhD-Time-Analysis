@@ -33,21 +33,21 @@ cleaned_time_sheet <-
     project == "INF3001" ~ "Course Work",
     project == "INF3104" ~ "Course Work",
     project == "INF2169" ~ "Course Work",
-    
+
     project == "TA-CCT419" ~ "TA",
     project == "TA-INF2208" ~ "TA",
     project == "TA-INF2192" ~ "TA",
-    
+
     project == "CCT419" ~ "Learning",
     project == "INF2208" ~ "Learning",
     project == "writing course" ~ "Learning",
     project == "Talks" ~ "Learning",
-    
+
     project == "Cookie Lab" ~ "Other Activities",
     project == "Service Work" ~ "Other Activities",
     project == "Professional" ~ "Other Activities",
-    
-    grepl("Anastasia", description, fixed=TRUE) ~ "Research",
+
+    grepl("Anastasia", description, fixed = TRUE) ~ "Research",
     project == "Industry DDN" ~ "Research",
     project == "Disfluency perception" ~ "Research",
     project == "OAPerception" ~ "Research",
@@ -55,16 +55,16 @@ cleaned_time_sheet <-
     project == "Lit Review" ~ "Research",
     project == "Finance CA Marginalization" ~ "Research",
     project == "Research-General" ~ "Research",
-    
+
     is.na(project) ~ "Admin",
     project == "Network" ~ "Admin",
-    grepl("Admin", description, fixed=TRUE) ~ "Admin",
-    grepl("NSERC", description, fixed=TRUE) ~ "Admin",
-    grepl("Grant", description, fixed=TRUE) ~ "Admin",
+    grepl("Admin", description, fixed = TRUE) ~ "Admin",
+    grepl("NSERC", description, fixed = TRUE) ~ "Admin",
+    grepl("Grant", description, fixed = TRUE) ~ "Admin",
   ))
 
 # change duration to hours
-cleaned_time_sheet =
+cleaned_time_sheet <-
   cleaned_time_sheet |>
   mutate(effort_hours = as.numeric(duration) / 3600) |>
   filter(effort_hours > 0)

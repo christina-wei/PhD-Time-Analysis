@@ -10,7 +10,7 @@
 source("scripts/04-helper_tests.R")
 
 # Reading in cleaned data
-cleaned_time_sheet = read_csv(
+cleaned_time_sheet <- read_csv(
   file = here("outputs/data/cleaned_time_sheet.csv"),
   show_col_types = FALSE
 )
