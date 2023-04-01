@@ -2,7 +2,7 @@
 
 ## Overview of Paper
 
-TBD
+Various studies have shown that PhD students are having trouble with their work-life balance and coping with the stress of their workloads. To understand my own time management skills, I analyzed my timesheet data to understand my behavioural patterns over the first two semesters of my PhD journey. I found that I am spending about 40 hours a week, with most of my time spent on research, course work, and teach assistant related activities. There is evidence of improper work-life balance based on my tendency to work in late evenings as well as on weekends. To strive for better balance, I have outlined several suggestions to purposefully plan for each day, as well as created prediction models to estimate and plan for upcoming projects.
 
 ## File Structure
 
