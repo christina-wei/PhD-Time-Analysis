@@ -1,7 +1,7 @@
 ---
-title: "TBD"
+title: "Requiem for a Balanced Life: Analysis of My Behavioural Patterns as a PhD Student"
 title-block-banner: true
-abstract: "TBD"
+abstract: "Various studies have shown that PhD students are having trouble with their work-life balance and coping with the stress of their workloads. To understand my own time management skills, I analyzed my timesheet data to understand my behavioural patterns over the first two semesters of my PhD journey. I found that I am spending about 40 hours a week, with most of my time spent on research, course work, and teach assistant related activities. There is evidence of improper work-life balance based on my tendency to work in late evenings as well as on weekends. To strive for better balance, I have outlined several suggestions to purposefully plan for each day, as well as created prediction models to estimate and plan for upcoming projects."
 thanks: "Code and data supporting this analysis is available at: hhttps://github.com/christina-wei/PhD-Time-Analysis.git"
 author: Christina Wei
 date: today
@@ -940,10 +940,14 @@ The prediction models can also be improved by building more nuances into their a
 
 # Conclusion
 
+Pursing a PhD can be an exciting journey filled with self-improvement and new learnings, but it can be a stressful period of time, causing improperly balance between work and life. Having proper time management skills and reflecting on the allocation time can be used to mitigate against the stress and strive for a better work-life balance. By analyzing into my own timesheet data tracking activities since starting my PhD, it has provided me with a number of actionalble insights into my own behavioural patterns and areas of improvements to incorporate into my daily practices. I am looking forward to leverage the prediction models to plan for upcoming work, as well as performing this analysis every semester to continuously improve my time management skills.
+
+\newpage
 # Appendix {.unnumbered}
 
 An interface was built using Shiny to expose the model for calibrating and predicting number of hours available or completion date. Please see @fig-app-screenshot for a snapshot of the application.
 
 ![Screenshot of the application for prediction models](shiny_app_screenshot.png){#fig-app-screenshot}
 
+\newpage
 # Reference
