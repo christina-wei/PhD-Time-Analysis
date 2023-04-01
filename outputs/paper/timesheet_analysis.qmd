@@ -87,7 +87,13 @@ hourly_calc <-
 
 # Introduction
 
-TBD
+Pursing a PhD degree can be an intellectually fulfilling journey to be at the forefront of academic knowledge. However, this can also be a difficult journey, as many students are struggling to cope with the stress of the work. Based on a study conducted on more than 3,500 PhD students in Belgium, the authors found that 50% ofthe students experienced psychological distress during their PhD, with more than 30% were at risk of developing a psychiatric disorder, especially depression [@levecque2017work]. Another study shows that around 70% of students do not perceive themselves having good work-balance balance, with 90% of them reporting an imbalance in their personal life [@worklifebalance]. Reading these cautionary tales, it makes me question myself on whether I am striking a good work-life balance in my PhD journey.
+
+While I feel like I have a good handle on my stress level and actively managing my work-life balance through time management, I want to quantitatively assess whether I am achieving these goals. Since I have the habit of tracking my time spent on academic work since starting as a PhD student at the University of Toronto, I decided to analyze my timesheet data to answer the question on whether I have a good work-life balance in my PhD journey. For this analysis, I am using the amount of time I spent on academic work as the estimand for proportion of work in my life, while deducing the non-work related aspects as the time not tracked as academic work.
+
+This analysis has provided me with various insights into my behavioural patterns as a PhD student, as well as areas of improvements to strive for better work-life balance. Over the last 8 months, I spent the majority of my time on research, source work and teaching assistant related activities, working on average about 6 hours a day. I prefer to work in sessions around 2 hours in length, focusing on 2-3 topics each day. As for work-life balance, there are definitely areas of improvement as I tend to work in late evenings (past 9pm), as well as significant amount of time on weekends. To help myself manage my time better, I built a couple of prediction models to estimate the number of hours or the completion dates for projects based on past behavioural patterns.
+
+In the remainder of the paper, will first discuss in the Data section the characteristics of the timesheet data and the data cleaning procedure applied to it, as well as limitations of this data source. Next, the Results section presents trends and findings in behaviour patterns related to individual sessions, daily efforts, as well as trend over time. The following Model section outlines the prediction models used to calibrate and estimate the number of hours available or the completion dates for a given set of project parameters. Lastly, the paper wraps up with a Discussion section sharing my reflections adjusting from full-time job to a PhD student, getting in the flow of work, concrete suggestions to improve work-life balance, and future work to improve this analysis.
 
 # Data
 
@@ -896,31 +902,47 @@ Lastly, there are different mixtures of tasks that I work on during the course o
 
 ## Getting in the Flow
 
--   Different types of flow - technical vs. research
+There are some evidence in the data for work sessions where I have gotten into the flow and worked for a prolonged period of time. It is interesting to observe some patterns on the type of work in the sessions where I have worked for over 4 hours (@tbl-over-4hrs). Specifically, work that are technical in nature as well as paper writing and review are most common in longer sessions.
 
--   Prefer to work on morning / early afternoon, and after dinner
+Some of the longer sessions came from working on technical assignments from INF2241 Critical Making and INF3104 Data Science Foundations courses. The longest session recorded at 10.7 hours was working on the first assignment analyzing COVID clinics across Toronto. Also, some technical aspects of research are also longer in the length of work, such as thematic analysis for coding and data analysis of literature reviews. Based on my personal experience, I sometimes experience a deep sense of involvement working on technical problems, where I am following a particular train of thought and do not want to be disturbed until it can be traced to a satisfactory conclusion.
 
-## Areas of Improvement
+Another aspect for getting into the flow for longer sessions are related to paper writing and paper reviews. Especially for paper writing, it is interesting that many times I have experienced writer's block where I am forcing the words to come out, but sometimes the words are flowing freely with fully formed thoughts and well crafted sentences. I usually do not know which state of paper writing I will be engaged in until about half an hour into the writing process. Paper reviews on the other hand usually have better flow, where I prefer to dedicate several hours to read through the whole manuscript reviewing for cohesiveness overall as well as sentence level revisions.
+
+## Improving Work-Life Balance
 
 While overall I am satisfied with my efforts over the last 8 months as a PhD student and feel like I am progressing well in my studies, this analysis shows me some areas of improvement to be more efficient in my time management as well as achieving better work-life balance.
 
-First, I can be more efficient with my time by defining a couple of topics to focus on at the beginning of each day, and engage in work sessions that are no longer than 2 hours in length. This is in line with my behavioural patterns, as I tend to have study sessions around 2 hours length, and focus on 1 to 3 projects per day. The caveat to this is if I get into the flow of the work, then the work sessions can be longer as not to disturb the deep engagement for the session.
+First, I can be more efficient with my time by defining a couple of topics to focus on at the beginning of each day, and engage in work sessions that are no longer than 2 hours in length. This is in line with my behavioural patterns, as I tend to have study sessions around 2 hours length (@tbl-session-summary), and focus on 1 to 3 projects per day (@tbl-day-summary) . The caveat to this is that if I get into the flow of the work, then the work sessions can be longer as not to disturb the deep engagement. Also, time planning should take into account of the scheduled activities of the day (e.g. attending classes) to plan for topics and work sessions around these fixed time slots.
 
-Second, this analysis shows that I have been spending significant amount of time working on weekends, which is not ideal for work-life balance and spending time with family. Tracking social times to analyze work life balance?
+Second, the analysis shows that I have been spending a significant amount of time working on weekends ( @fig-day-effort-2) as well as working late into the evenings (@fig-session-byhour). This pattern is not ideal for work-life balance, as there are no defined breaks within my schedule for work-life balance. Also, evenings and weekends are usually prime times for social interactions with family and friends. The tendency to work during these times will have an impact on this important aspect of my life. To improve upon this, I should plan my working hours to be between 9am and 8pm Mondays to Fridays, leaving the evenings and weekends to decompress and to engage in leisure or social activities. This will require better time management skills but it is a worthy goal to aim for.
 
-Third, better planning - use the model
+Lastly, an analysis of my time allocations periodically can be an useful way to reveal interesting patterns in my behaviour and offer insights for continuous improvement. As student life can be different semester by semester as demonstrated in @fig-day-numprojects-semester, it will be useful to perform this analysis at the end of each semester to discover consistencies or changes in trends as well as to calibrate the prediction models used for estimating hours and completion dates. This is needed to detect potential regime changes in the data. For example, after I complete the course work portion of my PhD and move into the preparing for qualifying exam phase, my behaviours may be changing dramatically. The prediction model should only be calibrated with data that reflects my future behavioural patterns.
 
-## Limitations
+Based on my current study patterns, I am proposing the following daily schedule (@tbl-proposed-schedule) to be followed on weekdays. This will achieve 37.5 hours of work time each week with each session between 1.5 and 2 hours and adequate breaks in between them, without needing to work in late evenings or weekends.
 
-The prediction models are built on the assumptions that past behavioural patterns can be used to predict future patterns. However, this may not always hold true. For example, I am currently in the course work period of my PhD studies, where a large amount of my time is driven by
+| Time          | Duration (hours) | Activity         |
+|---------------|:----------------:|------------------|
+| 09:00 - 11:00 |        2         | Study session #1 |
+| 11:00 - 11:30 |       0.5        | Break            |
+| 11:30 - 13:00 |       1.5        | Study session #2 |
+| 13:00 - 14:00 |        1         | Lunch            |
+| 14:00 - 16:00 |        2         | Study session #3 |
+| 16:00 - 17:00 |        1         | Break            |
+| 17:00 - 19:00 |        2         | Study session #4 |
 
-Changing schedules - regime switching (e.g. finishing course work)
+: Proposed Schedule for Weekdays {#tbl-proposed-schedule}
+
+## Future Work
+
+While this analysis has provided many interesting insights I can use to manage my time as PhD student, there are some improvements I can made to this analysis that can make it more insightful. First, I can incorporate social engagement data into the analysis to have a quantitative measure of work-life balance. This can be done by incorporating my Google calendar details where I plan for social activities. Also, it will be interesting to incorporate the activities data from my FitBit into the analysis, such as physical activities and sleep schedules. Both of these sources will bring in additional perspectives to analyze my time from a more holistic point of view rather than just focused on academic activities.
+
+The prediction models can also be improved by building more nuances into their algorithms. One simple improvement to the estimation is to account for statutory holidays and planned vacations in the model. Also, as additional sources of data related to social and physical activities are incorporated into the analysis, the model can be enhanced to propose a schedule suitable to achieving academic excellence and maintaining a healthy work-life balance.
 
 # Conclusion
 
 # Appendix {.unnumbered}
 
-See @fig-app-screenshot for a snapshot of the Shiny application.
+An interface was built using Shiny to expose the model for calibrating and predicting number of hours available or completion date. Please see @fig-app-screenshot for a snapshot of the application.
 
 ![Screenshot of the application for prediction models](shiny_app_screenshot.png){#fig-app-screenshot}
 
