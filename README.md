@@ -31,16 +31,3 @@ The repo is structured as the following:
 Type in the command `runApp('app')` in the root directory to run the application.
 
 ![](https://github.com/christina-wei/INF3104-UN-World-Economic-Outlook/blob/main/outputs/paper/shiny_app_screenshot.png)
-
-## **ToDo**
-
--   Paper details
-
-    -   Title
-
-    -   Abstract
-
-    -   Introduction
-
-    -   Estimand
-    

@@ -166,16 +166,6 @@ The selected *granularity* of data used in timesheet tracking is also a potentia
 
 There is also an interesting limitation on the *consistency* of project categorization over time as more knowledge is gained on how to efficiently organize projects. For example, my one-on-one meetings with my supervisor were not categorized into any projects initially because I wasn't sure where to put them. After a few months, I created the project "Research-General" to capture general activities related to research, and have tagged future one-on-one meetings into this category. For this particular situation, the data cleaning routine moved the untagged 1:1 meetings into the "Research-General" project. However, there may be other activities with different projects over time that were not adjusted.
 
-\<Data not complete - before and after\>
-
--   Sleep data - automatically tracked through Fitbit
-
--   Deliverable data - created at the beginning of each term to track major deliverables
-
--   Missing - social aspects, quality of work
-
--   Time fixed by events - like going to school, meetings that I do not control
-
 # Results
 
 ## Type of Work
@@ -943,6 +933,7 @@ The prediction models can also be improved by building more nuances into their a
 Pursing a PhD can be an exciting journey filled with self-improvement and new learnings, but it can be a stressful period of time, causing improperly balance between work and life. Having proper time management skills and reflecting on the allocation time can be used to mitigate against the stress and strive for a better work-life balance. By analyzing into my own timesheet data tracking activities since starting my PhD, it has provided me with a number of actionalble insights into my own behavioural patterns and areas of improvements to incorporate into my daily practices. I am looking forward to leverage the prediction models to plan for upcoming work, as well as performing this analysis every semester to continuously improve my time management skills.
 
 \newpage
+
 # Appendix {.unnumbered}
 
 An interface was built using Shiny to expose the model for calibrating and predicting number of hours available or completion date. Please see @fig-app-screenshot for a snapshot of the application.
@@ -950,4 +941,5 @@ An interface was built using Shiny to expose the model for calibrating and predi
 ![Screenshot of the application for prediction models](shiny_app_screenshot.png){#fig-app-screenshot}
 
 \newpage
+
 # Reference
