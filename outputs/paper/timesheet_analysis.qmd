@@ -1,7 +1,7 @@
 ---
 title: "Requiem for a Balanced Life: Analysis of My Behavioural Patterns as a PhD Student"
 title-block-banner: true
-abstract: "Various studies have shown that PhD students are having trouble with their work-life balance and coping with the stress of their workloads. To understand my own time management skills, I analyzed my timesheet data to understand my behavioural patterns over the first two semesters of my PhD journey. I found that I am spending about 40 hours a week, with most of my time spent on research, course work, and teach assistant related activities. There is evidence of improper work-life balance based on my tendency to work in late evenings as well as on weekends. To strive for better balance, I have outlined several suggestions to purposefully plan for each day, as well as created prediction models to estimate and plan for upcoming projects."
+abstract: "Many PhD students have trouble with their work-life balance and coping with the stress of their workloads. I undertook a quantitative autoethnography of my own time management skills. I analyzed my own timesheet data to understand my behavioural patterns over the first two semesters of my PhD. I found that I am spending more than 40 hours a week on PhD-related work, with most of my time spent on research, course work, and teach assistant related activities. There is evidence of improper work-life balance based on my tendency to work during the late evening and on weekends. To strive for better balance, I have outlined several suggestions to purposefully plan for each day, as well as created prediction models to estimate and plan for upcoming projects."
 thanks: "Code and data supporting this analysis is available at: https://github.com/christina-wei/PhD-Time-Analysis.git"
 author: Christina Wei
 date: today
@@ -87,19 +87,21 @@ hourly_calc <-
 
 # Introduction
 
-Pursing a PhD degree can be an intellectually fulfilling journey to be at the forefront of academic knowledge. However, this can also be a difficult journey, as many students are struggling to cope with the stress of the work. Based on a study conducted on more than 3,500 PhD students in Belgium, the authors found that 50% ofthe students experienced psychological distress during their PhD, with more than 30% were at risk of developing a psychiatric disorder, especially depression [@levecque2017work]. Another study shows that around 70% of students do not perceive themselves having good work-balance balance, with 90% of them reporting an imbalance in their personal life [@worklifebalance]. Reading these cautionary tales, it makes me question myself on whether I am striking a good work-life balance in my PhD journey.
+Pursing a PhD degree can be an intellectually fulfilling journey to be at the forefront of academic knowledge. However, this can also be a diﬀicult journey, and many students struggle to cope with the stress of the work. Based on a study conducted on more than 3,500 PhD students in Belgium, @levecque2017work found that 50% of students experienced psychological distress during their PhD, with more than 30% at risk of developing a psychiatric disorder, especially depression. @worklifebalance show that around 70% of students do not perceive themselves having good work-balance balance, with 90% of them reporting an imbalance in their personal life. Reading these cautionary tales makes me question whether my own work-life balance is appropriate.
 
-While I feel like I have a good handle on my stress level and actively managing my work-life balance through time management, I want to quantitatively assess whether I am achieving these goals. Since I have the habit of tracking my time spent on academic work since starting as a PhD student at the University of Toronto, I decided to analyze my timesheet data to answer the question on whether I have a good work-life balance in my PhD journey. For this analysis, I am using the amount of time I spent on academic work as the estimand for proportion of work in my life, while deducing the non-work related aspects as the time not tracked as academic work.
+While I feel like I have a good handle on my stress level and actively manage my work-life balance, in this paper I quantitatively assess whether I am achieving these goals. I have tracked the time I spent on academic work since I started as a PhD student at the University of Toronto. This enables me to analyze my timesheet data to answer the question of whether I have a good work-life balance in my PhD journey. For this analysis, I am using the amount of tracked time I spent on academic work as the estimand for the proportion of work in my life, while considering the time I do not track as non-work related.
 
-This analysis has provided me with various insights into my behavioural patterns as a PhD student, as well as areas of improvements to strive for better work-life balance. Over the last 8 months, I spent the majority of my time on research, source work and teaching assistant related activities, working on average about 6 hours a day. I prefer to work in sessions around 2 hours in length, focusing on 2-3 topics each day. As for work-life balance, there are definitely areas of improvement as I tend to work in late evenings (past 9pm), as well as significant amount of time on weekends. To help myself manage my time better, I built a couple of prediction models to estimate the number of hours or the completion dates for projects based on past behavioural patterns.
+This analysis has provided me with various insights into my behavioural patterns as a PhD student, as well as areas of improvements to strive for better work-life balance. Over the last 8 months, I spent the majority of my time on research, source work, and teaching assistant related activities, working on average about 6 hours a day. I prefer to work in sessions of around 2 hours in length, focusing on 2-3 topics each day. As for work-life balance, there are areas of improvement as I tend to work in late evenings (past 9pm), as well as spend significant amount of time on weekends. To help myself manage my time better, I built prediction models to estimate the number of hours, or the expected completion dates, for projects based on past behavioural patterns.
 
-In the remainder of the paper, will first discuss in the Data section the characteristics of the timesheet data and the data cleaning procedure applied to it, as well as limitations of this data source. Next, the Results section presents trends and findings in behaviour patterns related to individual sessions, daily efforts, as well as trend over time. The following Model section outlines the prediction models used to calibrate and estimate the number of hours available or the completion dates for a given set of project parameters. Lastly, the paper wraps up with a Discussion section sharing my reflections adjusting from full-time job to a PhD student, getting in the flow of work, concrete suggestions to improve work-life balance, and future work to improve this analysis.
+While the conclusions of this quantitative autoethnography of my own time management skills are specific to me, there is reason to believe they are generalizable. The coursework and teaching assistant expectations on me are common across my cohort, and are similar to expectations at comparable programs at different institutions. As such, I expect this autoethnography will be especially important to students starting a PhD, and also their supervisors.
 
-# Data
+In the remainder of the paper, I first discuss the characteristics of the timesheet data and the data cleaning procedure applied to it, as well as limitations of this data source in @sec-data. In @sec-results I present trends and findings in behaviour patterns related to individual sessions, daily efforts, as well as trend over time. @sec-model outlines the prediction models used to calibrate and estimate the number of hours available or the completion dates for a given set of project parameters. Lastly, the paper wraps up with @sec-discussion sharing my reflections adjusting from full-time job to a PhD student, getting in the flow of work, concrete suggestions to improve work-life balance, and future work to improve this analysis.
+
+# Data {#sec-data}
 
 ## Source & Data Cleaning
 
-The timesheet data used for this analysis is based on task tracking from August 15, 2022 to March 13, 2023. I used the an mobile application Toggl Track[^1] on my phone to keep track of my academic activities every day. There are in total 581 time entries tracked for the given time period.
+The timesheet data used for this analysis is based on task tracking from August 15, 2022 to March 13, 2023. I used the mobile application Toggl Track[^1] on my phone to keep track of my academic activities every day. There are 581 time entries tracked for the given time period.
 
 [^1]: https://toggl.com/track/
 
@@ -166,7 +168,7 @@ The selected *granularity* of data used in timesheet tracking is also a potentia
 
 There is also an interesting limitation on the *consistency* of project categorization over time as more knowledge is gained on how to efficiently organize projects. For example, my one-on-one meetings with my supervisor were not categorized into any projects initially because I wasn't sure where to put them. After a few months, I created the project "Research-General" to capture general activities related to research, and have tagged future one-on-one meetings into this category. For this particular situation, the data cleaning routine moved the untagged 1:1 meetings into the "Research-General" project. However, there may be other activities with different projects over time that were not adjusted.
 
-# Results
+# Results {#sec-results}
 
 ## Type of Work
 
@@ -200,7 +202,7 @@ cleaned_time_sheet |>
 
 To understand better the time spent on Research and Course Work, let's drill down to the project level details. Looking at Research time specifically, @fig-time-spent-bytype-1 shows that a significant amount of time is spent on working on the literature review paper (Lit Review) at 253 hours, which is the first research paper that I worked on as the lead author. The marginalization in financial industry (Finance CA Marginalization) is a workshop paper I authored, where I spent 21 hours working on the manuscript. The projects on older adults' perception on conversational agents (OAPerception), industry digital design marginalization (Industry DDN) and perceptions of conversational agents with disfluency (Disfluency perception) do not have complete data, as work done before August 15, 2022 was not tracked. The "Other" category shows that I spent 21 hours in the tracked period on general research activities, such as reading literature to keep up to date with research.
 
-Looking at time spent on Course Work in @fig-time-spent-bytype-2 , there are two courses that are taking significant amount of time: INF2241 Critical Making at 142 hours and INF3104 Data Science Foundations at 103 hours. Both of these courses are technical in nature, as the course work requires both programming skills as well as written communication skills to summarize findings. It is worth noting that INF3104 and INF2169 are courses that I am currently taking, and there will be more time spent on them that will not reflected in this analysis.
+Looking at time spent on Course Work in @fig-time-spent-bytype-2 , there are two courses that are taking significant amount of time: INF2241 Critical Making at 142 hours and INF3104 Data Science Foundations at 103 hours. Both of these courses are technical in nature, as the course work requires both programming skills as well as written communication skills to summarize findings. It is worth noting that INF3104 and INF2169 are courses that I am currently taking, and there will be more time spent on them that will not be reflected in this analysis.
 
 ```{r}
 #| message: false
@@ -631,7 +633,7 @@ As both course work and TA are structured based on each semester, their trends a
 #| echo: false
 #| warning: false
 #| label: fig-overtime-course-ta
-#| fig-cap: Weekly effort for differe type of work
+#| fig-cap: Weekly effort for different type of work
 #| fig-subcap: ["Course Work","Teaching Assistant"]
 #| layout-ncol: 2
 #| layout-nrow: 1
@@ -697,7 +699,7 @@ cleaned_time_sheet |>
 #| echo: false
 #| warning: false
 #| label: fig-research
-#| fig-cap: Weekly effort for differe type of work
+#| fig-cap: Weekly effort for different type of work
 
 generate_compare_bar_graph(
     ggplot_data =
@@ -721,7 +723,7 @@ generate_compare_bar_graph(
   scale_x_date(date_breaks = "1 months", date_labels = "%b-%y")
 ```
 
-# Model
+# Model {#sec-model}
 
 There are two prediction models created to help me with time management: one is to predict the number of hours available working on a deliverable based on a given targeted delivery date; the other is based on the estimated effort in hours to project the estimated completion date. Also, a calibration routine is used to control the model parameters used in calibration. These models assume that weekly patterns of hours spent working per day in the past is representative of future behavioural working patterns.
 
@@ -874,7 +876,7 @@ predict_completion_date(
   )
 ```
 
-# Discussion
+# Discussion {#sec-discusssion}
 
 The first
 
@@ -884,11 +886,11 @@ Since I was working full time for the last 15 years, I am quite familiar with th
 
 Comparing between the workload between full time work and as a PhD student, I feel that it is harder as a PhD student to balance the work with personal life. This is evident in the timesheet analysis that working on weekends is a common occurrence (@fig-day-effort-2). Based on my timesheet data, I am surprised to see that most weeks I am spending slightly less than 40 hours a week (@fig-overtime), which time-wise is less than the \~50 hours a week that I did in my full-time job. If I am quantitatively working less hours as a PhD student, why does it feel more tiring? There are a few potential contributing factors to this: level of familiarity, type of work, and mixture of cognitive demands in tasks.
 
-First, I am still learning the skills needed in order to excel in my PhD journey. As I have not done academic research previously, I need to learn foundational knowledge associated with it, as well as applying them to the projects that I am working on. There are many aspects of new learning associated with research: how to think about a research problem, how to synthesize findings, how to write a paper suitable for a conference to name a few. Compare this to my full time job, I am very familiar with leading a product development team to implement new applications in the financial industry. When faced with new problems, I can derive based on past experiences on different ways to approach and resolve them. The new learnings associated with being a PhD student feels unfamiliar, therefore it feels more tiring compare to previous work-related activities.
+First, I am still learning the skills needed in order to excel in my PhD journey. As I have not done academic research previously, I need to learn foundational knowledge associated with it, as well as applying them to the projects that I am working on. There are many aspects of new learning associated with research: how to think about a research problem, how to synthesize findings, how to write a paper suitable for a conference to name a few. Compare this to my full time job, I am very familiar with leading a product development team to implement new applications in the financial industry. When faced with new problems, I can derive based on past experiences on different ways to approach and resolve them. The new learnings associated with being a PhD student feels unfamiliar, therefore it feels more tiring compared to previous work-related activities.
 
-Secondly, there are fundamentally different types of work done as an academic researcher vs. industry practitioner. Academic research is more of a creative process, to seek out domains that have not been explored before and to generate new macro knowledge fo fill these gaps. The process can be unstructured and lacking a sense of achievement as it is not a linear progress. Industry practitioners, specifically those on the implementation side, are generally applying existing knowledge to specific use cases for their applications. There is also knowledge creation in the process, but it is usually at the micro level to adapt general knowledge towards specific applications. There are usually concrete deliverables defined and it is easier to have a sense of achievement based on this. The creative mindset of academia vs. execute mindset of industry may also be a factor for feeling that PhD work is harder, as it is difficult to grasp a sense of concrete achievement.
+Secondly, there are fundamentally different types of work done as an academic researcher vs. industry practitioner. Academic research is more of a creative process, to seek out domains that have not been explored before and to generate new macro knowledge to fill these gaps. The process can be unstructured and lacking a sense of achievement as it is not a linear progress. Industry practitioners, specifically those on the implementation side, are generally applying existing knowledge to specific use cases for their applications. There is also knowledge creation in the process, but it is usually at the micro level to adapt general knowledge towards specific applications. There are usually concrete deliverables defined and it is easier to have a sense of achievement based on this. The creative mindset of academia vs. execute mindset of industry may also be a factor for feeling that PhD work is harder, as it is difficult to grasp a sense of concrete achievement.
 
-Lastly, there are different mixtures of tasks that I work on during the course of a day between PhD and full-time work. Based on this timesheet analysis, most of my time as a PhD student are spent on research, course work and and teaching assistant obligations. All of these are mentally demanding tasks that require my full attention. On the other hand, full-time jobs have some activities requiring lower mental engagement scattered throughout the day, like attending general information meetings (e.g. town halls), daily stand-up meetings, and reviewing customer feedback. These activities give me a mental break from highly cognitive work, reducing the feeling of tiredness.
+Lastly, there are different mixtures of tasks that I work on during the course of a day between PhD and full-time work. Based on this timesheet analysis, most of my time as a PhD student are spent on research, course work and teaching assistant obligations. All of these are mentally demanding tasks that require my full attention. On the other hand, full-time jobs have some activities requiring lower mental engagement scattered throughout the day, like attending general information meetings (e.g. town halls), daily stand-up meetings, and reviewing customer feedback. These activities give me a mental break from highly cognitive work, reducing the feeling of tiredness.
 
 ## Getting in the Flow
 
@@ -928,9 +930,9 @@ While this analysis has provided many interesting insights I can use to manage m
 
 The prediction models can also be improved by building more nuances into their algorithms. One simple improvement to the estimation is to account for statutory holidays and planned vacations in the model. Also, as additional sources of data related to social and physical activities are incorporated into the analysis, the model can be enhanced to propose a schedule suitable to achieving academic excellence and maintaining a healthy work-life balance.
 
-# Conclusion
+# Conclusion {#sec-conclusion}
 
-Pursing a PhD can be an exciting journey filled with self-improvement and new learnings, but it can be a stressful period of time, causing improperly balance between work and life. Having proper time management skills and reflecting on the allocation time can be used to mitigate against the stress and strive for a better work-life balance. By analyzing into my own timesheet data tracking activities since starting my PhD, it has provided me with a number of actionalble insights into my own behavioural patterns and areas of improvements to incorporate into my daily practices. I am looking forward to leverage the prediction models to plan for upcoming work, as well as performing this analysis every semester to continuously improve my time management skills.
+Pursing a PhD can be an exciting journey filled with self-improvement and new learnings, but it can be a stressful period of time, causing improperly balance between work and life. Having proper time management skills and reflecting on the allocation time can be used to mitigate against the stress and strive for a better work-life balance. By analyzing into my own timesheet data tracking activities since starting my PhD, it has provided me with a number of actionable insights into my own behavioural patterns and areas of improvements to incorporate into my daily practices. I am looking forward to leverage the prediction models to plan for upcoming work, as well as performing this analysis every semester to continuously improve my time management skills.
 
 \newpage
 
