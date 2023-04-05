@@ -1,7 +1,7 @@
 #### Preamble ####
 # Purpose: Clean up datasets related timesheets, sleep quality, and deliverables
 # Author: Christina Wei
-# Data: March 19, 2023
+# Date: March 19, 2023
 # Contact: christina.wei@mail.utoronto.ca
 # License: MIT
 

@@ -190,6 +190,7 @@ cleaned_time_sheet |>
   geom_col(color = "black") +
   geom_label(aes(label = round(effort, 0)),
              position = position_stack(vjust = 0.5),
+             fill = "white",
              size = 3,
              show.legend = FALSE) +
   coord_polar(theta = "y") +

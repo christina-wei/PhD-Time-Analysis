@@ -1,7 +1,7 @@
 #### Preamble ####
 # Purpose: Simulate timesheet data
 # Author: Christina Wei
-# Data: 31 March 2023
+# Date: 31 March 2023
 # Contact: christina.wei@mail.utoronto.ca
 # License: MIT
 # Pre-requisites: None
