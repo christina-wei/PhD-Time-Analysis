@@ -1,7 +1,7 @@
 ---
 title: "Requiem for a Balanced Life: Quantitative Autoethnography of My Experience as a First Year PhD Student"
 title-block-banner: true
-abstract: "Many doctoral students have trouble with their work-life balance and coping with the stress of their workloads. I undertook a quantitative autoethnography of my own time management skills, analyzing my own timesheet data to understand my behavioural patterns over the first two semesters of my PhD. I found that I am spending more than 40 hours a week on PhD-related work, with most of my time spent on research, course work, and teach assistant related activities. There is evidence of improper work-life balance based on my tendency to work during the late evening and on weekends. The findings of this study have the potential to be generalized to early-stage doctoral students, providing insights into their behavioural paterns and time management skills."
+abstract: "Many doctoral students have trouble with their work-life balance and coping with the stress of their workloads. I undertook a quantitative autoethnography of my own time management skills, analyzing my own timesheet data to understand my behavioural patterns over the first two semesters of my PhD. I found that I am spending more than 40 hours a week on PhD-related work, with most of my time spent on research, course work, and teach assistant related activities. There is evidence of improper work-life balance based on my tendency to work during the late evening and on weekends. The findings of this study have the potential to be generalized to early-stage doctoral students, providing insights into their behavioural patterns and time management skills."
 thanks: "Code and data supporting this analysis is available at: https://github.com/christina-wei/PhD-Time-Analysis.git"
 author: Christina Wei
 date: today
@@ -91,7 +91,7 @@ Pursing a PhD degree can be an intellectually fulfilling journey to be at the fo
 
 Research have shown that effective time management skills can buffer against academic stress and help students achieve better work-life balance [@kearns2007time, @misra2000college]. However, there may be differences between the time management practices between traditional and non-traditional students [@forbus2011study]. However, the current research on higher education time management skills are mainly focused on the behaviours of undergraduate students. It is unclear whether the same findings can be applied to students engaged in research-based doctoral studies. This leads to the motivational question for this study: **how can doctoral students leverage time management skills to manage the stress of their academic workload and to balance work-life relations?**
 
-To address this question, I am using the method of quantitative autoethnography to analyze my own timesheet data tracked over the last two semesters, which contains all activities I spent on academic work since starting as a PhD student at the University of Toronto in Fall 2022. For this analysis, I am using the amount of tracked time I spent on academic work as the estimand for the proportion of PhD work in my life, while considering the time I did not track as non-work related. As I am an older student who worked in the industry for a period of time before returning to academia, this findings of this analysis will may be more applicable to non-traditional students than traditional students.
+To address this question, I am using the method of quantitative autoethnography to analyze my own timesheet data tracked over the last two semesters, which contains all activities I spent on academic work since starting as a PhD student at the University of Toronto in Fall 2022. For this analysis, I am using the amount of tracked time I spent on academic work as the estimand for the proportion of PhD work in my life, while considering the time I did not track as non-work related. As I am an older student who worked in the industry for a period of time before returning to academia, the findings of this analysis will may be more applicable to non-traditional students than traditional students.
 
 This analysis has provided me with various insights into my behavioural patterns as a PhD student, as well as areas of improvements to strive for better work-life balance. Over the last 8 months, I spent the majority of my time on research, source work, and teaching assistant related activities, working on average about 6 hours a day. I prefer to work in sessions of around 2 hours in length, focusing on 2-3 topics each day. As for work-life balance, there are areas of improvement as I tend to work in late evenings (past 9pm), as well as spend significant amount of time on weekends. To help myself manage my time better, I built prediction models to estimate the number of hours, or the expected completion dates, for projects based on past behavioural patterns.
 
@@ -101,12 +101,11 @@ In the remainder of the paper, I first discuss in @sec-related-work literature r
 
 # Related Work {#sec-related-work}
 
-There are various **contributing factors to the stress** of pursuing a PhD and learning to become a researcher. Some of these are related to the nature of PhD work, including lack of clarity, intense workloads, supervisory relationship, and isolated experience. First, the path towards earning a doctoral degree is *not clearly defined*, unlike the pursuit of coursework degrees (e.g. undergraduate studies) with concrete learning paths, objectives and outcomes [@mackie2019contribution]. In addition to research skills, students need to learn how to carve their own path to achieve a PhD degree. Secondly, there are *intensive workloads* graduate students take on, juggling between research, learning, teaching, and service work [@levecque2017work]. These academic obligations are constantly in conflict with students' personal life, as they are largely driven by inflexible deadlines (e.g. publication submission deadlines). Also, the amount of workload has been increasing over the years, as students are expected to produce more academic outputs as part of their doctoral studies. *Supervisory relationship* can be another contributing factor to stress [@hazell2020understanding]. For early year PhD students, it make take a period of adjustment before they can collaborate effectively with their supervisors. Mismatch in working style, output expectations, and level of guidance can cause conflicts, leading to additional stress on top of academic work. Lastly, pursuing a PhD can be a lonely and *isolated experience*, as many students feel they are "always alone in the struggle" [@hazell2020understanding]. This is especially affecting out-of-town students who do not have friends and family nearby to provide social support.
+There are various **contributing factors to the stress** of pursuing a PhD and learning to become a researcher. Some of these are related to the nature of PhD work, including lack of clarity, intense workloads, supervisory relationship, and isolated experience. First, the path towards earning a doctoral degree is *not clearly defined*, unlike the pursuit of coursework degrees (e.g. undergraduate studies) with concrete learning paths, objectives and outcomes [@mackie2019contribution]. In addition to research skills, students need to learn how to carve their own path to achieve a PhD degree. Secondly, there are *intensive workloads* graduate students take on, juggling between research, learning, teaching, and service work [@levecque2017work]. These academic obligations are constantly in conflict with students' personal life, as they are largely driven by inflexible deadlines (e.g. publication submission deadlines). Also, the amount of workload has been increasing over the years, as students are expected to produce more academic outputs as part of their doctoral studies. *Supervisory relationship* can be another contributing factor to stress [@hazell2020understanding]. For early year PhD students, it may take a period of adjustment before they can collaborate effectively with their supervisors. Mismatch in working style, output expectations, and level of guidance can cause conflicts, leading to additional stress on top of academic work. Lastly, pursuing a PhD can be a lonely and *isolated experience*, as many students feel they are "always alone in the struggle" [@hazell2020understanding]. This is especially affecting out-of-town students who do not have friends and family nearby to provide social support.
 
-There are some mechanisms that research have shown to be effective to **cope and reduce the stress** of pursuing a PhD. Specifically, McAlpine et al. [@mcalpine2022phd] found that students are actively seeking to avoid misalignments between work and life. As such, having a positive balance between work and life can help to buffer exhaustion, resulting in less cynicism and burnout. Also, it is important to cultivate social connections at the individual and the institutional level [@charles2022positive]. As doctoral students often spend hours alone studying and working on independent project, it is easy to feel isolated. Fostering relationships with peers and the institution can combat isolation by providing a sense of social belonging and community.
+There are some mechanisms that research have shown to be effective to **cope and reduce the stress** of pursuing a PhD. Specifically, @mcalpine2022phd found that students are actively seeking to avoid misalignments between work and life. As such, having a positive balance between work and life can help to buffer exhaustion, resulting in less cynicism and burnout. Also, it is important to cultivate social connections at the individual and the institutional level [@charles2022positive]. As doctoral students often spend hours alone studying and working on independent project, it is easy to feel isolated. Fostering relationships with peers and the institution can combat isolation by providing a sense of social belonging and community.
 
-**Time management** is another mechanism that can be used to effectively manage academic stress. Studies have found that students with more time management behaviors consider themselves to be more effective with their work, and have lower levels of stress [@kearns2007time]. As stress is related to perceived control of time, practicing effective time management techniques can help students to gain control over their time, therefore reducing stress [@misra2000college]. Interestingly, Forbus et al. [@forbus2011study] found that traditional and non-traditional students (those who have not
-followed a continuous educational path into college) differ in their time management behaviours. Non-traditional students are more likely to have more experience at time management, actively applying these skills to effectively organize and prioritize their work. Traditional students on the other hand are less likely to cope with stress with time management, and instead are more likely to use passive stress management methods associated with skipping classes and homework.
+**Time management** is another mechanism that can be used to effectively manage academic stress. Studies have found that students with more time management behaviors consider themselves to be more effective with their work, and have lower levels of stress [@kearns2007time]. As stress is related to perceived control of time, practicing effective time management techniques can help students to gain control over their time, therefore reducing stress [@misra2000college]. Interestingly, @forbus2011study found that traditional and non-traditional students (those who have not followed a continuous educational path into college) differ in their time management behaviours. Non-traditional students are more likely to have more experience at time management, actively applying these skills to effectively organize and prioritize their work. Traditional students on the other hand are less likely to cope with stress with time management, and instead are more likely to use passive stress management methods associated with skipping classes and homework.
 
 # Data {#sec-data}
 
@@ -173,7 +172,7 @@ cleaned_time_sheet |>
 
 ## Data Limitations
 
-As the timesheet data depends on my action to manually tracked my time accurately, there is definitely the potential for *human errors* in the data. Specifically, there may be missing data that I forgot to enter into the application. Also, some data are entered retrospectively after the actual activity happened, which could impact the accuracy of time tracked. Also, there are potential issues of tracking time to the wrong project or description that's not reflective of the actual activity.
+As the timesheet data depends on my action to manually tracked my time accurately, there is potential for *human errors* in the data. Specifically, there may be missing data that I forgot to enter into the application. Also, some data are entered retrospectively after the actual activity happened, which could impact the accuracy of time tracked. Also, there are potential issues of tracking time to the wrong project or description that's not reflective of the actual activity.
 
 The selected *granularity* of data used in timesheet tracking is also a potential limitation. There are aspects that are not currently captured which may be useful for analysis. For example, data can be enriched by tracking productivity, location, and more details on the activities for each session. Some of these attributes are not tracked because they do not have a field on the application to be entered. But even if the additional fields are available on the app, there is also the consideration to balance the ease of performing data tracking vs. the amount of data to be tracked. If the act of tracking data becomes cumbersome to do, I may stop tracking time all together to avoid the hassle, which results in more loss in data than not having more data attributes.
 
@@ -183,7 +182,7 @@ There is also an interesting limitation on the *consistency* of project categori
 
 ## Type of Work
 
-From August 15, 2022 to March 13, 2023, I have tracked 1034 hours over 581 sessions. Looking at @fig-time-spent, most of my time are spent on Research (398 hours, 38%) and Course Work (343 hours, 33%) type of work. Performing teaching assistant (TA) duties takes about 12% of my time with 124 hours. The remaining 17% of my time are pretty equally split across Learning, Admin, and Other Activities.
+From August 15, 2022 to March 13, 2023, I have tracked 1034 hours over 581 sessions. Looking at @fig-time-spent, most of my time is spent on Research (398 hours, 38%) and Course Work (343 hours, 33%) type of work. Performing teaching assistant (TA) duties takes about 12% of my time with 124 hours. The remaining 17% of my time is pretty equally split across Learning, Admin, and Other Activities.
 
 ```{r}
 #| message: false
@@ -192,29 +191,25 @@ From August 15, 2022 to March 13, 2023, I have tracked 1034 hours over 581 sessi
 #| label: fig-time-spent
 #| fig-cap: Amount of time spent on each type of activity
 
-# Piecharts: https://r-charts.com/part-whole/pie-chart-ggplot2/
 cleaned_time_sheet |>
   group_by(type) |>
   summarize(effort = sum(effort_hours)) |>
   mutate(effort_pct = effort / sum(effort)) |>
-  ggplot(aes(x = "", y = effort_pct, fill = fct_rev(type))) +
-  geom_col(color = "black") +
-  geom_label(aes(label = round(effort, 0)),
-             position = position_stack(vjust = 0.5),
-             fill = "white",
-             size = 3,
-             show.legend = FALSE) +
-  coord_polar(theta = "y") +
+  ggplot(aes(x = type, y = effort, fill = type)) +
+  geom_col() +
   labs(
-    y = "Effort (Hours)",
-    fill = "Type"
+    y = "Effort (hours)",
+    fill = "Type of activity",
+    x = "Type of activity"
   ) +
-  scale_fill_viridis(discrete = TRUE) #colorblind-friendly palette
+  scale_fill_viridis(discrete = TRUE) +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1)
+        )
 ```
 
 To understand better the time spent on Research and Course Work, let's drill down to the project level details. Looking at Research time specifically, @fig-time-spent-bytype-1 shows that a significant amount of time is spent on working on the literature review paper (Lit Review) at 253 hours, which is the first research paper that I worked on as the lead author. The marginalization in financial industry (Finance CA Marginalization) is a workshop paper I authored, where I spent 21 hours working on the manuscript. The projects on older adults' perception on conversational agents (OAPerception), industry digital design marginalization (Industry DDN) and perceptions of conversational agents with disfluency (Disfluency perception) do not have complete data, as work done before August 15, 2022 was not tracked. The "Other" category shows that I spent 21 hours in the tracked period on general research activities, such as reading literature to keep up to date with research.
 
-Looking at time spent on Course Work in @fig-time-spent-bytype-2 , there are two courses that are taking significant amount of time: INF2241 Critical Making at 142 hours and INF3104 Data Science Foundations at 103 hours. Both of these courses are technical in nature, as the course work requires both programming skills as well as written communication skills to summarize findings. It is worth noting that INF3104 and INF2169 are courses that I am currently taking, and there will be more time spent on them that will not be reflected in this analysis.
+Looking at time spent on Course Work in @fig-time-spent-bytype-2, there are two courses that are taking significant amount of time: INF2241 Critical Making at 142 hours and INF3104 Data Science Foundations at 103 hours. Both of these courses are technical in nature, as the course work requires both programming skills as well as written communication skills to summarize findings. It is worth noting that INF3104 and INF2169 are courses that I am currently taking, and there will be more time spent on them that will not be reflected in this analysis.
 
 ```{r}
 #| message: false
@@ -638,7 +633,7 @@ generate_compare_bar_graph(
 
 ### Course Work & TA
 
-As both course work and TA are structured based on each semester, their trends are analyzed together in this section. Looking at the trend over time for course work for both Fall 2022 and Winter 2023 semester in @fig-overtime-course-ta-1, it looks like there is a pattern where there are more work at the beginning and the end of the semester, with some down time in the middle. As for TA work ( @fig-overtime-course-ta-2), while the workload is mostly steady at a few hours a week, there are noticeable peaks when a large amount of time is needed for fast turnaround on deliverables.
+As both course work and TA are structured based on each semester, their trends are analyzed together in this section. Looking at the trend over time for course work for both Fall 2022 and Winter 2023 semester in @fig-overtime-course-ta-1, it looks like there is a pattern where there is more work at the beginning and the end of the semester, with some down time in the middle. As for TA work (@fig-overtime-course-ta-2), while the workload is mostly steady at a few hours a week, there are noticeable peaks when a large amount of time is needed for fast turnaround on deliverables.
 
 ```{r}
 #| message: false
@@ -679,7 +674,7 @@ generate_compare_bar_graph(
 
 ### Research
 
-Since August 2022, I have been spending on average of 14.2 hours per week on research related activities. There is high variation (standard deviation = 11.3 hours) in the weekly effort on research, with minimum of 1.1 hours and maximum of 51 hours (see @tbl-research). The variation is correlated with the submissions deadlines for conferences and journals, as the number of hours spent on research increases dramatically in the weeks leading up to the deadline (@fig-research). One good example is the time spent on the systematic literature review paper (Lit Review), where there are a couple of weeks with over 40 hours before the deadline.
+Since August 2022, I have been spending on average of 14.2 hours per week on research related activities. There is high variation (standard deviation = 11.3 hours) in the weekly effort on research, with minimum of 1.1 hours and maximum of 51 hours (see @tbl-research). The variation is correlated with the submission deadlines for conferences and journals, as the number of hours spent on research increases dramatically in the weeks leading up to the deadline (@fig-research). One good example is the time spent on the systematic literature review paper (Lit Review), where there are a couple of weeks with over 40 hours before the deadline.
 
 Based on the graph in @fig-research, there are usually only 1 or 2 research projects that I'm working on at a given time. As a research project finishes, then I can take on new projects for research. This rolling schedule can be seen with the OA Perception project as the main focus in August and September. After this project is finished, the next major project, Lit Review is started in October and continue to be the main focus until end of February. It is also interesting to observe the differences between being the lead author on Lit Review where there are high peaks of writing time before submission versus a contributing researcher on OA Perception where it is a steady amount of work before the deadline.
 
@@ -788,31 +783,23 @@ calibrate_model(as.Date("2023-01-09"), as.Date("2023-04-01"), "Research") |>
 This function is used to estimate the number of hours I have available to work on a project if I have a target completion date in mind. As such, the input parameters for this function are defined as the following:
 
 -   `model_param` specifies the calibrated number of hours worked for each day of the week (e.g. @tbl-calibration-all)
-
 -   `start_date(optional)` specifies the start date of the project. If not specified, it will default to today's date
-
 -   `end_date` specifies the target completion date of the project
-
 -   `pct_effort(optional)` specifies the multiplier to be applied to the calibrate hours in model parameters. For example, specifying 1.2 here will scale up the calibrated hours by 120%.
-
 -   `include_weekends(optional)` specifies whether the estimated hours should include Saturdays and Sundays. If not specified this value is default to be TRUE to include weekends in prediction.
 
 To estimate the number of hours, the algorithm is projecting the list of dates that are available between the start date and the end date, calculating the number of days available for each day of the week (e.g. 3 Mondays, 2 Tuesdays ..), multiplying them by the average number of hours for each day of the week, then scaling them up by the `pct_effort` parameter to generate the final estimate.
 
 $$
-total\_hours = \sum_{i=1}^{N} \beta_{i} * n_{i} * \alpha
+\mbox{total hours} = \sum_{i=1}^{N} \beta_{i} \times n_{i} \times \alpha
 $$ {#eq-predict-hours}
 
 The parameters in @eq-predict-hours are:
 
 -   i = day of the week (e.g. 1 = Mon, 2 = Tues ..)
-
 -   N = 1 to 7 if include_weekends = TRUE; 1 to 5 if include_weekends = FALSE
-
 -   $\beta_{i}$ = average hours for the day of the week
-
 -   $n_{i}$ = number of the day of the week (e.g. 3 Mondays)
-
 -   $\alpha$ = pct_effort multiplier value for effort scaling
 
 For example, the following code snippet estimates the number of hours I have available between now and April 17 based all the timesheet data available. Based on the prediction model, I have 106 hours available for work, and it also generates a detailed daily schedule for my review (sample schedule in @tbl-predict-hours).
@@ -839,7 +826,7 @@ predict_hours_available(calibrate_model(), end_date = as.Date("2023-04-17"))$sch
 
 ## Predict Completion Date
 
-On the other hand, I can also predict the estimated completion date if I have an estimated number of effort for a project. The algorithm of this prediction is similar to predicting the hours available between two date by using the average number of hours worked for each day of the week as the baseline. Specifically, the input parameters for this function are defined as the following:
+On the other hand, I can also predict the estimated completion date if I have an estimated effort (i.e. number of hours) for a project. The algorithm of this prediction is similar to predicting the hours available between two dates by using the average number of hours worked for each day of the week as the baseline. Specifically, the input parameters for this function are defined as the following:
 
 -   `model_param` specifies the calibrated number of hours worked for each day of the week (e.g. @tbl-calibration-all)
 
@@ -896,7 +883,7 @@ Since I was working full time for the last 15 years, I am quite familiar with th
 
 Comparing between the workload between full time work and as a PhD student, I feel that it is harder as a PhD student to balance the work with personal life. This is evident in the timesheet analysis that working on weekends is a common occurrence (@fig-day-effort-2). Based on my timesheet data, I am surprised to see that most weeks I am spending slightly less than 40 hours a week (@fig-overtime), which time-wise is less than the \~50 hours a week that I did in my full-time job. If I am quantitatively working less hours as a PhD student, why does it feel more tiring? There are a few potential contributing factors to this: level of familiarity, type of work, and mixture of cognitive demands in tasks.
 
-First, I am still learning the skills needed in order to excel in my PhD journey. As I have not done academic research previously, I need to learn foundational knowledge associated with it, as well as applying them to the projects that I am working on. There are many aspects of new learning associated with research: how to think about a research problem, how to synthesize findings, how to write a paper suitable for a conference to name a few. Compare this to my full time job, I am very familiar with leading a product development team to implement new applications in the financial industry. When faced with new problems, I can derive based on past experiences on different ways to approach and resolve them. The new learnings associated with being a PhD student feels unfamiliar, therefore it feels more tiring compared to previous work-related activities.
+First, I am still learning the skills needed in order to excel in my PhD journey. As I have not done academic research previously, I need to learn foundational knowledge associated with it, as well as applying them to the projects that I am working on. There are many aspects of new learning associated with research: how to think about a research problem, how to synthesize findings, how to write a paper suitable for a conference to name a few. Compare this to my full-time job, I am very familiar with leading a product development team to implement new applications in the financial industry. When faced with new problems, I can derive based on past experiences on different ways to approach and resolve them. The new learnings associated with being a PhD student feels unfamiliar, therefore it feels more tiring compared to previous work-related activities.
 
 Secondly, there are fundamentally different types of work done as an academic researcher vs. industry practitioner. Academic research is more of a creative process, to seek out domains that have not been explored before and to generate new macro knowledge to fill these gaps. The process can be unstructured and lacking a sense of achievement as it is not a linear progress. Industry practitioners, specifically those on the implementation side, are generally applying existing knowledge to specific use cases for their applications. There is also knowledge creation in the process, but it is usually at the micro level to adapt general knowledge towards specific applications. There are usually concrete deliverables defined and it is easier to have a sense of achievement based on this. The creative mindset of academia vs. execute mindset of industry may also be a factor for feeling that PhD work is harder, as it is difficult to grasp a sense of concrete achievement.
 
@@ -904,11 +891,11 @@ Lastly, there are different mixtures of tasks that I work on during the course o
 
 ## Getting in the Flow
 
-There are some evidence in the data for work sessions where I have gotten into the flow and worked for a prolonged period of time. It is interesting to observe some patterns on the type of work in the sessions where I have worked for over 4 hours (@tbl-over-4hrs). Specifically, work that are technical in nature as well as paper writing and review are most common in longer sessions.
+There is some evidence in the data for work sessions where I have gotten into the flow and worked for a prolonged period of time. It is interesting to observe some patterns on the type of work in the sessions where I have worked for over 4 hours (@tbl-over-4hrs). Specifically, work that are technical in nature as well as paper writing and review are most common in longer sessions.
 
 Some of the longer sessions came from working on technical assignments from INF2241 Critical Making and INF3104 Data Science Foundations courses. The longest session recorded at 10.7 hours was working on the first assignment analyzing COVID clinics across Toronto. Also, some technical aspects of research are also longer in the length of work, such as thematic analysis for coding and data analysis of literature reviews. Based on my personal experience, I sometimes experience a deep sense of involvement working on technical problems, where I am following a particular train of thought and do not want to be disturbed until it can be traced to a satisfactory conclusion.
 
-Another aspect for getting into the flow for longer sessions are related to paper writing and paper reviews. Especially for paper writing, it is interesting that many times I have experienced writer's block where I am forcing the words to come out, but sometimes the words are flowing freely with fully formed thoughts and well crafted sentences. I usually do not know which state of paper writing I will be engaged in until about half an hour into the writing process. Paper reviews on the other hand usually have better flow, where I prefer to dedicate several hours to read through the whole manuscript reviewing for cohesiveness overall as well as sentence level revisions.
+Another aspect for getting into the flow for longer sessions are related to paper writing and paper reviews. Especially for paper writing, it is interesting that many times I have experienced writer's block where I am forcing the words to come out, but sometimes the words are flowing freely with fully formed thoughts and well-crafted sentences. I usually do not know which state of paper writing I will be engaged in until about half an hour into the writing process. Paper reviews on the other hand usually have better flow, where I prefer to dedicate several hours to read through the whole manuscript reviewing for cohesiveness overall as well as sentence level revisions.
 
 ## Improving Work-Life Balance
 
@@ -916,9 +903,9 @@ While overall I am satisfied with my efforts over the last 8 months as a PhD stu
 
 First, I can be more efficient with my time by defining a couple of topics to focus on at the beginning of each day, and engage in work sessions that are no longer than 2 hours in length. This is in line with my behavioural patterns, as I tend to have study sessions around 2 hours length (@tbl-session-summary), and focus on 1 to 3 projects per day (@tbl-day-summary) . The caveat to this is that if I get into the flow of the work, then the work sessions can be longer as not to disturb the deep engagement. Also, time planning should take into account of the scheduled activities of the day (e.g. attending classes) to plan for topics and work sessions around these fixed time slots.
 
-Second, the analysis shows that I have been spending a significant amount of time working on weekends ( @fig-day-effort-2) as well as working late into the evenings (@fig-session-byhour). This pattern is not ideal for work-life balance, as there are no defined breaks within my schedule for work-life balance. Also, evenings and weekends are usually prime times for social interactions with family and friends. The tendency to work during these times will have an impact on this important aspect of my life. To improve upon this, I should plan my working hours to be between 9am and 8pm Mondays to Fridays, leaving the evenings and weekends to decompress and to engage in leisure or social activities. This will require better time management skills but it is a worthy goal to aim for.
+Second, the analysis shows that I have been spending a significant amount of time working on weekends (@fig-day-effort-2) as well as working late into the evenings (@fig-session-byhour). This pattern is not ideal for work-life balance, as there are no defined breaks within my schedule for work-life balance. Also, evenings and weekends are usually prime times for social interactions with family and friends. The tendency to work during these times will have an impact on this important aspect of my life. To improve upon this, I should plan my working hours to be between 9am and 8pm Mondays to Fridays, leaving the evenings and weekends to decompress and to engage in leisure or social activities. This will require better time management skills but it is a worthy goal to aim for.
 
-Lastly, an analysis of my time allocations periodically can be an useful way to reveal interesting patterns in my behaviour and offer insights for continuous improvement. As student life can be different semester by semester as demonstrated in @fig-day-numprojects-semester, it will be useful to perform this analysis at the end of each semester to discover consistencies or changes in trends as well as to calibrate the prediction models used for estimating hours and completion dates. This is needed to detect potential regime changes in the data. For example, after I complete the course work portion of my PhD and move into the preparing for qualifying exam phase, my behaviours may be changing dramatically. The prediction model should only be calibrated with data that reflects my future behavioural patterns.
+Lastly, an analysis of my time allocations periodically can be a useful way to reveal interesting patterns in my behaviour and offer insights for continuous improvement. As student life can be different semester by semester as demonstrated in @fig-day-numprojects-semester, it will be useful to perform this analysis at the end of each semester to discover consistencies or changes in trends as well as to calibrate the prediction models used for estimating hours and completion dates. This is needed to detect potential regime changes in the data. For example, after I complete the course work portion of my PhD and move into the preparing for qualifying exam phase, my behaviours may be changing dramatically. The prediction model should only be calibrated with data that reflects my future behavioural patterns.
 
 Based on my current study patterns, I am proposing the following daily schedule (@tbl-proposed-schedule) to be followed on weekdays. This will achieve 37.5 hours of work time each week with each session between 1.5 and 2 hours and adequate breaks in between them, without needing to work in late evenings or weekends.
 
@@ -954,4 +941,4 @@ An interface was built using Shiny to expose the model for calibrating and predi
 
 \newpage
 
-# Reference
+# References
